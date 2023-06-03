@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Inter';
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -22,10 +26,6 @@ a {
   transition: all .5s ease;
   font-weight: 500;
   color: #1abcfe;
-
-  &:hover {
-    color: #ef4a31;
-  }
 }
 
 .MuiButtonBase-root {
