@@ -1,0 +1,78 @@
+import { CgSpinner } from "react-icons/cg";
+import styled, { keyframes } from "styled-components/macro";
+
+export const StyledButton = styled.button<{ disabled: boolean | undefined }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 99px;
+  padding: 1rem 1.25rem;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  opacity: ${({ disabled }) => disabled && "0.5"};
+
+  svg {
+    margin-left: 0.5rem;
+  }
+
+  &:hover {
+    transform: scale(1.025);
+  }
+`;
+
+export const ButtonPrimary = styled(StyledButton)<{ color?: string }>`
+  color: ${({ color }) => (color ? "color" : "#000")};
+`;
+
+export const ButtonSecondary = styled(StyledButton)`
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+`;
+
+export const ButtonOutline = styled(StyledButton)`
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+
+  &:hover {
+    background: #f1f1f1;
+    border-color: transparent;
+    color: #0f0f0f;
+  }
+`;
+
+export const SubmitButton = styled(StyledButton)`
+  background-color: #3749e9;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  margin-top: 1.5rem;
+
+  &:hover {
+    background-color: #3749e9;
+  }
+`;
+
+const spin = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Spinner = styled(CgSpinner)`
+  animation: ${spin} 0.75s linear infinite;
+  margin-right: 0.5rem;
+`;

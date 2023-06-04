@@ -1,9 +1,9 @@
 import styled from "styled-components/macro";
 
-export const MainMenu = styled.div`
+export const MainMenu = styled.div<{ footer?: boolean }>`
   position: relative;
   flex: 1;
-  display: none;
+  display: ${({ footer }) => (footer ? "block" : "none")};
 
   @media (min-width: 768px) {
     display: block;
@@ -16,24 +16,28 @@ export const NavBarWrap = styled.div<{ footer?: boolean }>`
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: ${({ footer }) => (footer ? "center" : "flex-start")};
+    justify-content: ${({ footer }) => (footer ? "flex-start" : "center")};
     width: 100%;
     margin-bottom: 0;
 
-    @media (min-width: 768px) {
-      justify-content: ${({ footer }) => (footer ? "flex-end" : "center")};
-    }
-
     li {
-      margin: 0 10px;
+      margin: ${({ footer }) => (footer ? "0.75rem 10px" : "0 10px")};
+
+      @media (min-width: 992px) {
+        margin: ${({ footer }) => (footer && "0.75rem 0")};
+      }
 
       @media (min-width: 1200px) {
-        margin: 0 1rem;
+        margin: ${({ footer }) => (footer ? "0.75rem 0" : "0 1rem")};
       }
 
       @media (min-width: 1400px) {
-        margin: 0 1.25rem;
+        margin: ${({ footer }) => (footer ? "0.75rem 0" : "0 1.25rem")};
       }
+    }
+
+    @media (min-width: 992px) {
+      display: ${({ footer }) => (footer ? "block" : "flex")};
     }
   }
 `;

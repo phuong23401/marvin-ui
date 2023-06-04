@@ -11,8 +11,8 @@ function Navigation(props: INavigationProps): JSX.Element {
   const { isOpen, onHide, footer } = props;
 
   return (
-    <MainMenu>
-      <NavBarWrap className="d-none d-md-flex flex-grow-1" footer={footer}>
+    <MainMenu footer={footer}>
+      <NavBarWrap className="d-md-flex flex-grow-1" footer={footer}>
         <ul className="main-menu list-unstyled">
           <li>
             <StyledLink href="/ecosystem">Ecosystem</StyledLink>

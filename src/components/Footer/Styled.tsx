@@ -1,152 +1,123 @@
-import styled from 'styled-components/macro'
+import styled from "styled-components/macro";
 
 export const FooterMain = styled.footer`
-  background-color: #000;
   width: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  border-top: 2px solid #1f1f1f;
 
-  @media (min-width: 768px) {
-    padding-top: 2rem;
+  @media (min-width: 992px) {
+    padding-top: 6rem;
   }
-`
+`;
 
 export const FooterWrapper = styled.div`
   position: relative;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
   }
-`
+`;
 
-export const LogoWrap = styled.a`
-  display: flex;
-  justify-content: center;
-`
-
-export const Logo = styled.img`
-  width: 200px;
-`
-
-export const SupportedWallets = styled.div`
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2.5rem;
-
-  p {
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    color: #fff;
-  }
-
-  img {
-    margin: 0 7px;
-  }
-
-  @media (min-width: 576px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-
-  @media (min-width: 768px) {
-    justify-content: flex-end;
-
-    p {
-      margin-right: 1rem;
-    }
-  }
-
+export const Informations = styled.div`
   @media (min-width: 992px) {
-    margin-right: 0.5rem;
-  }
-
-  @media (min-width: 1200px) {
-    margin-right: 0.75rem;
+    width: 30%;
   }
 `
+
+export const LogoWrap = styled.div`
+  text-align: center;
+`;
+
+export const LogoImage = styled.img`
+  /* width: 200px; */
+`;
+
+export const SubText = styled.p`
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
+  color: #808080;
+  margin-top: 1.5rem;
+`;
 
 export const SocialLinks = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  gap: 15px;
+`;
 
-  @media (min-width: 768px) {
-    justify-content: flex-end;
-    margin-top: 0;
+export const SocialIcon = styled.a`
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  &:hover {
+    box-shadow: 0 3px 10px rgba(153, 0, 0, 0.5);
+    transition: all 0.5s ease;
   }
+`;
 
-  @media (min-width: 992px) {
-    margin-right: 0.5rem;
-  }
-
-  @media (min-width: 1200px) {
-    margin-right: 0.75rem;
-  }
-
-  img {
-    width: 30px;
-    margin: 0 0.75rem;
-
-    @media (min-width: 576px) {
-      margin: 0 1rem;
-    }
-
-    @media (min-width: 768px) {
-      width: auto;
-      margin-left: 1.5rem;
-      margin-right: 0;
-    }
-
-    @media (min-width: 1200px) {
-      margin-left: 2rem;
-    }
-  }
-`
-
-export const TagLine = styled.p`
+export const FooterTitle = styled.p`
+  font-family: "Space Grotesk";
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
-  color: #cacaca;
-  margin-bottom: 0;
-  margin-top: 2rem;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: end;
-  }
+  line-height: 24px;
+  margin-top: 1rem;
 
   @media (min-width: 992px) {
-    margin-right: 0.5rem;
+    margin-top: 5rem;
   }
+`;
 
-  @media (min-width: 1200px) {
-    margin-right: 0.75rem;
-  }
+export const InputField = styled.div`
+  background: rgba(255, 255, 255, 0.06);
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 99px;
 
   span {
-    font-weight: 700;
-    color: #ad203e;
+    text-align: center;
+    padding: 1rem 1.25rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
-  a.link-policy {
-    font-weight: 700;
-    color: #ad203e;
-  }
-`
 
-export const StyledLink = styled.a`
-  color: #fff;
-  text-decoration: underline;
-`
+  input {
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  margin-top: 1.75rem;
+
+  button:first-child {
+    margin-right: 1rem;
+  }
+`;
