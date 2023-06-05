@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { Link } from "react-scroll";
 
 export const MainMenu = styled.div<{ footer?: boolean }>`
   position: relative;
@@ -42,7 +43,7 @@ export const NavBarWrap = styled.div<{ footer?: boolean }>`
   }
 `;
 
-export const StyledLink = styled.a`
+export const StyledLink = styled(Link)`
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;

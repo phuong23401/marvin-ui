@@ -1,3 +1,4 @@
+import Scroll from "react-scroll";
 import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
@@ -25,69 +26,71 @@ import Pancake from "assets/images/Ecosystem/Partners/pancake.png";
 
 function Ecosystem(): JSX.Element {
   return (
-    <SectionWrapper>
-      <Container>
-        <BackgroundWrapper>
-          <TitleWrapper>
-            <Introduce>Marvin inu ecosystem</Introduce>
-            <BackgroundTitle>Elon's bossy dog</BackgroundTitle>
-            <BackgroundSubtitle>
-              Ignite your rocket and join the bossiest Web3 community now!
-            </BackgroundSubtitle>
-            <ButtonWrapper>
-              <StyledPrimaryButton>Launch Dapp</StyledPrimaryButton>
-              <StyledSecondaryButton>Mint Pass</StyledSecondaryButton>
-            </ButtonWrapper>
-          </TitleWrapper>
-        </BackgroundWrapper>
+    <Scroll.Element name="ecosystem">
+      <SectionWrapper>
+        <Container>
+          <BackgroundWrapper>
+            <TitleWrapper>
+              <Introduce>Marvin inu ecosystem</Introduce>
+              <BackgroundTitle>Elon's bossy dog</BackgroundTitle>
+              <BackgroundSubtitle>
+                Ignite your rocket and join the bossiest Web3 community now!
+              </BackgroundSubtitle>
+              <ButtonWrapper>
+                <StyledPrimaryButton>Launch Dapp</StyledPrimaryButton>
+                <StyledSecondaryButton>Mint Pass</StyledSecondaryButton>
+              </ButtonWrapper>
+            </TitleWrapper>
+          </BackgroundWrapper>
 
-        <CrewTheMoon />
+          <CrewTheMoon />
 
-        <PartnersWrapper>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            loop={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            speed={3000}
-            breakpoints={{
-              576: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              992: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-            }}
-            modules={[Autoplay]}
-          >
-            <SwiperSlide>
-              <img src={Binance} alt="Binance" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={Bitmart} alt="Bitmart" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={Cmc} alt="Cmc" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={Eth} alt="Eth" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={Pancake} alt="Pancake" />
-            </SwiperSlide>
-          </Swiper>
-          <StyledPartnersButton>View all</StyledPartnersButton>
-        </PartnersWrapper>
+          <PartnersWrapper>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              speed={3000}
+              breakpoints={{
+                576: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                992: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              }}
+              modules={[Autoplay]}
+            >
+              <SwiperSlide>
+                <img src={Binance} alt="Binance" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Bitmart} alt="Bitmart" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Cmc} alt="Cmc" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Eth} alt="Eth" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Pancake} alt="Pancake" />
+              </SwiperSlide>
+            </Swiper>
+            <StyledPartnersButton>View all</StyledPartnersButton>
+          </PartnersWrapper>
 
-        <Engagement />
-        <ApprovedByElon />
-      </Container>
-    </SectionWrapper>
+          <Engagement />
+          <ApprovedByElon />
+        </Container>
+      </SectionWrapper>
+    </Scroll.Element>
   );
 }
 

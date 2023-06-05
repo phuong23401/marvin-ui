@@ -15,19 +15,19 @@ function Navigation(props: INavigationProps): JSX.Element {
       <NavBarWrap className="d-md-flex flex-grow-1" footer={footer}>
         <ul className="main-menu list-unstyled">
           <li>
-            <StyledLink href="/ecosystem">Ecosystem</StyledLink>
+            <StyledLink to="ecosystem">Ecosystem</StyledLink>
           </li>
           <li>
-            <StyledLink href="/community">Community</StyledLink>
+            <StyledLink to="community">Community</StyledLink>
           </li>
           <li>
-            <StyledLink href="/team">Team</StyledLink>
+            <StyledLink to="team">Team</StyledLink>
           </li>
           <li>
-            <StyledLink href="/howtobuy">How To Buy</StyledLink>
+            <StyledLink to="howtobuy">How To Buy</StyledLink>
           </li>
           <li>
-            <StyledLink href="/documents">Documents</StyledLink>
+            <StyledLink to="documents">Documents</StyledLink>
           </li>
         </ul>
       </NavBarWrap>
@@ -36,19 +36,19 @@ function Navigation(props: INavigationProps): JSX.Element {
         <Offcanvas.Body>
           <MobileMenu>
             <li>
-              <StyledLink href="/ecosystem">Ecosystem</StyledLink>
+              <StyledLink to="ecosystem">Ecosystem</StyledLink>
             </li>
             <li>
-              <StyledLink href="/community">Community</StyledLink>
+              <StyledLink to="community">Community</StyledLink>
             </li>
             <li>
-              <StyledLink href="/team">Team</StyledLink>
+              <StyledLink to="team">Team</StyledLink>
             </li>
             <li>
-              <StyledLink href="/howtobuy">How To Buy</StyledLink>
+              <StyledLink to="howtobuy">How To Buy</StyledLink>
             </li>
             <li>
-              <StyledLink href="/documents">Documents</StyledLink>
+              <StyledLink to="documents">Documents</StyledLink>
             </li>
           </MobileMenu>
         </Offcanvas.Body>
