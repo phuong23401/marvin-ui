@@ -23,7 +23,6 @@ import Telegram from "assets/images/Footer/telegram.png";
 import Youtube from "assets/images/Footer/youtube.png";
 import Reddit from "assets/images/Footer/reddit.png";
 import Twitch from "assets/images/Footer/twitch.png";
-import { GrShare } from "react-icons/gr";
 import { RiShareBoxFill } from "react-icons/ri";
 import Button from "components/Button";
 

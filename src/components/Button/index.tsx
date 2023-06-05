@@ -1,77 +1,99 @@
-import { ButtonPrimary, ButtonSecondary, SubmitButton, StyledButton, Spinner, ButtonOutline } from './Styled'
+import {
+  ButtonPrimary,
+  ButtonSecondary,
+  SubmitButton,
+  StyledButton,
+  Spinner,
+  ButtonOutline,
+} from "./Styled";
 
 interface IButtonProps {
-  children: React.ReactNode
-  type?: 'primary' | 'secondary' | 'submit' | 'outline'
-  handleClick?: () => void
-  loading?: boolean
-  style?: string
-  disabled?: boolean
-  padding?: string
+  children: React.ReactNode;
+  type?: "primary" | "secondary" | "submit" | "outline";
+  handleClick?: () => void;
+  loading?: boolean;
+  style?: string;
+  disabled?: boolean;
+  padding?: string;
 }
 
 function Button(props: IButtonProps): JSX.Element {
-  const { children, type, loading, handleClick, disabled, padding } = props
+  const { children, type, loading, handleClick, disabled, padding } = props;
 
-  if (type === 'primary') {
+  if (type === "primary") {
     return (
-      <ButtonPrimary type="button" disabled={disabled ?? loading} padding={padding ?? '5px 20px'} onClick={handleClick}>
+      <ButtonPrimary
+        type="button"
+        disabled={disabled ?? loading}
+        onClick={handleClick}
+      >
         <span>
           {loading && <Spinner />}
           {children}
         </span>
       </ButtonPrimary>
-    )
+    );
   }
 
-  if (type === 'outline') {
+  if (type === "outline") {
     return (
-      <ButtonOutline type="button" disabled={disabled ?? loading} onClick={handleClick} padding={padding ?? '5px 20px'}>
+      <ButtonOutline
+        type="button"
+        disabled={disabled ?? loading}
+        onClick={handleClick}
+      >
         <span>
           {loading && <Spinner />}
           {children}
         </span>
       </ButtonOutline>
-    )
+    );
   }
 
-  if (type === 'secondary') {
+  if (type === "secondary") {
     return (
       <ButtonSecondary
         type="button"
         disabled={disabled ?? loading}
         onClick={handleClick}
-        padding={padding ?? '5px 20px'}
       >
         <span>
           {loading && <Spinner />}
           {children}
         </span>
       </ButtonSecondary>
-    )
+    );
   }
 
-  if (type === 'submit') {
+  if (type === "submit") {
     return (
-      <SubmitButton type="button" disabled={disabled ?? loading} onClick={handleClick}>
+      <SubmitButton
+        type="button"
+        disabled={disabled ?? loading}
+        onClick={handleClick}
+      >
         <span>
           {loading && <Spinner />}
           {children}
         </span>
       </SubmitButton>
-    )
+    );
   }
 
   return (
     <>
-      <StyledButton type="button" disabled={disabled ?? loading} onClick={handleClick}>
+      <StyledButton
+        type="button"
+        disabled={disabled ?? loading}
+        onClick={handleClick}
+      >
         <span>
           {loading && <Spinner />}
           {children}
         </span>
       </StyledButton>
     </>
-  )
+  );
 }
 
-export default Button
+export default Button;
