@@ -20,7 +20,7 @@ const StyledSubtitle = styled.p`
 `;
 
 interface ITitleProps {
-  alignCenter: boolean;
+  alignCenter?: boolean;
   size?: "sm" | "lg";
   subTitle?: string;
   children: React.ReactNode;
@@ -32,7 +32,7 @@ function SectionTitle(props: ITitleProps): JSX.Element {
   return (
     <TitleWrapper align={alignCenter}>
       <StyledSubtitle>{subTitle}</StyledSubtitle>
-      <StyledTitle size={size}>{children}</StyledTitle>;
+      <StyledTitle size={size}>{children}</StyledTitle>
     </TitleWrapper>
   );
 }

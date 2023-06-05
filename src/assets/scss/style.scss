@@ -74,3 +74,17 @@ strong {
 .swiper-slide {
   width: auto !important;
 }
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.12);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}

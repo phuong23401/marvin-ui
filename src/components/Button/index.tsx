@@ -14,11 +14,10 @@ interface IButtonProps {
   loading?: boolean;
   style?: string;
   disabled?: boolean;
-  padding?: string;
 }
 
 function Button(props: IButtonProps): JSX.Element {
-  const { children, type, loading, handleClick, disabled, padding } = props;
+  const { children, type, loading, handleClick, disabled } = props;
 
   if (type === "primary") {
     return (
