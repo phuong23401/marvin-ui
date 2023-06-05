@@ -17,6 +17,7 @@ export const SectionWrapper = styled.section`
     background: #92001e;
     opacity: 0.41;
     filter: blur(85px);
+    z-index: -1;
   }
 `;
 
