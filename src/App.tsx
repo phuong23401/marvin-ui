@@ -6,6 +6,7 @@ import Community from "pages/Community";
 import About from "pages/About";
 import HowToBuy from "pages/HowToBuy";
 import WatchTrailer from "pages/WatchTrailer";
+import Gamefi from "pages/Gamefi";
 import Footer from "components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "assets/scss/style.scss";
@@ -19,6 +20,7 @@ function App(): JSX.Element {
       <About />
       <HowToBuy />
       <WatchTrailer />
+      <Gamefi />
       <Footer />
     </Router>
   );
