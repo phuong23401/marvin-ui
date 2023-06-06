@@ -25,7 +25,7 @@ export const SectionWrapper = styled.section`
     content: "";
     position: absolute;
     background-image: url(${Hero});
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     bottom: 0;
