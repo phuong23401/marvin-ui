@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const SectionWrapper = styled.section`
   position: relative;
-  padding: 4.5rem 0 3rem;
+  padding: 4.5rem 0;
 `;
 
 export const ContentWrapper = styled.div`
