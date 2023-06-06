@@ -31,7 +31,7 @@ function About(): JSX.Element {
         </Introduce>
         <ContentWrapper>
           <ContentInner className="col-lg-12">
-            <img src={ETH} />
+            <img src={ETH} alt="" />
             <ButtonWrapper>
               <Button type="secondary">
                 Etherscan (ETH)
@@ -43,7 +43,7 @@ function About(): JSX.Element {
             <h5>200k+on DEX</h5>
           </ContentInner>
           <ContentInner className="col-lg-6">
-            <img src={Coingecko} />
+            <img src={Coingecko} alt="" />
             <ButtonWrapper>
               <Button type="secondary">
                 Verified supply on CoinGecko
@@ -54,7 +54,7 @@ function About(): JSX.Element {
             <h5>1,000,000,000,000</h5>
           </ContentInner>
           <ContentInner className="col-lg-6">
-            <img src={CMC} />
+            <img src={CMC} alt="" />
             <ButtonWrapper>
               <Button type="secondary">
                 Verified supply on CoinMarketCap

@@ -8,21 +8,35 @@ export const StyledButton = styled.button<{ disabled: boolean | undefined }>`
   background-color: #fff;
   border: none;
   border-radius: 99px;
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1rem;
   color: #000;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
   text-transform: capitalize;
   transition: all 0.3s ease;
   opacity: ${({ disabled }) => disabled && "0.5"};
 
   svg {
     margin-left: 0.5rem;
+    width: 14px;
+    height: 14px;
   }
 
   &:hover {
     transform: scale(1.025);
+  }
+
+  @media (min-width: 576px) {
+    padding: 1rem 1.25rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
   }
 `;
 
