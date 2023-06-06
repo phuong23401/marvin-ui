@@ -5,6 +5,7 @@ import Ecosystem from "pages/Ecosystem";
 import Community from "pages/Community";
 import About from "pages/About";
 import HowToBuy from "pages/HowToBuy";
+import WatchTrailer from "pages/WatchTrailer";
 import Footer from "components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "assets/scss/style.scss";
@@ -17,6 +18,7 @@ function App(): JSX.Element {
       <Community />
       <About />
       <HowToBuy />
+      <WatchTrailer />
       <Footer />
     </Router>
   );
