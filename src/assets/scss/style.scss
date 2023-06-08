@@ -78,3 +78,13 @@ strong {
 .swiper-pagination-bullet-active {
   background: #fff;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin-top: 9rem;
+  }
+}

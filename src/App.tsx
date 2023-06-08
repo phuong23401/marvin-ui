@@ -9,6 +9,7 @@ import WatchTrailer from "pages/WatchTrailer";
 import Gamefi from "pages/Gamefi";
 import Roadmap from "pages/Roadmap";
 import Updates from "pages/Updates";
+import Team from "pages/Team";
 import DAO from "pages/DAO";
 import Footer from "components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -26,6 +27,7 @@ function App(): JSX.Element {
       <Gamefi />
       <Roadmap />
       <Updates />
+      <Team />
       <DAO />
       <Footer />
     </Router>
