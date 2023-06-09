@@ -31,7 +31,9 @@ function Community(): JSX.Element {
                 <RiShareBoxFill size={14} />
               </ChannelName>
               <ChannelContent>
-                Join the bossiest Web3 community and get 24/7 support
+                Join the bossiest Web3 community and{" "}
+                <br className="d-none d-xl-block" />
+                get 24/7 support
               </ChannelContent>
               <h5>160000</h5>
               <span>Members</span>
@@ -43,7 +45,9 @@ function Community(): JSX.Element {
                 <RiShareBoxFill size={14} />
               </ChannelName>
               <ChannelContent>
-                Join the official Marvin NFT discord
+                Join the official Marvin NFT
+                <br className="d-none d-lg-block" />
+                discord
               </ChannelContent>
               <h5>837</h5>
               <span>Members</span>
@@ -55,7 +59,9 @@ function Community(): JSX.Element {
                 <RiShareBoxFill size={14} />
               </ChannelName>
               <ChannelContent>
-                Follow Marvin and spread the Mars Mission
+                Follow Marvin and spread the Mars
+                <br className="d-none d-lg-block" />
+                Mission
               </ChannelContent>
               <h5>61000</h5>
               <span>Followers</span>
@@ -67,7 +73,8 @@ function Community(): JSX.Element {
                 <RiShareBoxFill size={14} />
               </ChannelName>
               <ChannelContent>
-                Education, gameplay videos & more!
+                Education, gameplay videos
+                <br className="d-none d-lg-block" />& more!
               </ChannelContent>
               <h5>319</h5>
               <span>Subscribers</span>

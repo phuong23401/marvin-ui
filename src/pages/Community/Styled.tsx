@@ -106,5 +106,14 @@ export const ChannelContent = styled.p`
   font-size: 24px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 0.5rem;
+
+  @media (min-width: 576px) {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 576px) {
+    width: auto;
+  }
 `;
