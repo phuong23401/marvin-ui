@@ -48,7 +48,7 @@ function Ecosystem(): JSX.Element {
           <PartnersWrapper>
             <Swiper
               slidesPerView={1}
-              spaceBetween={10}
+              spaceBetween={20}
               loop={true}
               autoplay={{
                 delay: 2500,
@@ -58,11 +58,11 @@ function Ecosystem(): JSX.Element {
               breakpoints={{
                 576: {
                   slidesPerView: 2,
-                  spaceBetween: 10,
+                  spaceBetween: 30,
                 },
                 992: {
                   slidesPerView: 3,
-                  spaceBetween: 20,
+                  spaceBetween: 50,
                 },
               }}
               modules={[Autoplay]}
