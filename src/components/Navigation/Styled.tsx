@@ -12,13 +12,16 @@ export const MainMenu = styled.div<{ footer?: boolean }>`
 `;
 
 export const NavBarWrap = styled.div<{ footer?: boolean }>`
+  width: fit-content;
+  margin: auto;
+
   ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
     justify-content: ${({ footer }) => (footer ? "flex-start" : "center")};
-    width: 100%;
+    width: fit-content;
     margin-bottom: 0;
 
     li {

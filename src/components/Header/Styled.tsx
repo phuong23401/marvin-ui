@@ -1,16 +1,11 @@
 import styled from "styled-components/macro";
 
 export const HeaderMain = styled.header`
-  position: fixed;
+  position: relative;
   background-color: transparent;
   top: 0;
   width: 100%;
   z-index: 9;
-
-  @media (min-width: 768px) {
-    position: relative;
-    display: block;
-  }
 `;
 
 export const HeaderWrapper = styled.div`
@@ -36,7 +31,17 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const LogoWrap = styled.a`
-  /* margin-right: 2rem; */
+  @media (min-width: 768px) {
+    margin-left: 1rem;
+  }
+  
+  @media (min-width: 992px) {
+    margin-left: 6rem;
+  }
+
+  @media (min-width: 1400px) {
+    margin-left: 10rem;
+  }
 `;
 
 export const LogoImage = styled.img`
