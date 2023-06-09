@@ -25,7 +25,7 @@ export const SectionWrapper = styled.section`
 export const ActionsWrapper = styled.div`
   text-align: center;
   margin: auto;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 
   @media (min-width: 576px) {
     display: flex;
@@ -74,7 +74,7 @@ export const ContentWrapper = styled.div`
   padding: 2rem 1rem;
   width: fit-content;
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 3rem;
 
   @media (min-width: 992px) {
     padding: 2rem 0 3rem;
