@@ -1,14 +1,17 @@
 import { Container } from "react-bootstrap";
 import SectionTitle from "components/SectionTitle";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import {
   BottomWrapper,
   ButtonWrapper,
   ContentInner,
   ContentSubText,
   ContentText,
-  ContentWrapper,
+  ContentMobile,
   Introduce,
   SectionWrapper,
+  ContentDesktop,
 } from "./Styled";
 import ETH from "assets/images/About/eth.svg";
 import Coingecko from "assets/images/About/coingecko.svg";
@@ -29,52 +32,129 @@ function About(): JSX.Element {
             holders of 1,356
           </p>
         </Introduce>
-        <ContentWrapper>
-          <ContentInner className="col-lg-12">
-            <img src={ETH} alt="" />
-            <ButtonWrapper>
-              <Button type="secondary">
-                Etherscan (ETH)
-                <RiShareBoxFill size={16} />
-              </Button>
-            </ButtonWrapper>
-            <ContentText>Marvin ETH contract addresses</ContentText>
-            <span>Transactions</span>
-            <h5>200k+on DEX</h5>
-          </ContentInner>
-          <ContentInner className="col-lg-6">
-            <img src={Coingecko} alt="" />
-            <ButtonWrapper>
-              <Button type="secondary">
-                Verified supply on CoinGecko
-                <RiShareBoxFill size={16} />
-              </Button>
-            </ButtonWrapper>
-            <span>Circulating Supply</span>
-            <h5>1,000,000,000,000</h5>
-          </ContentInner>
-          <ContentInner className="col-lg-6">
-            <img src={CMC} alt="" />
-            <ButtonWrapper>
-              <Button type="secondary">
-                Verified supply on CoinMarketCap
-                <RiShareBoxFill size={16} />
-              </Button>
-            </ButtonWrapper>
-            <ContentText>Tokenomics</ContentText>
-            <ContentSubText>
-              Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
-            </ContentSubText>
-          </ContentInner>
-        </ContentWrapper>
+        <ContentMobile>
+          <Swiper
+            cssMode={true}
+            navigation={true}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
+            slidesPerView={1}
+            spaceBetween={20}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            speed={3000}
+            breakpoints={{
+              576: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              992: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          >
+            <SwiperSlide>
+              <ContentInner>
+                <img src={ETH} alt="" />
+                <ButtonWrapper>
+                  <Button type="secondary">
+                    Etherscan (ETH)
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </ButtonWrapper>
+                <ContentText>Marvin ETH contract addresses</ContentText>
+                <p>Transactions</p>
+                <h5>200k+on DEX</h5>
+              </ContentInner>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ContentInner>
+                <img src={Coingecko} alt="" />
+                <ButtonWrapper>
+                  <Button type="secondary">
+                    Verified supply on CoinGecko
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </ButtonWrapper>
+                <p>Circulating Supply</p>
+                <h5>1,000,000,000,000</h5>
+              </ContentInner>
+            </SwiperSlide>
+            <SwiperSlide>
+              <ContentInner>
+                <img src={CMC} alt="" />
+                <ButtonWrapper>
+                  <Button type="secondary">
+                    Verified supply on CoinMarketCap
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </ButtonWrapper>
+                <ContentText>Tokenomics</ContentText>
+                <ContentSubText>
+                  Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
+                </ContentSubText>
+              </ContentInner>
+            </SwiperSlide>
+          </Swiper>
+        </ContentMobile>
+
+        <div className="d-none d-lg-block">
+          <ContentDesktop>
+            <ContentInner className="col-lg-12">
+              <img src={ETH} alt="" />
+              <ButtonWrapper>
+                <Button type="secondary">
+                  Etherscan (ETH)
+                  <RiShareBoxFill size={16} />
+                </Button>
+              </ButtonWrapper>
+              <ContentText>Marvin ETH contract addresses</ContentText>
+              <p>Transactions</p>
+              <h5>200k+on DEX</h5>
+            </ContentInner>
+          </ContentDesktop>
+          <ContentDesktop>
+            <ContentInner>
+              <img src={Coingecko} alt="" />
+              <ButtonWrapper>
+                <Button type="secondary">
+                  Verified supply on CoinGecko
+                  <RiShareBoxFill size={16} />
+                </Button>
+              </ButtonWrapper>
+              <p>Circulating Supply</p>
+              <h5>1,000,000,000,000</h5>
+            </ContentInner>
+            <ContentInner>
+              <img src={CMC} alt="" />
+              <ButtonWrapper>
+                <Button type="secondary">
+                  Verified supply on CoinMarketCap
+                  <RiShareBoxFill size={16} />
+                </Button>
+              </ButtonWrapper>
+              <ContentText>Tokenomics</ContentText>
+              <ContentSubText>
+                Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
+              </ContentSubText>
+            </ContentInner>
+          </ContentDesktop>
+        </div>
+
         <BottomWrapper>
           <SectionTitle alignCenter size="sm">
             Marvin Statistics
           </SectionTitle>
-          <ContentText>
+          <p>
             Marvin holder count continues to grow regardless of market
             conditions.
-          </ContentText>
+          </p>
           <ButtonWrapper>
             <Button type="primary">Buy Marvin</Button>
           </ButtonWrapper>

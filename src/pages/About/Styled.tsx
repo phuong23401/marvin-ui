@@ -29,9 +29,9 @@ export const SectionWrapper = styled.section`
     background-repeat: no-repeat;
     background-position: center;
     bottom: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
+    left: -1rem;
+    width: 170px;
+    height: 170px;
     z-index: -1;
 
     @media (min-width: 576px) {
@@ -39,22 +39,22 @@ export const SectionWrapper = styled.section`
       height: 200px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
+      width: 300px;
+      height: 300px;
       left: -2rem;
     }
 
-    @media (min-width: 992px) {
-      width: 250px;
-      height: 250px;
-    }
-
     @media (min-width: 1200px) {
-      left: 0;
+      width: 400px;
+      height: 400px;
+      z-index: 2;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1400px) {
       width: 420px;
       height: 420px;
+      left: 0;
     }
   }
 `;
@@ -99,14 +99,22 @@ export const Introduce = styled.div`
   }
 `;
 
-export const ContentWrapper = styled.div`
+export const ContentMobile = styled.div`
   margin-top: 3.5rem;
 
   @media (min-width: 992px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: none;
+  }
+`;
+
+export const ContentDesktop = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  &:last-child {
+    gap: 3rem;
   }
 `;
 
@@ -116,50 +124,75 @@ export const ContentInner = styled.div`
   border-radius: 24px;
   text-align: center;
   padding: 2.5rem;
-  margin-bottom: 3rem;
   width: 100%;
+  height: 348px;
 
   img {
     width: 75px;
     margin-bottom: 1rem;
   }
 
-  h5 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
-    margin-bottom: 0;
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 31px;
+    }
   }
 
-  span {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: rgba(255, 255, 255, 0.5);
+  h5 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 365px;
   }
 
   @media (min-width: 992px) {
-    min-width: 390px;
+    min-width: 365px;
     width: fit-content;
-    height: 380px;
-
-    :first-child {
-      margin: 0 5rem 3rem;
-    }
   }
 `;
 
-export const ContentText = styled.p`
+export const ContentText = styled.div`
   font-weight: 400;
-  font-size: 20px;
-  line-height: 31px;
+  font-size: 18px;
+  line-height: 29px;
   color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 31px;
+  }
 `;
 
-export const ContentSubText = styled.p`
+export const ContentSubText = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+`;
+
+export const BottomWrapper = styled.div`
+  text-align: center;
+  margin-top: 2rem;
+
+  @media (min-width: 992px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -167,8 +200,17 @@ export const ButtonWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
-`;
 
-export const BottomWrapper = styled.div`
-  text-align: center;
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 31px;
+    }
+  }
 `;
