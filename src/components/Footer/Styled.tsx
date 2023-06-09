@@ -23,18 +23,21 @@ export const FooterWrapper = styled.div`
 `;
 
 export const Informations = styled.div`
-  @media (min-width: 992px) {
-    width: 30%;
+  @media (min-width: 1400px) {
+    width: 36%;
   }
-`
+`;
 
 export const LogoWrap = styled.div`
-  text-align: center;
+  width: fit-content;
+  margin: auto;
+
+  @media (min-width: 992px) {
+    margin: 0;
+  }
 `;
 
-export const LogoImage = styled.img`
-  /* width: 200px; */
-`;
+export const LogoImage = styled.img``;
 
 export const SubText = styled.p`
   font-weight: 400;
@@ -43,16 +46,34 @@ export const SubText = styled.p`
   letter-spacing: 0.3px;
   color: #808080;
   margin-top: 1.5rem;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
 `;
 
 export const SocialLinks = styled.div`
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   gap: 15px;
+
+  @media (min-width: 576px) {
+    margin: 2rem 5rem 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    margin: 2rem 9rem 1.5rem;
+  }
+  
+  @media (min-width: 992px) {
+    margin: 2rem 0 1.5rem;
+    justify-content: flex-start;
+  }
 `;
 
 export const SocialIcon = styled.a`
@@ -73,10 +94,12 @@ export const FooterTitle = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
   margin-top: 1rem;
 
   @media (min-width: 992px) {
     margin-top: 5rem;
+    text-align: left;
   }
 `;
 
@@ -115,9 +138,15 @@ export const InputField = styled.div`
 
 export const ButtonWrapper = styled.div`
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 1.75rem;
 
   button:first-child {
     margin-right: 1rem;
+  }
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
   }
 `;

@@ -31,7 +31,7 @@ function Footer(): JSX.Element {
     <FooterMain>
       <Container>
         <FooterWrapper>
-          <Informations>
+          <Informations className="col-lg-5">
             <LogoWrap>
               <a href="/">
                 <LogoImage src={Logo} alt="" />
@@ -42,7 +42,7 @@ function Footer(): JSX.Element {
               that has actual real time utility - staking, GameFi, Launchpad ,
               NFT Marketplace, and NFTs without the gas fees (well almost).
             </SubText>
-            <SocialLinks>
+            <SocialLinks className="col-lg-10 col-xl-9">
               <SocialIcon href="/" target="blank_">
                 <img src={Twitter} alt="" />
               </SocialIcon>
@@ -78,7 +78,7 @@ function Footer(): JSX.Element {
             <Navigation footer={true} />
           </div>
 
-          <div>
+          <div className="col-xl-3">
             <FooterTitle>Contracts</FooterTitle>
             <InputField>
               <span>ETH</span>

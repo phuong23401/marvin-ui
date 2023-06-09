@@ -20,7 +20,7 @@ export const NavBarWrap = styled.div<{ footer?: boolean }>`
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: ${({ footer }) => (footer ? "flex-start" : "center")};
+    justify-content: center;
     width: fit-content;
     margin-bottom: 0;
 
@@ -28,7 +28,7 @@ export const NavBarWrap = styled.div<{ footer?: boolean }>`
       margin: ${({ footer }) => (footer ? "0.75rem 10px" : "0 10px")};
 
       @media (min-width: 992px) {
-        margin: ${({ footer }) => (footer && "0.75rem 0")};
+        margin: ${({ footer }) => footer && "0.75rem 0"};
       }
 
       @media (min-width: 1200px) {
@@ -38,6 +38,10 @@ export const NavBarWrap = styled.div<{ footer?: boolean }>`
       @media (min-width: 1400px) {
         margin: ${({ footer }) => (footer ? "0.75rem 0" : "0 1.25rem")};
       }
+    }
+
+    @media (min-width: 768px) {
+      justify-content: ${({ footer }) => (footer ? "flex-start" : "center")};
     }
 
     @media (min-width: 992px) {
