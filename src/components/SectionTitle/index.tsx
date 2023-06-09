@@ -1,7 +1,11 @@
 import styled from "styled-components/macro";
 
 const TitleWrapper = styled.div<{ align?: boolean }>`
-  text-align: ${({ align }) => (align ? "center" : "left")};
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: ${({ align }) => (align ? "center" : "left")};
+  }
 `;
 
 const StyledTitle = styled.h4<{ size?: string }>`
