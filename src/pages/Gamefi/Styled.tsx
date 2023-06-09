@@ -2,11 +2,29 @@ import styled from "styled-components/macro";
 
 export const SectionWrapper = styled.section`
   position: relative;
-  padding: 4.5rem 0;
+  padding-top: 4.5rem;
+
+  @media (min-width: 992px) {
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 1400px) {
+    padding-bottom: 4rem;
+  }
 `;
 
 export const ContentWrapper = styled.div`
   margin-top: 5rem;
+
+  &:first-child {
+    margin-top: 3rem;
+  }
+
+  @media (min-width: 576px) {
+    &:first-child {
+      margin-top: 5rem;
+    }
+  }
 
   @media (min-width: 992px) {
     display: flex;
@@ -41,10 +59,16 @@ export const ContentText = styled.p`
   font-size: 16px;
   line-height: 27px;
   color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  margin-bottom: 1.5rem;
 
   @media (min-width: 576px) {
     font-size: 18px;
     line-height: 29px;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
   }
 
   @media (min-width: 992px) {
@@ -60,7 +84,7 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   margin-bottom: 2rem;
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     justify-content: flex-start;
     gap: 20px;
   }
@@ -77,4 +101,4 @@ export const Spacing = styled.div`
   @media (min-width: 1400px) {
     margin-top: 5rem;
   }
-`
+`;
