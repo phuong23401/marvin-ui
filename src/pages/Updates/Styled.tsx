@@ -1,16 +1,22 @@
 import styled from "styled-components/macro";
+import Hero from "assets/images/Updates/hero.png";
 
 export const SectionWrapper = styled.section`
   position: relative;
-  padding-bottom: 2rem;
-  margin-top: -2rem;
+  padding: 10rem 0 2rem;
 
-  @media (min-width: 576px) {
-    margin-top: -6rem;
-  }
-
-  @media (min-width: 992px) {
-    margin-top: -6.5rem;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(${Hero});
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 3rem;
+    right: 0rem;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
   }
 `;
 
