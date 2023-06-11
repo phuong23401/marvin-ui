@@ -79,20 +79,31 @@ strong {
   background: #fff;
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media (min-width: 768px) {
     display: block;
     top: auto;
     bottom: 0;
+    width: 44px;
+    height: 44px;
   }
 }
 
 .swiper-button-prev {
   left: 5rem;
-  
+
   @media (min-width: 992px) {
     left: 7rem;
   }
