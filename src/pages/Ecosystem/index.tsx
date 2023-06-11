@@ -85,10 +85,10 @@ function Ecosystem(): JSX.Element {
             </Swiper>
             <StyledPartnersButton>View all</StyledPartnersButton>
           </PartnersWrapper>
-
-          <Engagement />
-          <ApprovedByElon />
         </Container>
+
+        <Engagement />
+        <ApprovedByElon />
       </SectionWrapper>
     </Scroll.Element>
   );

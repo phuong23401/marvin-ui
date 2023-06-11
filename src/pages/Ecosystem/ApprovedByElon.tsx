@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import styled from "styled-components/macro";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
@@ -5,6 +6,8 @@ import SectionTitle from "components/SectionTitle";
 import Image1 from "assets/images/Ecosystem/ApprovedByElon/approved_1.png";
 import Image2 from "assets/images/Ecosystem/ApprovedByElon/approved_2.png";
 import Image3 from "assets/images/Ecosystem/ApprovedByElon/approved_3.png";
+import SwipperPrev from "assets/images/swiper_prev.png";
+import SwipperNext from "assets/images/swiper_next.png";
 
 const ApprovedWrapper = styled.div`
   position: relative;
@@ -19,33 +22,34 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
   margin-top: 2rem;
 
-  img {
-    width: 295px;
-    
-    @media (min-width: 375px) {
-      width: 350px;
-    }
-
-    @media (min-width: 576px) {
-      width: 100%;
-    }
-  }
-
   @media (min-width: 1200px) {
     justify-content: flex-start;
+  }
+`;
+
+const ContentImage = styled.img`
+  width: 295px;
+
+  @media (min-width: 576px) {
+    width: auto;
   }
 `;
 
 function ApprovedByElon(): JSX.Element {
   return (
     <ApprovedWrapper>
-      <SectionTitle subTitle="Where it all started">
-        Approved by Elon
-      </SectionTitle>
+      <Container>
+        <SectionTitle subTitle="Where it all started">
+          Approved by Elon
+        </SectionTitle>
+      </Container>
       <ContentWrapper>
         <Swiper
           cssMode={true}
-          navigation={true}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
           pagination={true}
           mousewheel={true}
           keyboard={true}
@@ -70,14 +74,16 @@ function ApprovedByElon(): JSX.Element {
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         >
           <SwiperSlide>
-            <img src={Image1} alt="" />
+            <ContentImage src={Image1} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Image2} alt="" />
+            <ContentImage src={Image2} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Image3} alt="" />
+            <ContentImage src={Image3} alt="" />
           </SwiperSlide>
+          <img className="swiper-button-prev" src={SwipperPrev} alt="" />
+          <img className="swiper-button-next" src={SwipperNext} alt="" />
         </Swiper>
       </ContentWrapper>
     </ApprovedWrapper>

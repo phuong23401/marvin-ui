@@ -1,9 +1,14 @@
+import { Container } from "react-bootstrap";
 import styled from "styled-components/macro";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import SectionTitle from "components/SectionTitle";
 import Button from "components/Button";
 import Image1 from "assets/images/Ecosystem/Engagement/engagement_1.png";
 import Image2 from "assets/images/Ecosystem/Engagement/engagement_2.png";
 import Image3 from "assets/images/Ecosystem/Engagement/engagement_3.png";
+import SwipperPrev from "assets/images/swiper_prev.png";
+import SwipperNext from "assets/images/swiper_next.png";
 import { RiShareBoxFill } from "react-icons/ri";
 
 const EngagementWrapper = styled.div`
@@ -78,37 +83,77 @@ const ButtonWrapper = styled.div`
 function Engagement(): JSX.Element {
   return (
     <EngagementWrapper>
-      <SectionTitle subTitle="Elon Engagement">
-        There are no coincedences
-      </SectionTitle>
+      <Container>
+        <SectionTitle subTitle="Elon Engagement">
+          There are no coincedences
+        </SectionTitle>
+      </Container>
       <ContentWrapper>
-        <ContentImage>
-          <img src={Image1} alt="" />
-          <ButtonWrapper>
-            <Button type="secondary">
-              Check it out
-              <RiShareBoxFill size={15} />
-            </Button>
-          </ButtonWrapper>
-        </ContentImage>
-        <ContentImage>
-          <img src={Image2} alt="" />
-          <ButtonWrapper>
-            <Button type="secondary">
-              Check it out
-              <RiShareBoxFill size={16} />
-            </Button>
-          </ButtonWrapper>
-        </ContentImage>
-        <ContentImage>
-          <img src={Image3} alt="" />
-          <ButtonWrapper>
-            <Button type="secondary">
-              Check it out
-              <RiShareBoxFill size={15} />
-            </Button>
-          </ButtonWrapper>
-        </ContentImage>
+        <Swiper
+          cssMode={true}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={true}
+          mousewheel={true}
+          keyboard={true}
+          slidesPerView={1}
+          spaceBetween={20}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={3000}
+          breakpoints={{
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        >
+          <SwiperSlide>
+            <ContentImage>
+              <img src={Image1} alt="" />
+              <ButtonWrapper>
+                <Button type="secondary">
+                  Check it out
+                  <RiShareBoxFill size={15} />
+                </Button>
+              </ButtonWrapper>
+            </ContentImage>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ContentImage>
+              <img src={Image2} alt="" />
+              <ButtonWrapper>
+                <Button type="secondary">
+                  Check it out
+                  <RiShareBoxFill size={16} />
+                </Button>
+              </ButtonWrapper>
+            </ContentImage>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ContentImage>
+              <img src={Image3} alt="" />
+              <ButtonWrapper>
+                <Button type="secondary">
+                  Check it out
+                  <RiShareBoxFill size={15} />
+                </Button>
+              </ButtonWrapper>
+            </ContentImage>
+          </SwiperSlide>
+          <img className="swiper-button-prev" src={SwipperPrev} alt="" />
+          <img className="swiper-button-next" src={SwipperNext} alt="" />
+        </Swiper>
       </ContentWrapper>
     </EngagementWrapper>
   );
