@@ -1,6 +1,7 @@
 import { Parallax } from "@react-spring/parallax";
 import styled from "styled-components/macro";
-import BgImage from "assets/images/Roadmap/roadmap_bg.png";
+import MobileBg from "assets/images/Roadmap/mobile_bg.png";
+import DesktopBg from "assets/images/Roadmap/desktop_bg.png";
 import ContentBg from "assets/images/Roadmap/content_bg.png";
 import Vector_1 from "assets/images/Roadmap/Beginning/vector.png";
 import Vector_2 from "assets/images/Roadmap/Growth/vector.png";
@@ -10,7 +11,7 @@ import Vector_5 from "assets/images/Roadmap/Destination/vector.png";
 
 export const SectionWrapper = styled.section`
   position: relative;
-  background-image: url(${BgImage});
+  background-image: url(${MobileBg});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,24 +32,70 @@ export const SectionWrapper = styled.section`
     height: 6.5rem;
     z-index: 0;
   }
+
+  @media (min-width: 992px) {
+    height: 1400px;
+  }
+
+  @media (min-width: 1400px) {
+    background-image: url(${DesktopBg});
+    background-size: contain;
+    height: auto;
+  }
+
+  @media (min-width: 1920px) {
+    background-size: cover;
+  }
 `;
 
 export const StyledParallax = styled(Parallax)`
   top: 0;
   left: 0;
-  margin-top: 5rem;
+  margin-top: 2rem;
+
+  @media (min-width: 576px) {
+    margin-top: 5rem;
+  }
+`;
+
+export const DesktopWrapper = styled.div`
+  display: none;
+
+  .desktop-content {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: scale(1);
+
+    @media (min-width: 1920px) {
+      transform: scale(1.25);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30rem;
+  }
 `;
 
 export const BegginingWrapper = styled.div`
   position: absolute;
   width: fit-content;
-  bottom: 11rem;
+  left: 2.5rem;
+  bottom: 8.5rem;
 
   img {
     position: absolute;
     top: -13.5rem;
     left: 0;
     z-index: 1;
+
+    @media (min-width: 576px) {
+      left: auto;
+      right: 0;
+    }
   }
 
   &::before {
@@ -63,14 +110,49 @@ export const BegginingWrapper = styled.div`
     width: 248.95px;
     height: 23.04px;
     z-index: 3;
+
+    @media (min-width: 576px) {
+      left: 7.5rem;
+      width: 260px;
+      height: 25px;
+    }
+
+    @media (min-width: 1400px) {
+      left: 7rem;
+      width: 248.95px;
+      height: 23.04px;
+    }
+  }
+
+  @media (min-width: 375px) {
+    left: 2rem;
+  }
+
+  @media (min-width: 992px) {
+    transform: scale(1.25);
+    left: 5rem;
+  }
+
+  @media (min-width: 1200px) {
+    left: 17rem;
+  }
+
+  @media (min-width: 1400px) {
+    left: 2rem;
+    top: -1rem;
+  }
+
+  @media (min-width: 1920px) {
+    left: 4rem;
+    top: 4.5rem;
   }
 `;
 
 export const GrowthWrapper = styled.div`
   position: absolute;
   width: fit-content;
-  bottom: 11.5rem;
-  left: -7rem;
+  bottom: 9rem;
+  left: -6rem;
 
   img {
     position: absolute;
@@ -91,10 +173,43 @@ export const GrowthWrapper = styled.div`
     width: 184.2px;
     height: 237.55px;
     z-index: 3;
+
+    @media (min-width: 576px) {
+      width: 190px;
+      height: 240px;
+    }
+
+    @media (min-width: 1400px) {
+      width: 184.2px;
+      height: 237.55px;
+    }
   }
 
   @media (min-width: 375px) {
     left: -11rem;
+  }
+
+  @media (min-width: 576px) {
+    left: 17rem;
+  }
+
+  @media (min-width: 992px) {
+    transform: scale(1.25);
+    left: 26rem;
+    bottom: 9.5rem;
+  }
+  
+  @media (min-width: 1200px) {
+    left: auto;
+    right: 22rem;
+  }
+
+  @media (min-width: 1400px) {
+    top: -1.5rem;
+  }
+
+  @media (min-width: 1920px) {
+    top: 4rem;
   }
 `;
 
@@ -128,13 +243,39 @@ export const LaunchingWrapper = styled.div`
   @media (min-width: 375px) {
     left: -16rem;
   }
+
+  @media (min-width: 576px) {
+    left: -3rem;
+    bottom: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    left: auto;
+    right: -6rem;
+  }
+
+  @media (min-width: 992px) {
+    transform: scale(1.25);
+    right: -7rem;
+    bottom: 3rem;
+  }
+
+  @media (min-width: 1400px) {
+    top: 1.25rem;
+    left: -2.5rem;
+  }
+
+  @media (min-width: 1920px) {
+    top: 8rem;
+    left: -3rem;
+  }
 `;
 
 export const IgnationWrapper = styled.div`
   position: absolute;
   width: fit-content;
-  bottom: 2rem;
-  left: -12rem;
+  bottom: 5rem;
+  left: -11rem;
 
   img {
     position: absolute;
@@ -158,15 +299,46 @@ export const IgnationWrapper = styled.div`
   }
 
   @media (min-width: 375px) {
-    left: -24rem;
+    left: -23rem;
+  }
+
+  @media (min-width: 576px) {
+    left: auto;
+    right: 3rem;
+    bottom: 7rem;
+  }
+
+  @media (min-width: 768px) {
+    left: 2.5rem;
+    right: auto;
+  }
+
+  @media (min-width: 992px) {
+    transform: scale(1.25);
+    left: 6rem;
+    bottom: 6.25rem;
+  }
+
+  @media (min-width: 1200px) {
+    left: 3.5rem;
+  }
+
+  @media (min-width: 1400px) {
+    top: 2.25rem;
+    left: 0.5rem;
+  }
+
+  @media (min-width: 1920px) {
+    top: 8.5rem;
+    left: 0rem;
   }
 `;
 
 export const DestinationWrapper = styled.div`
   position: absolute;
   width: fit-content;
-  bottom: 9.5rem;
-  left: -18rem;
+  bottom: 8.5rem;
+  left: -18.5rem;
 
   img {
     position: absolute;
@@ -187,10 +359,42 @@ export const DestinationWrapper = styled.div`
     width: 261.44px;
     height: 65.02px;
     z-index: 3;
+
+    @media (min-width: 1400px) {
+      left: -9rem;
+    }
   }
 
   @media (min-width: 375px) {
     left: -34rem;
+  }
+
+  @media (min-width: 576px) {
+    left: -8rem;
+    bottom: 10.5rem;
+  }
+
+  @media (min-width: 768px) {
+    left: 19rem;
+  }
+
+  @media (min-width: 992px) {
+    transform: scale(1.25);
+    left: auto;
+    right: 21.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    right: 37rem;
+  }
+
+  @media (min-width: 1400px) {
+    top: -1rem;
+  }
+
+  @media (min-width: 1920px) {
+    left: -2rem;
+    top: 4rem;
   }
 `;
 
