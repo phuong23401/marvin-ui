@@ -85,7 +85,7 @@ function Engagement(): JSX.Element {
     <EngagementWrapper>
       <Container>
         <SectionTitle subTitle="Elon Engagement">
-          There are no coincedences
+          There are no coincidence
         </SectionTitle>
       </Container>
       <ContentWrapper>
