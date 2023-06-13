@@ -43,31 +43,31 @@ function Footer(): JSX.Element {
               NFT Marketplace, and NFTs without the gas fees (well almost).
             </SubText>
             <SocialLinks className="col-lg-10 col-xl-9">
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://twitter.com/marvin_inu" target="blank_">
                 <img src={Twitter} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://discord.com/invite/KXtBnvh3tE" target="blank_">
                 <img src={Discord} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://www.instagram.com/marvininueth/" target="blank_">
                 <img src={Instagram} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://www.tiktok.com/@marvinecosystem" target="blank_">
                 <img src={Tiktok} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://www.facebook.com/MarvinInuEcosystem" target="blank_">
                 <img src={Facebook} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://www.t.me/marvininuofficial" target="blank_">
                 <img src={Telegram} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://www.youtube.com/marvininu" target="blank_">
                 <img src={Youtube} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://www.reddit.com/r/MarvinInu_ETH/" target="blank_">
                 <img src={Reddit} alt="" />
               </SocialIcon>
-              <SocialIcon href="/" target="blank_">
+              <SocialIcon href="https://www.twitch.tv/marvin_inu" target="blank_">
                 <img src={Twitch} alt="" />
               </SocialIcon>
             </SocialLinks>

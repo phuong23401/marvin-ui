@@ -9,7 +9,9 @@ function WatchTrailer(): JSX.Element {
         <div className="text-center">
           <ContentImage src={ContentImg} alt="" />
           <StyledButton>
-            <a href="/" target="_blank">&ensp;</a>
+            <a href="https://youtu.be/jF7RCrc374I" target="_blank">
+              &ensp;
+            </a>
           </StyledButton>
         </div>
       </Container>
