@@ -14,7 +14,7 @@ import {
   DecentralizedButtons,
 } from "./Styled";
 import Uniswap from "assets/images/HowToBuy/uniswap.svg";
-import Pancakeswap from "assets/images/HowToBuy/pancakeswap.svg";
+import Certik from "assets/images/HowToBuy/certikaudit.png";
 import Bitmart from "assets/images/HowToBuy/bitmart.svg";
 import { RiShareBoxFill } from "react-icons/ri";
 
@@ -40,7 +40,7 @@ function HowToBuy(): JSX.Element {
                   <RiShareBoxFill size={16} />
                 </Button>
                 <Button type="secondary">
-                  Pancakeswap
+                  CertiK Audit
                   <RiShareBoxFill size={16} />
                 </Button>
               </DecentralizedButtons>
@@ -57,7 +57,7 @@ function HowToBuy(): JSX.Element {
           </ActionsWrapper>
           <ContentWrapper>
             <SectionTitle alignCenter subTitle="Partners">
-              Together there's no stopping us.
+              Join the invasion
             </SectionTitle>
             <PartnersWrapper>
               <ContentInner>
@@ -65,8 +65,8 @@ function HowToBuy(): JSX.Element {
                 <PartnerName>Uniswap</PartnerName>
               </ContentInner>
               <ContentInner>
-                <PartnerLogo src={Pancakeswap} alt="" />
-                <PartnerName>Pancakeswap</PartnerName>
+                <PartnerLogo src={Certik} alt="" />
+                <PartnerName>CertiK Audit</PartnerName>
               </ContentInner>
               <ContentInner>
                 <PartnerLogo src={Bitmart} alt="" />

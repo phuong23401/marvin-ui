@@ -6,6 +6,8 @@ import SectionTitle from "components/SectionTitle";
 import Image1 from "assets/images/Ecosystem/ApprovedByElon/approved_1.png";
 import Image2 from "assets/images/Ecosystem/ApprovedByElon/approved_2.png";
 import Image3 from "assets/images/Ecosystem/ApprovedByElon/approved_3.png";
+import Image4 from "assets/images/Ecosystem/ApprovedByElon/approved_4.png";
+import Image5 from "assets/images/Ecosystem/ApprovedByElon/approved_5.png";
 import SwipperPrev from "assets/images/swiper_prev.png";
 import SwipperNext from "assets/images/swiper_next.png";
 
@@ -21,17 +23,15 @@ const ContentWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2rem;
-
-  @media (min-width: 1200px) {
-    justify-content: flex-start;
-  }
 `;
 
 const ContentImage = styled.img`
+  border: 2px solid #1f1f1f;
   width: 295px;
+  border-radius: 20px;
 
-  @media (min-width: 576px) {
-    width: auto;
+  @media (min-width: 768px) {
+    width: 300px;
   }
 `;
 
@@ -55,7 +55,6 @@ function ApprovedByElon(): JSX.Element {
           keyboard={true}
           slidesPerView={1}
           spaceBetween={20}
-          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -81,6 +80,12 @@ function ApprovedByElon(): JSX.Element {
           </SwiperSlide>
           <SwiperSlide>
             <ContentImage src={Image3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ContentImage src={Image4} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ContentImage src={Image5} alt="" />
           </SwiperSlide>
           <img className="swiper-button-prev" src={SwipperPrev} alt="" />
           <img className="swiper-button-next" src={SwipperNext} alt="" />

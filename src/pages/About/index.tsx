@@ -104,7 +104,7 @@ function About(): JSX.Element {
           keyboard={true}
           slidesPerView={1}
           spaceBetween={20}
-          loop={true}
+          
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,

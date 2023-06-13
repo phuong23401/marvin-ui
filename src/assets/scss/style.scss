@@ -62,6 +62,9 @@ strong {
 }
 
 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   width: auto !important;
 }
 
@@ -80,7 +83,7 @@ strong {
 }
 
 .swiper-button-disabled {
-  display: none;
+  display: none !important;
 }
 
 .swiper-button-prev,
