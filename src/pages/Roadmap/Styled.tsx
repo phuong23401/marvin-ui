@@ -33,14 +33,17 @@ export const SectionWrapper = styled.section`
     z-index: 0;
   }
 
-  @media (min-width: 992px) {
-    height: 1400px;
+  @media (min-width: 768px) {
+    height: 1450px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 1150px;
   }
 
   @media (min-width: 1400px) {
     background-image: url(${DesktopBg});
-    background-size: contain;
-    height: auto;
+    background-size: cover;
   }
 
   @media (min-width: 1920px) {
@@ -54,6 +57,14 @@ export const StyledParallax = styled(Parallax)`
   margin-top: 2rem;
 
   @media (min-width: 576px) {
+    margin-top: 5rem;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: 1200px) {
     margin-top: 5rem;
   }
 `;
@@ -80,85 +91,341 @@ export const DesktopWrapper = styled.div`
   }
 `;
 
-export const BegginingWrapper = styled.div`
+// export const BegginingWrapper = styled.div`
+//   position: absolute;
+//   width: fit-content;
+//   left: 2.5rem;
+//   bottom: 8.5rem;
+
+//   img {
+//     position: absolute;
+//     top: -13.5rem;
+//     left: 0;
+//     z-index: 1;
+
+//     @media (min-width: 576px) {
+//       left: auto;
+//       right: 0;
+//     }
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-image: url(${Vector_1});
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     top: -1rem;
+//     left: 7rem;
+//     width: 248.95px;
+//     height: 23.04px;
+//     z-index: 3;
+
+//     @media (min-width: 576px) {
+//       left: 7.5rem;
+//       width: 260px;
+//       height: 25px;
+//     }
+
+//     @media (min-width: 1400px) {
+//       left: 7rem;
+//       width: 248.95px;
+//       height: 23.04px;
+//     }
+//   }
+
+//   @media (min-width: 375px) {
+//     left: 2rem;
+//   }
+
+//   @media (min-width: 992px) {
+//     transform: scale(1.25);
+//     left: 5rem;
+//   }
+
+//   @media (min-width: 1200px) {
+//     left: 17rem;
+//   }
+
+//   @media (min-width: 1400px) {
+//     left: 2rem;
+//     top: -1rem;
+//   }
+
+//   @media (min-width: 1920px) {
+//     left: 4rem;
+//     top: 4.5rem;
+//   }
+// `;
+
+// export const GrowthWrapper = styled.div`
+//   position: absolute;
+//   width: fit-content;
+//   bottom: 9rem;
+//   left: -6rem;
+
+//   img {
+//     position: absolute;
+//     top: -26rem;
+//     right: -1rem;
+//     z-index: 1;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-image: url(${Vector_2});
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     top: -14.5rem;
+//     left: 7rem;
+//     width: 184.2px;
+//     height: 237.55px;
+//     z-index: 3;
+
+//     @media (min-width: 576px) {
+//       width: 190px;
+//       height: 240px;
+//     }
+
+//     @media (min-width: 1400px) {
+//       width: 184.2px;
+//       height: 237.55px;
+//     }
+//   }
+
+//   @media (min-width: 375px) {
+//     left: -11rem;
+//   }
+
+//   @media (min-width: 576px) {
+//     left: 17rem;
+//   }
+
+//   @media (min-width: 992px) {
+//     transform: scale(1.25);
+//     left: 26rem;
+//     bottom: 9.5rem;
+//   }
+
+//   @media (min-width: 1200px) {
+//     left: auto;
+//     right: 22rem;
+//   }
+
+//   @media (min-width: 1400px) {
+//     top: -1.5rem;
+//   }
+
+//   @media (min-width: 1920px) {
+//     top: 4rem;
+//   }
+// `;
+
+// export const LaunchingWrapper = styled.div`
+//   position: absolute;
+//   width: fit-content;
+//   bottom: 2rem;
+//   left: -8rem;
+
+//   img {
+//     position: absolute;
+//     top: -39rem;
+//     right: -10rem;
+//     z-index: 1;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-image: url(${Vector_3});
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     top: -18rem;
+//     left: 0;
+//     width: 444.89px;
+//     height: 298.37px;
+//     z-index: 3;
+//   }
+
+//   @media (min-width: 375px) {
+//     left: -16rem;
+//   }
+
+//   @media (min-width: 576px) {
+//     left: -3rem;
+//     bottom: 4rem;
+//   }
+
+//   @media (min-width: 768px) {
+//     left: auto;
+//     right: -6rem;
+//   }
+
+//   @media (min-width: 992px) {
+//     transform: scale(1.25);
+//     right: -7rem;
+//     bottom: 3rem;
+//   }
+
+//   @media (min-width: 1400px) {
+//     top: 1.25rem;
+//     left: -2.5rem;
+//   }
+
+//   @media (min-width: 1920px) {
+//     top: 8rem;
+//     left: -3rem;
+//   }
+// `;
+
+// export const IgnationWrapper = styled.div`
+//   position: absolute;
+//   width: fit-content;
+//   bottom: 5rem;
+//   left: -11rem;
+
+//   img {
+//     position: absolute;
+//     top: -30rem;
+//     right: -13rem;
+//     z-index: 1;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-image: url(${Vector_4});
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     top: -1.25rem;
+//     left: 7rem;
+//     width: 22.13px;
+//     height: 23.04px;
+//     z-index: 3;
+//   }
+
+//   @media (min-width: 375px) {
+//     left: -23rem;
+//   }
+
+//   @media (min-width: 576px) {
+//     left: auto;
+//     right: 3rem;
+//     bottom: 7rem;
+//   }
+
+//   @media (min-width: 768px) {
+//     left: 2.5rem;
+//     right: auto;
+//   }
+
+//   @media (min-width: 992px) {
+//     transform: scale(1.25);
+//     left: 6rem;
+//     bottom: 6.25rem;
+//   }
+
+//   @media (min-width: 1200px) {
+//     left: 3.5rem;
+//   }
+
+//   @media (min-width: 1400px) {
+//     top: 2.25rem;
+//     left: 0.5rem;
+//   }
+
+//   @media (min-width: 1920px) {
+//     top: 8.5rem;
+//     left: 0rem;
+//   }
+// `;
+
+// export const DestinationWrapper = styled.div`
+//   position: absolute;
+//   width: fit-content;
+//   bottom: 8.5rem;
+//   left: -18.5rem;
+
+//   img {
+//     position: absolute;
+//     top: -12rem;
+//     left: 2rem;
+//     z-index: 1;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     background-image: url(${Vector_5});
+//     background-size: contain;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     top: -1rem;
+//     left: -8rem;
+//     width: 261.44px;
+//     height: 65.02px;
+//     z-index: 3;
+
+//     @media (min-width: 1400px) {
+//       left: -9rem;
+//     }
+//   }
+
+//   @media (min-width: 375px) {
+//     left: -34rem;
+//   }
+
+//   @media (min-width: 576px) {
+//     left: -8rem;
+//     bottom: 10.5rem;
+//   }
+
+//   @media (min-width: 768px) {
+//     left: 19rem;
+//   }
+
+//   @media (min-width: 992px) {
+//     transform: scale(1.25);
+//     left: auto;
+//     right: 21.5rem;
+//   }
+
+//   @media (min-width: 1200px) {
+//     right: 37rem;
+//   }
+
+//   @media (min-width: 1400px) {
+//     top: -1rem;
+//   }
+
+//   @media (min-width: 1920px) {
+//     left: -2rem;
+//     top: 4rem;
+//   }
+// `;
+
+export const RebirthWrapper = styled.div`
   position: absolute;
   width: fit-content;
-  left: 2.5rem;
-  bottom: 8.5rem;
-
-  img {
-    position: absolute;
-    top: -13.5rem;
-    left: 0;
-    z-index: 1;
-
-    @media (min-width: 576px) {
-      left: auto;
-      right: 0;
-    }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url(${Vector_1});
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: -1rem;
-    left: 7rem;
-    width: 248.95px;
-    height: 23.04px;
-    z-index: 3;
-
-    @media (min-width: 576px) {
-      left: 7.5rem;
-      width: 260px;
-      height: 25px;
-    }
-
-    @media (min-width: 1400px) {
-      left: 7rem;
-      width: 248.95px;
-      height: 23.04px;
-    }
-  }
-
-  @media (min-width: 375px) {
-    left: 2rem;
-  }
-
-  @media (min-width: 992px) {
-    transform: scale(1.25);
-    left: 5rem;
-  }
-
-  @media (min-width: 1200px) {
-    left: 17rem;
-  }
-
-  @media (min-width: 1400px) {
-    left: 2rem;
-    top: -1rem;
-  }
-
-  @media (min-width: 1920px) {
-    left: 4rem;
-    top: 4.5rem;
-  }
-`;
-
-export const GrowthWrapper = styled.div`
-  position: absolute;
-  width: fit-content;
-  bottom: 9rem;
-  left: -6rem;
+  right: 0;
+  bottom: 0.5rem;
 
   img {
     position: absolute;
     top: -26rem;
     right: -1rem;
     z-index: 1;
+
+    &.first_img {
+      top: -12rem;
+      right: auto;
+      left: -8rem;
+    }
   }
 
   &::before {
@@ -169,7 +436,7 @@ export const GrowthWrapper = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     top: -14.5rem;
-    left: 7rem;
+    left: 10rem;
     width: 184.2px;
     height: 237.55px;
     z-index: 3;
@@ -186,38 +453,46 @@ export const GrowthWrapper = styled.div`
   }
 
   @media (min-width: 375px) {
-    left: -11rem;
+    right: -2rem;
   }
 
   @media (min-width: 576px) {
-    left: 17rem;
+    right: auto;
+    left: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    transform: scale(1.25);
+    left: 11rem;
   }
 
   @media (min-width: 992px) {
-    transform: scale(1.25);
-    left: 26rem;
-    bottom: 9.5rem;
+    left: 25rem;
   }
-  
+
   @media (min-width: 1200px) {
-    left: auto;
-    right: 22rem;
+    transform: scale(0.9);
+    left: 7rem;
   }
 
   @media (min-width: 1400px) {
-    top: -1.5rem;
+    transform: scale(1);
+    left: 12rem;
+    bottom: -1rem;
   }
 
   @media (min-width: 1920px) {
-    top: 4rem;
+    transform: scale(1.25);
+    left: 23rem;
+    bottom: -7rem;
   }
 `;
 
-export const LaunchingWrapper = styled.div`
+export const VibeWrapper = styled.div`
   position: absolute;
   width: fit-content;
   bottom: 2rem;
-  left: -8rem;
+  left: -2rem;
 
   img {
     position: absolute;
@@ -234,54 +509,60 @@ export const LaunchingWrapper = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     top: -18rem;
-    left: 0;
+    left: 4rem;
     width: 444.89px;
     height: 298.37px;
     z-index: 3;
   }
 
   @media (min-width: 375px) {
-    left: -16rem;
+    left: 0;
   }
 
   @media (min-width: 576px) {
-    left: -3rem;
-    bottom: 4rem;
+    left: auto;
+    right: -9rem;
   }
 
   @media (min-width: 768px) {
-    left: auto;
-    right: -6rem;
+    transform: scale(1.25);
+    right: -10rem;
   }
 
-  @media (min-width: 992px) {
-    transform: scale(1.25);
-    right: -7rem;
-    bottom: 3rem;
+  @media (min-width: 1200px) {
+    transform: scale(0.9);
+    left: 27rem;
   }
 
   @media (min-width: 1400px) {
-    top: 1.25rem;
-    left: -2.5rem;
+    transform: scale(1);
+    left: 33rem;
+    bottom: 1rem;
   }
 
   @media (min-width: 1920px) {
-    top: 8rem;
-    left: -3rem;
+    transform: scale(1.25);
+    left: 48rem;
+    bottom: -5rem;
   }
 `;
 
-export const IgnationWrapper = styled.div`
+export const TakeoverWrapper = styled.div`
   position: absolute;
   width: fit-content;
-  bottom: 5rem;
-  left: -11rem;
+  bottom: 3.25rem;
+  left: -1rem;
 
   img {
     position: absolute;
     top: -30rem;
-    right: -13rem;
+    right: -11rem;
     z-index: 1;
+
+    &.last_img {
+      top: -15rem;
+      right: -13rem;
+    }
   }
 
   &::before {
@@ -299,102 +580,38 @@ export const IgnationWrapper = styled.div`
   }
 
   @media (min-width: 375px) {
-    left: -23rem;
+    left: -3rem;
   }
 
   @media (min-width: 576px) {
-    left: auto;
-    right: 3rem;
-    bottom: 7rem;
+    left: 8rem;
   }
 
   @media (min-width: 768px) {
-    left: 2.5rem;
-    right: auto;
+    transform: scale(1.25);
+    left: 12.5rem;
   }
 
   @media (min-width: 992px) {
-    transform: scale(1.25);
-    left: 6rem;
-    bottom: 6.25rem;
+    left: 10rem;
   }
 
   @media (min-width: 1200px) {
-    left: 3.5rem;
-  }
-
-  @media (min-width: 1400px) {
-    top: 2.25rem;
-    left: 0.5rem;
-  }
-
-  @media (min-width: 1920px) {
-    top: 8.5rem;
-    left: 0rem;
-  }
-`;
-
-export const DestinationWrapper = styled.div`
-  position: absolute;
-  width: fit-content;
-  bottom: 8.5rem;
-  left: -18.5rem;
-
-  img {
-    position: absolute;
-    top: -12rem;
-    left: 2rem;
-    z-index: 1;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url(${Vector_5});
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: -1rem;
-    left: -8rem;
-    width: 261.44px;
-    height: 65.02px;
-    z-index: 3;
-
-    @media (min-width: 1400px) {
-      left: -9rem;
-    }
-  }
-
-  @media (min-width: 375px) {
-    left: -34rem;
-  }
-
-  @media (min-width: 576px) {
-    left: -8rem;
-    bottom: 10.5rem;
-  }
-
-  @media (min-width: 768px) {
-    left: 19rem;
-  }
-
-  @media (min-width: 992px) {
-    transform: scale(1.25);
+    transform: scale(0.9);
     left: auto;
-    right: 21.5rem;
-  }
-
-  @media (min-width: 1200px) {
-    right: 37rem;
+    right: 8.5rem;
   }
 
   @media (min-width: 1400px) {
-    top: -1rem;
+    transform: scale(1);
+    right: 12.5rem;
+    bottom: 2.25rem;
   }
 
   @media (min-width: 1920px) {
-    left: -2rem;
-    top: 4rem;
+    transform: scale(1.25);
+    right: 23rem;
+    bottom: -3.75rem;
   }
 `;
 
@@ -461,18 +678,18 @@ const SubContent = styled.div`
 `;
 
 export const CometWrapper = styled(SubContent)`
-  top: -19rem;
-  left: -3rem;
+  top: -17rem;
+  left: 5rem;
 `;
 
 export const MikyWayWrapper = styled(SubContent)`
   top: -30rem;
-  left: 5rem;
+  left: 9rem;
 `;
 
 export const PlanetFirstWrapper = styled(SubContent)`
   top: -17rem;
-  left: -3rem;
+  left: 3rem;
 `;
 
 export const PlanetLastWrapper = styled(SubContent)`

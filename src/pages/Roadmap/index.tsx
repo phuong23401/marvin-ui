@@ -2,22 +2,25 @@ import { useRef } from "react";
 import { Container } from "react-bootstrap";
 import { ParallaxLayer, IParallax } from "@react-spring/parallax";
 import {
-  BegginingWrapper,
+  // BegginingWrapper,
   CometWrapper,
   ContentText,
   ContentTitle,
   ContentWrapper,
   DesktopWrapper,
-  DestinationWrapper,
-  GrowthWrapper,
-  IgnationWrapper,
-  LaunchingWrapper,
+  // DestinationWrapper,
+  // GrowthWrapper,
+  // IgnationWrapper,
+  // LaunchingWrapper,
   MikyWayWrapper,
   PlanetFirstWrapper,
   PlanetLastWrapper,
+  RebirthWrapper,
   SectionWrapper,
   StyledParallax,
+  TakeoverWrapper,
   UfoWrapper,
+  VibeWrapper,
 } from "./Styled";
 import SectionTitle from "components/SectionTitle";
 import Planet_1 from "assets/images/Roadmap/Beginning/planet.png";
@@ -35,11 +38,360 @@ function Roadmap(): JSX.Element {
         <SectionTitle subTitle="Roadmap">Roadmap To Mars</SectionTitle>
       </Container>
       <div className="d-sm-none">
-        <StyledParallax ref={parallax} pages={4} horizontal>
+        <StyledParallax ref={parallax} pages={3} horizontal>
+          <ParallaxLayer offset={0} speed={0.2}>
+            <RebirthWrapper>
+              <img className="first_img" src={Planet_1} alt="" />
+              <img src={Planet_2} alt="" />
+              <CometWrapper>
+                <p>comet</p>
+              </CometWrapper>
+              <ContentWrapper>
+                <ContentTitle>Rebirth as martians</ContentTitle>
+                <ContentText>
+                  <li>Creation of marvolutionary Smart contract</li>
+                  <li>New Website</li>
+                  <li>
+                    Airdropping new coins to previous
+                    <br />
+                    Marvin holders
+                  </li>
+                  <li>Spreading the word via partnerships</li>
+                  <li>Trading goes live</li>
+                  <li>Updating socials on Etherscan</li>
+                  <li>Multiple wallet integrations</li>
+                  <li>1000+ holders</li>
+                  <li>New DAO infrastructure</li>
+                  <li>COMMUNITY EXPANSION</li>
+                  <li>Community Contest & Giveaways</li>
+                  <li>First Burn event</li>
+                  <li>BITMART exchange</li>
+                </ContentText>
+              </ContentWrapper>
+            </RebirthWrapper>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1} speed={0.2}>
+            <VibeWrapper>
+              <img src={Planet_3} alt="" />
+              <MikyWayWrapper>
+                <p>miky way</p>
+              </MikyWayWrapper>
+              <PlanetFirstWrapper>
+                <p>planet ?</p>
+              </PlanetFirstWrapper>
+              <PlanetLastWrapper>
+                <p>planet ?</p>
+              </PlanetLastWrapper>
+              <ContentWrapper>
+                <ContentTitle>Vibe & HODL with Martians</ContentTitle>
+                <ContentText>
+                  <li>Airdrop for Gamepass holders</li>
+                  <li>5k+ holders</li>
+                  <li>Marvin Survivors Web3 Release</li>
+                  <li>Gaming tournament for Pass HODLERS</li>
+                  <li>CEX #2</li>
+                  <li>Marvin Leaderboards goes live</li>
+                  <li>AMAs & continued marketing campaigns</li>
+                  <li>Marvin vaults goes live</li>
+                  <li>CEX #3</li>
+                  <li>Press Releases</li>
+                  <li>2nd BURN event</li>
+                </ContentText>
+              </ContentWrapper>
+            </VibeWrapper>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2} speed={0.2}>
+            <TakeoverWrapper>
+              <img src={Planet_4} alt="" />
+              <img className="last_img" src={Planet_5} alt="" />
+              <UfoWrapper>
+                <p>UFO</p>
+              </UfoWrapper>
+              <ContentWrapper>
+                <ContentTitle>Martians Takeover 2023</ContentTitle>
+                <ContentText>
+                  <li>Appstore & playstore Release</li>
+                  <li>T1 listings</li>
+                  <li>Marvin merchandise</li>
+                  <li>10k+ holders</li>
+                  <li>Marvin VISA cards</li>
+                  <li>Murderous intent towards Doge coin</li>
+                  <li>Doge coin raped left with aids</li>
+                  <li>
+                    Marvin becomes the bossiest
+                    <br />
+                    cryptocurrency on the internet
+                  </li>
+                  <li>👀 nope we ain't ready for this yet</li>
+                </ContentText>
+              </ContentWrapper>
+            </TakeoverWrapper>
+          </ParallaxLayer>
+        </StyledParallax>
+      </div>
+
+      <div className="d-none d-sm-block d-xl-none">
+        <StyledParallax ref={parallax} pages={2} horizontal>
+          <ParallaxLayer offset={0} speed={0.2}>
+            <RebirthWrapper>
+              <img className="first_img" src={Planet_1} alt="" />
+              <img src={Planet_2} alt="" />
+              <CometWrapper>
+                <p>comet</p>
+              </CometWrapper>
+              <ContentWrapper>
+                <ContentTitle>Rebirth as martians</ContentTitle>
+                <ContentText>
+                  <li>Creation of marvolutionary Smart contract</li>
+                  <li>New Website</li>
+                  <li>
+                    Airdropping new coins to previous
+                    <br />
+                    Marvin holders
+                  </li>
+                  <li>Spreading the word via partnerships</li>
+                  <li>Trading goes live</li>
+                  <li>Updating socials on Etherscan</li>
+                  <li>Multiple wallet integrations</li>
+                  <li>1000+ holders</li>
+                  <li>New DAO infrastructure</li>
+                  <li>COMMUNITY EXPANSION</li>
+                  <li>Community Contest & Giveaways</li>
+                  <li>First Burn event</li>
+                  <li>BITMART exchange</li>
+                </ContentText>
+              </ContentWrapper>
+            </RebirthWrapper>
+            <VibeWrapper>
+              <img src={Planet_3} alt="" />
+              <MikyWayWrapper>
+                <p>miky way</p>
+              </MikyWayWrapper>
+              <PlanetFirstWrapper>
+                <p>planet ?</p>
+              </PlanetFirstWrapper>
+              <PlanetLastWrapper>
+                <p>planet ?</p>
+              </PlanetLastWrapper>
+              <ContentWrapper>
+                <ContentTitle>Vibe & HODL with Martians</ContentTitle>
+                <ContentText>
+                  <li>Airdrop for Gamepass holders</li>
+                  <li>5k+ holders</li>
+                  <li>Marvin Survivors Web3 Release</li>
+                  <li>Gaming tournament for Pass HODLERS</li>
+                  <li>CEX #2</li>
+                  <li>Marvin Leaderboards goes live</li>
+                  <li>AMAs & continued marketing campaigns</li>
+                  <li>Marvin vaults goes live</li>
+                  <li>CEX #3</li>
+                  <li>Press Releases</li>
+                  <li>2nd BURN event</li>
+                </ContentText>
+              </ContentWrapper>
+            </VibeWrapper>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1} speed={0.2}>
+            <TakeoverWrapper>
+              <img src={Planet_4} alt="" />
+              <img className="last_img" src={Planet_5} alt="" />
+              <UfoWrapper>
+                <p>UFO</p>
+              </UfoWrapper>
+              <ContentWrapper>
+                <ContentTitle>Martians Takeover 2023</ContentTitle>
+                <ContentText>
+                  <li>Appstore & playstore Release</li>
+                  <li>T1 listings</li>
+                  <li>Marvin merchandise</li>
+                  <li>10k+ holders</li>
+                  <li>Marvin VISA cards</li>
+                  <li>Murderous intent towards Doge coin</li>
+                  <li>Doge coin raped left with aids</li>
+                  <li>
+                    Marvin becomes the bossiest
+                    <br />
+                    cryptocurrency on the internet
+                  </li>
+                  <li>👀 nope we ain't ready for this yet</li>
+                </ContentText>
+              </ContentWrapper>
+            </TakeoverWrapper>
+          </ParallaxLayer>
+        </StyledParallax>
+      </div>
+
+      <div className="d-none d-xl-block d-xxl-none">
+        <RebirthWrapper>
+          <img className="first_img" src={Planet_1} alt="" />
+          <img src={Planet_2} alt="" />
+          <CometWrapper>
+            <p>comet</p>
+          </CometWrapper>
+          <ContentWrapper>
+            <ContentTitle>Rebirth as martians</ContentTitle>
+            <ContentText>
+              <li>Creation of marvolutionary Smart contract</li>
+              <li>New Website</li>
+              <li>
+                Airdropping new coins to previous
+                <br />
+                Marvin holders
+              </li>
+              <li>Spreading the word via partnerships</li>
+              <li>Trading goes live</li>
+              <li>Updating socials on Etherscan</li>
+              <li>Multiple wallet integrations</li>
+              <li>1000+ holders</li>
+              <li>New DAO infrastructure</li>
+              <li>COMMUNITY EXPANSION</li>
+              <li>Community Contest & Giveaways</li>
+              <li>First Burn event</li>
+              <li>BITMART exchange</li>
+            </ContentText>
+          </ContentWrapper>
+        </RebirthWrapper>
+        <VibeWrapper>
+          <img src={Planet_3} alt="" />
+          <MikyWayWrapper>
+            <p>miky way</p>
+          </MikyWayWrapper>
+          <PlanetFirstWrapper>
+            <p>planet ?</p>
+          </PlanetFirstWrapper>
+          <PlanetLastWrapper>
+            <p>planet ?</p>
+          </PlanetLastWrapper>
+          <ContentWrapper>
+            <ContentTitle>Vibe & HODL with Martians</ContentTitle>
+            <ContentText>
+              <li>Airdrop for Gamepass holders</li>
+              <li>5k+ holders</li>
+              <li>Marvin Survivors Web3 Release</li>
+              <li>Gaming tournament for Pass HODLERS</li>
+              <li>CEX #2</li>
+              <li>Marvin Leaderboards goes live</li>
+              <li>AMAs & continued marketing campaigns</li>
+              <li>Marvin vaults goes live</li>
+              <li>CEX #3</li>
+              <li>Press Releases</li>
+              <li>2nd BURN event</li>
+            </ContentText>
+          </ContentWrapper>
+        </VibeWrapper>
+        <TakeoverWrapper>
+          <img src={Planet_4} alt="" />
+          <img className="last_img" src={Planet_5} alt="" />
+          <UfoWrapper>
+            <p>UFO</p>
+          </UfoWrapper>
+          <ContentWrapper>
+            <ContentTitle>Martians Takeover 2023</ContentTitle>
+            <ContentText>
+              <li>Appstore & playstore Release</li>
+              <li>T1 listings</li>
+              <li>Marvin merchandise</li>
+              <li>10k+ holders</li>
+              <li>Marvin VISA cards</li>
+              <li>Murderous intent towards Doge coin</li>
+              <li>Doge coin raped left with aids</li>
+              <li>
+                Marvin becomes the bossiest
+                <br />
+                cryptocurrency on the internet
+              </li>
+              <li>👀 nope we ain't ready for this yet</li>
+            </ContentText>
+          </ContentWrapper>
+        </TakeoverWrapper>
+      </div>
+
+      <DesktopWrapper>
+        <RebirthWrapper>
+          <CometWrapper>
+            <p>comet</p>
+          </CometWrapper>
+          <ContentWrapper>
+            <ContentTitle>Rebirth as martians</ContentTitle>
+            <ContentText>
+              <li>Creation of marvolutionary Smart contract</li>
+              <li>New Website</li>
+              <li>
+                Airdropping new coins to previous
+                <br />
+                Marvin holders
+              </li>
+              <li>Spreading the word via partnerships</li>
+              <li>Trading goes live</li>
+              <li>Updating socials on Etherscan</li>
+              <li>Multiple wallet integrations</li>
+              <li>1000+ holders</li>
+              <li>New DAO infrastructure</li>
+              <li>COMMUNITY EXPANSION</li>
+              <li>Community Contest & Giveaways</li>
+              <li>First Burn event</li>
+              <li>BITMART exchange</li>
+            </ContentText>
+          </ContentWrapper>
+        </RebirthWrapper>
+        <VibeWrapper>
+          <MikyWayWrapper>
+            <p>miky way</p>
+          </MikyWayWrapper>
+          <PlanetFirstWrapper>
+            <p>planet ?</p>
+          </PlanetFirstWrapper>
+          <PlanetLastWrapper>
+            <p>planet ?</p>
+          </PlanetLastWrapper>
+          <ContentWrapper>
+            <ContentTitle>Vibe & HODL with Martians</ContentTitle>
+            <ContentText>
+              <li>Airdrop for Gamepass holders</li>
+              <li>5k+ holders</li>
+              <li>Marvin Survivors Web3 Release</li>
+              <li>Gaming tournament for Pass HODLERS</li>
+              <li>CEX #2</li>
+              <li>Marvin Leaderboards goes live</li>
+              <li>AMAs & continued marketing campaigns</li>
+              <li>Marvin vaults goes live</li>
+              <li>CEX #3</li>
+              <li>Press Releases</li>
+              <li>2nd BURN event</li>
+            </ContentText>
+          </ContentWrapper>
+        </VibeWrapper>
+        <TakeoverWrapper>
+          <UfoWrapper>
+            <p>UFO</p>
+          </UfoWrapper>
+          <ContentWrapper>
+            <ContentTitle>Martians Takeover 2023</ContentTitle>
+            <ContentText>
+              <li>Appstore & playstore Release</li>
+              <li>T1 listings</li>
+              <li>Marvin merchandise</li>
+              <li>10k+ holders</li>
+              <li>Marvin VISA cards</li>
+              <li>Murderous intent towards Doge coin</li>
+              <li>Doge coin raped left with aids</li>
+              <li>
+                Marvin becomes the bossiest
+                <br />
+                cryptocurrency on the internet
+              </li>
+              <li>👀 nope we ain't ready for this yet</li>
+            </ContentText>
+          </ContentWrapper>
+        </TakeoverWrapper>
+      </DesktopWrapper>
+
+      {/* <div className="d-sm-none">
+        <StyledParallax ref={parallax} pages={5} horizontal>
           <ParallaxLayer offset={0} speed={0.2}>
             <BegginingWrapper>
               <img src={Planet_1} alt="" />
-              <ContentWrapper>
+              <ContentWrapper> 
                 <ContentTitle>1. The Beginning</ContentTitle>
                 <ContentText>
                   <li>
@@ -85,11 +437,6 @@ function Roadmap(): JSX.Element {
               <img src={Planet_2} alt="" />
               <CometWrapper>
                 <p>comet</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </CometWrapper>
               <ContentWrapper>
                 <ContentTitle>2. Growth</ContentTitle>
@@ -136,23 +483,12 @@ function Roadmap(): JSX.Element {
               <img src={Planet_3} alt="" />
               <MikyWayWrapper>
                 <p>miky way</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </MikyWayWrapper>
               <PlanetFirstWrapper>
                 <p>planet ?</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </PlanetFirstWrapper>
               <PlanetLastWrapper>
                 <p>planet ?</p>
-                <span>Lorem ipsum.</span>
               </PlanetLastWrapper>
               <ContentWrapper>
                 <ContentTitle>3. Launching</ContentTitle>
@@ -195,11 +531,6 @@ function Roadmap(): JSX.Element {
               <img src={Planet_4} alt="" />
               <UfoWrapper>
                 <p>UFO</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </UfoWrapper>
               <ContentWrapper>
                 <ContentTitle>4. Ignition</ContentTitle>
@@ -243,8 +574,9 @@ function Roadmap(): JSX.Element {
             </DestinationWrapper>
           </ParallaxLayer>
         </StyledParallax>
-      </div>
-      <div className="d-none d-sm-block d-md-none">
+      </div> */}
+
+      {/* <div className="d-none d-sm-block d-md-none">
         <StyledParallax ref={parallax} pages={3} horizontal>
           <ParallaxLayer offset={0} speed={0.2}>
             <BegginingWrapper>
@@ -293,11 +625,6 @@ function Roadmap(): JSX.Element {
               <img src={Planet_2} alt="" />
               <CometWrapper>
                 <p>comet</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </CometWrapper>
               <ContentWrapper>
                 <ContentTitle>2. Growth</ContentTitle>
@@ -344,23 +671,12 @@ function Roadmap(): JSX.Element {
               <img src={Planet_3} alt="" />
               <MikyWayWrapper>
                 <p>miky way</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </MikyWayWrapper>
               <PlanetFirstWrapper>
                 <p>planet ?</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </PlanetFirstWrapper>
               <PlanetLastWrapper>
                 <p>planet ?</p>
-                <span>Lorem ipsum.</span>
               </PlanetLastWrapper>
               <ContentWrapper>
                 <ContentTitle>3. Launching</ContentTitle>
@@ -401,11 +717,6 @@ function Roadmap(): JSX.Element {
               <img src={Planet_4} alt="" />
               <UfoWrapper>
                 <p>UFO</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </UfoWrapper>
               <ContentWrapper>
                 <ContentTitle>4. Ignition</ContentTitle>
@@ -449,8 +760,9 @@ function Roadmap(): JSX.Element {
             </DestinationWrapper>
           </ParallaxLayer>
         </StyledParallax>
-      </div>
-      <div className="d-none d-md-block d-xxl-none">
+      </div> */}
+
+      {/* <div className="d-none d-md-block d-xxl-none">
         <StyledParallax ref={parallax} pages={2} horizontal>
           <ParallaxLayer offset={0} speed={0.2}>
             <BegginingWrapper>
@@ -499,11 +811,6 @@ function Roadmap(): JSX.Element {
               <img src={Planet_2} alt="" />
               <CometWrapper>
                 <p>comet</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </CometWrapper>
               <ContentWrapper>
                 <ContentTitle>2. Growth</ContentTitle>
@@ -548,23 +855,12 @@ function Roadmap(): JSX.Element {
               <img src={Planet_3} alt="" />
               <MikyWayWrapper>
                 <p>miky way</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </MikyWayWrapper>
               <PlanetFirstWrapper>
                 <p>planet ?</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </PlanetFirstWrapper>
               <PlanetLastWrapper>
                 <p>planet ?</p>
-                <span>Lorem ipsum.</span>
               </PlanetLastWrapper>
               <ContentWrapper>
                 <ContentTitle>3. Launching</ContentTitle>
@@ -607,11 +903,6 @@ function Roadmap(): JSX.Element {
               <img src={Planet_4} alt="" />
               <UfoWrapper>
                 <p>UFO</p>
-                <span>
-                  Lorem ipsum dolor
-                  <br />
-                  sit amet.
-                </span>
               </UfoWrapper>
               <ContentWrapper>
                 <ContentTitle>4. Ignition</ContentTitle>
@@ -653,8 +944,9 @@ function Roadmap(): JSX.Element {
             </DestinationWrapper>
           </ParallaxLayer>
         </StyledParallax>
-      </div>
-      <DesktopWrapper>
+      </div> */}
+
+      {/* <DesktopWrapper>
         <BegginingWrapper className="desktop-content">
           <ContentWrapper>
             <ContentTitle>1. The Beginning</ContentTitle>
@@ -698,11 +990,6 @@ function Roadmap(): JSX.Element {
         <GrowthWrapper className="desktop-content">
           <CometWrapper>
             <p>comet</p>
-            <span>
-              Lorem ipsum dolor
-              <br />
-              sit amet.
-            </span>
           </CometWrapper>
           <ContentWrapper>
             <ContentTitle>2. Growth</ContentTitle>
@@ -746,23 +1033,12 @@ function Roadmap(): JSX.Element {
         <LaunchingWrapper className="desktop-content">
           <MikyWayWrapper>
             <p>miky way</p>
-            <span>
-              Lorem ipsum dolor
-              <br />
-              sit amet.
-            </span>
           </MikyWayWrapper>
           <PlanetFirstWrapper>
             <p>planet ?</p>
-            <span>
-              Lorem ipsum dolor
-              <br />
-              sit amet.
-            </span>
           </PlanetFirstWrapper>
           <PlanetLastWrapper>
             <p>planet ?</p>
-            <span>Lorem ipsum.</span>
           </PlanetLastWrapper>
           <ContentWrapper>
             <ContentTitle>3. Launching</ContentTitle>
@@ -802,11 +1078,6 @@ function Roadmap(): JSX.Element {
         <IgnationWrapper className="desktop-content">
           <UfoWrapper>
             <p>UFO</p>
-            <span>
-              Lorem ipsum dolor
-              <br />
-              sit amet.
-            </span>
           </UfoWrapper>
           <ContentWrapper>
             <ContentTitle>4. Ignition</ContentTitle>
@@ -845,7 +1116,7 @@ function Roadmap(): JSX.Element {
             </ContentText>
           </ContentWrapper>
         </DestinationWrapper>
-      </DesktopWrapper>
+      </DesktopWrapper> */}
     </SectionWrapper>
   );
 }
