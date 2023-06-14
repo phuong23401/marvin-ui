@@ -42,55 +42,55 @@ function ApprovedByElon(): JSX.Element {
         <SectionTitle subTitle="Where it all started">
           Approved by Elon
         </SectionTitle>
+        <ContentWrapper>
+          <Swiper
+            cssMode={true}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
+            slidesPerView={1}
+            spaceBetween={20}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            speed={3000}
+            breakpoints={{
+              576: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              992: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          >
+            <SwiperSlide>
+              <ContentImage src={Image1} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ContentImage src={Image2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ContentImage src={Image3} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ContentImage src={Image4} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ContentImage src={Image5} alt="" />
+            </SwiperSlide>
+            <img className="swiper-button-prev" src={SwipperPrev} alt="" />
+            <img className="swiper-button-next" src={SwipperNext} alt="" />
+          </Swiper>
+        </ContentWrapper>
       </Container>
-      <ContentWrapper>
-        <Swiper
-          cssMode={true}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          pagination={true}
-          mousewheel={true}
-          keyboard={true}
-          slidesPerView={1}
-          spaceBetween={20}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          speed={3000}
-          breakpoints={{
-            576: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-            992: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          }}
-          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        >
-          <SwiperSlide>
-            <ContentImage src={Image1} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ContentImage src={Image2} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ContentImage src={Image3} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ContentImage src={Image4} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ContentImage src={Image5} alt="" />
-          </SwiperSlide>
-          <img className="swiper-button-prev" src={SwipperPrev} alt="" />
-          <img className="swiper-button-next" src={SwipperNext} alt="" />
-        </Swiper>
-      </ContentWrapper>
     </ApprovedWrapper>
   );
 }
