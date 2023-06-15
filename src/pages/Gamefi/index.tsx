@@ -30,10 +30,17 @@ function Gamefi(): JSX.Element {
                 rewards - The Marvin Vault.
               </ContentText>
               <ButtonWrapper>
-                <Button type="primary">Join Community</Button>
-                <Button type="secondary">
-                  Read more <FaSearchPlus />
-                </Button>
+                <a href="https://www.t.me/marvininuofficial" target="_blank">
+                  <Button type="primary">Join Community</Button>
+                </a>
+                <a
+                  href="https://www.reddit.com/r/marvininu_ETH"
+                  target="_blank"
+                >
+                  <Button type="secondary">
+                    Read more <FaSearchPlus />
+                  </Button>
+                </a>
               </ButtonWrapper>
             </div>
             <ContentImage className="d-none d-lg-block" src={Vault} alt="" />
@@ -44,15 +51,18 @@ function Gamefi(): JSX.Element {
             <div className="col-lg-6 col-xxl-5">
               <SectionTitle size="sm">Game Pass</SectionTitle>
               <ContentText>
-                Marvin Inu offers tiered Marvinaut game passes designed to provide
-                long-term value in the whole GameFi ecosystem. These passes unlock
-                the earliest access to the game, in-game rewards....
+                Marvin Inu offers tiered Marvinaut game passes designed to
+                provide long-term value in the whole GameFi ecosystem. These
+                passes unlock the earliest access to the game, in-game
+                rewards....
               </ContentText>
               <ButtonWrapper>
-                <Button type="primary">Mint Pass</Button>
-                <Button type="secondary">
+                <a href="https://nft.marvin-ecosystem.com/" target="_blank">
+                  <Button type="primary">Mint Pass</Button>
+                </a>
+                {/* <Button type="secondary">
                   Read more <FaSearchPlus />
-                </Button>
+                </Button> */}
               </ButtonWrapper>
             </div>
           </ContentWrapper>

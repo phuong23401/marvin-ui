@@ -68,10 +68,15 @@ function About(): JSX.Element {
               <ContentInner>
                 <img src={ETH} alt="" />
                 <ButtonWrapper>
-                  <Button type="secondary">
-                    Etherscan (ETH)
-                    <RiShareBoxFill size={16} />
-                  </Button>
+                  <a
+                    href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
+                    target="_blank"
+                  >
+                    <Button type="secondary">
+                      Etherscan (ETH)
+                      <RiShareBoxFill size={16} />
+                    </Button>
+                  </a>
                 </ButtonWrapper>
                 <ContentText>Marvin ETH contract addresses</ContentText>
                 <p>Transactions</p>
@@ -82,10 +87,15 @@ function About(): JSX.Element {
               <ContentInner>
                 <img src={Coingecko} alt="" />
                 <ButtonWrapper>
-                  <Button type="secondary">
-                    Verified supply on CoinGecko
-                    <RiShareBoxFill size={16} />
-                  </Button>
+                  <a
+                    href="https://www.coingecko.com/en/coins/marvin-inu"
+                    target="_blank"
+                  >
+                    <Button type="secondary">
+                      Verified supply on CoinGecko
+                      <RiShareBoxFill size={16} />
+                    </Button>
+                  </a>
                 </ButtonWrapper>
                 <p>Circulating Supply</p>
                 <h5>1,000,000,000,000</h5>
@@ -95,10 +105,15 @@ function About(): JSX.Element {
               <ContentInner>
                 <img src={CMC} alt="" />
                 <ButtonWrapper>
-                  <Button type="secondary">
-                    Verified supply on CoinMarketCap
-                    <RiShareBoxFill size={16} />
-                  </Button>
+                  <a
+                    href="https://coinmarketcap.com/currencies/marvin-inu/"
+                    target="_blank"
+                  >
+                    <Button type="secondary">
+                      Verified supply on CoinMarketCap
+                      <RiShareBoxFill size={16} />
+                    </Button>
+                  </a>
                 </ButtonWrapper>
                 <ContentText>Tokenomics</ContentText>
                 <ContentSubText>
@@ -116,10 +131,15 @@ function About(): JSX.Element {
             <ContentInner className="col-lg-12">
               <img src={ETH} alt="" />
               <ButtonWrapper>
-                <Button type="secondary">
-                  Etherscan (ETH)
-                  <RiShareBoxFill size={16} />
-                </Button>
+                <a
+                  href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
+                  target="_blank"
+                >
+                  <Button type="secondary">
+                    Etherscan (ETH)
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </a>
               </ButtonWrapper>
               <ContentText>Marvin ETH contract addresses</ContentText>
               <p>Transactions</p>
@@ -130,10 +150,15 @@ function About(): JSX.Element {
             <ContentInner>
               <img src={Coingecko} alt="" />
               <ButtonWrapper>
-                <Button type="secondary">
-                  Verified supply on CoinGecko
-                  <RiShareBoxFill size={16} />
-                </Button>
+                <a
+                  href="https://www.coingecko.com/en/coins/marvin-inu"
+                  target="_blank"
+                >
+                  <Button type="secondary">
+                    Verified supply on CoinGecko
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </a>
               </ButtonWrapper>
               <p>Circulating Supply</p>
               <h5>1,000,000,000,000</h5>
@@ -141,10 +166,15 @@ function About(): JSX.Element {
             <ContentInner>
               <img src={CMC} alt="" />
               <ButtonWrapper>
-                <Button type="secondary">
-                  Verified supply on CoinMarketCap
-                  <RiShareBoxFill size={16} />
-                </Button>
+                <a
+                  href="https://coinmarketcap.com/currencies/marvin-inu/"
+                  target="_blank"
+                >
+                  <Button type="secondary">
+                    Verified supply on CoinMarketCap
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </a>
               </ButtonWrapper>
               <ContentText>Tokenomics</ContentText>
               <ContentSubText>
@@ -163,7 +193,12 @@ function About(): JSX.Element {
             conditions.
           </p>
           <ButtonWrapper>
-            <Button type="primary">Buy Marvin</Button>
+            <a
+              href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
+              target="_blank"
+            >
+              <Button type="primary">Buy Marvin</Button>
+            </a>
           </ButtonWrapper>
         </BottomWrapper>
       </Container>

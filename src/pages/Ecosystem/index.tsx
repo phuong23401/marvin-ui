@@ -36,8 +36,18 @@ function Ecosystem(): JSX.Element {
                 Ignite your rocket and join the bossiest Web3 community now!
               </BackgroundSubtitle>
               <ButtonWrapper>
-                <StyledPrimaryButton>Launch Dapp</StyledPrimaryButton>
-                <StyledSecondaryButton>Mint Pass</StyledSecondaryButton>
+                <StyledPrimaryButton
+                  href="https://swap.marvininu.finance/"
+                  target="_blank"
+                >
+                  Launch Dapp
+                </StyledPrimaryButton>
+                <StyledSecondaryButton
+                  href="https://nft.marvin-ecosystem.com/"
+                  target="_blank"
+                >
+                  Mint Pass
+                </StyledSecondaryButton>
               </ButtonWrapper>
             </TitleWrapper>
           </BackgroundWrapper>
@@ -48,6 +58,7 @@ function Ecosystem(): JSX.Element {
             <Swiper
               slidesPerView={1}
               spaceBetween={20}
+              loop={true}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -66,16 +77,36 @@ function Ecosystem(): JSX.Element {
               modules={[Autoplay]}
             >
               <SwiperSlide>
-                <img src={Binance} alt="Binance" />
+                <a
+                  href="https://www.binance.com/en/price/marvin-inu"
+                  target="_blank"
+                >
+                  <img src={Binance} alt="Binance" />
+                </a>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Bitmart} alt="Bitmart" />
+                <a
+                  href="https://www.bitmart.com/trade/en-US?symbol=MARVIN_USDT&layout=basic"
+                  target="_blank"
+                >
+                  <img src={Bitmart} alt="Bitmart" />
+                </a>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Cmc} alt="Cmc" />
+                <a
+                  href="https://coinmarketcap.com/currencies/marvin-inu/"
+                  target="_blank"
+                >
+                  <img src={Cmc} alt="Cmc" />
+                </a>
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Eth} alt="Eth" />
+                <a
+                  href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
+                  target="_blank"
+                >
+                  <img src={Eth} alt="Eth" />
+                </a>
               </SwiperSlide>
             </Swiper>
             {/* <StyledPartnersButton>View all</StyledPartnersButton> */}

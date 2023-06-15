@@ -50,7 +50,22 @@ export const NavBarWrap = styled.div<{ footer?: boolean }>`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledNavLink = styled(Link)`
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+`;
+
+export const StyledLink = styled.a`
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;

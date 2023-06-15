@@ -35,23 +35,38 @@ function HowToBuy(): JSX.Element {
             <div>
               <SectionSubtitle>Decentralized</SectionSubtitle>
               <DecentralizedButtons>
-                <Button type="secondary">
-                  Uniswap
-                  <RiShareBoxFill size={16} />
-                </Button>
-                <Button type="secondary">
-                  CertiK Audit
-                  <RiShareBoxFill size={16} />
-                </Button>
+                <a
+                  href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
+                  target="_blank"
+                >
+                  <Button type="secondary">
+                    Uniswap
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </a>
+                <a
+                  href="https://skynet.certik.com/projects/marvin-inu"
+                  target="_blank"
+                >
+                  <Button type="secondary">
+                    CertiK Audit
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </a>
               </DecentralizedButtons>
             </div>
             <div>
               <SectionSubtitle>Centralized</SectionSubtitle>
               <div className="d-flex justify-content-center align-items-center">
-                <Button type="secondary">
-                  Buy on Bitmart
-                  <RiShareBoxFill size={16} />
-                </Button>
+                <a
+                  href="https://www.bitmart.com/trade/en-US?symbol=MARVIN_USDT&layout=basic"
+                  target="_blank"
+                >
+                  <Button type="secondary">
+                    Buy on Bitmart
+                    <RiShareBoxFill size={16} />
+                  </Button>
+                </a>
               </div>
             </div>
           </ActionsWrapper>

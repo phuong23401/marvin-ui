@@ -37,7 +37,9 @@ function Team(): JSX.Element {
                 <h5>Kikai</h5>
                 <p>Co-founder & Master Designer (RIP)</p>
                 <SocialWrapper>
-                  <img src={Twitter} alt="" />
+                  <a href="https://twitter.com/sir_kikai" target="_blank">
+                    <img src={Twitter} alt="" />
+                  </a>
                 </SocialWrapper>
               </MemberInfo>
             </MemberWrapper>
@@ -49,8 +51,12 @@ function Team(): JSX.Element {
                 <h5>Jack</h5>
                 <p>Co-founder & Master Visionary</p>
                 <SocialWrapper>
-                  <img src={Twitter} alt="" />
-                  <img src={Telegram} alt="" />
+                  <a href="https://twitter.com/shinobiofcrypto" target="_blank">
+                    <img src={Twitter} alt="" />
+                  </a>
+                  <a href="https://www.t.me/Shinobiofcrypto" target="_blank">
+                    <img src={Telegram} alt="" />
+                  </a>
                 </SocialWrapper>
               </MemberInfo>
             </MemberWrapper>
@@ -62,8 +68,12 @@ function Team(): JSX.Element {
                 <h5>Hizuno</h5>
                 <p>Co-founder & Human Resources</p>
                 <SocialWrapper>
-                  <img src={Twitter} alt="" />
-                  <img src={Telegram} alt="" />
+                  <a href="https://twitter.com/donhizuno" target="_blank">
+                    <img src={Twitter} alt="" />
+                  </a>
+                  <a href="https://www.t.me/donhizuno" target="_blank">
+                    <img src={Telegram} alt="" />
+                  </a>
                 </SocialWrapper>
               </MemberInfo>
             </MemberWrapper>
@@ -75,7 +85,9 @@ function Team(): JSX.Element {
                 <h5>Zeus</h5>
                 <p>Co-founder & Human Development</p>
                 <SocialWrapper>
-                  <img src={Telegram} alt="" />
+                  <a href="https://www.t.me/Stanley668" target="_blank">
+                    <img src={Telegram} alt="" />
+                  </a>
                 </SocialWrapper>
               </MemberInfo>
             </MemberWrapper>
@@ -87,7 +99,9 @@ function Team(): JSX.Element {
                 <h5>Queen</h5>
                 <p>Head of Marketing</p>
                 <SocialWrapper>
-                  <img src={Telegram} alt="" />
+                  <a href="https://www.t.me/QueenMonique88" target="_blank">
+                    <img src={Telegram} alt="" />
+                  </a>
                 </SocialWrapper>
               </MemberInfo>
             </MemberWrapper>
@@ -99,8 +113,12 @@ function Team(): JSX.Element {
                 <h5>Mula</h5>
                 <p>Web Develeopment, Content & Social Media</p>
                 <SocialWrapper>
-                  <img src={Twitter} alt="" />
-                  <img src={Telegram} alt="" />
+                  <a href="https://twitter.com/mula_mule_300" target="_blank">
+                    <img src={Twitter} alt="" />
+                  </a>
+                  <a href="https://www.t.me/MulaMarvin300" target="_blank">
+                    <img src={Telegram} alt="" />
+                  </a>
                 </SocialWrapper>
               </MemberInfo>
             </MemberWrapper>
@@ -116,8 +134,12 @@ function Team(): JSX.Element {
                   <h5>Hizuno</h5>
                   <p>Co-founder & Human Resources</p>
                   <SocialWrapper>
-                    <img src={Twitter} alt="" />
-                    <img src={Telegram} alt="" />
+                    <a href="https://twitter.com/donhizuno" target="_blank">
+                      <img src={Twitter} alt="" />
+                    </a>
+                    <a href="https://www.t.me/donhizuno" target="_blank">
+                      <img src={Telegram} alt="" />
+                    </a>
                   </SocialWrapper>
                 </MemberInfo>
               </MemberWrapper>
@@ -143,7 +165,9 @@ function Team(): JSX.Element {
                   <h5>Kikai</h5>
                   <p>Co-founder & Master Designer (RIP)</p>
                   <SocialWrapper>
-                    <img src={Twitter} alt="" />
+                    <a href="https://twitter.com/sir_kikai" target="_blank">
+                      <img src={Twitter} alt="" />
+                    </a>
                   </SocialWrapper>
                 </MemberInfo>
               </MemberWrapper>
@@ -155,7 +179,9 @@ function Team(): JSX.Element {
                   <h5>Queen</h5>
                   <p>Head of Marketing</p>
                   <SocialWrapper>
-                    <img src={Telegram} alt="" />
+                    <a href="https://www.t.me/QueenMonique88" target="_blank">
+                      <img src={Telegram} alt="" />
+                    </a>
                   </SocialWrapper>
                 </MemberInfo>
               </MemberWrapper>
@@ -181,8 +207,15 @@ function Team(): JSX.Element {
                   <h5>Jack</h5>
                   <p>Co-founder & Master Visionary</p>
                   <SocialWrapper>
-                    <img src={Twitter} alt="" />
-                    <img src={Telegram} alt="" />
+                    <a
+                      href="https://twitter.com/shinobiofcrypto"
+                      target="_blank"
+                    >
+                      <img src={Twitter} alt="" />
+                    </a>
+                    <a href="https://www.t.me/Shinobiofcrypto" target="_blank">
+                      <img src={Telegram} alt="" />
+                    </a>
                   </SocialWrapper>
                 </MemberInfo>
               </MemberWrapper>
@@ -194,8 +227,12 @@ function Team(): JSX.Element {
                   <h5>Mula</h5>
                   <p>Web Develeopment, Content & Social Media</p>
                   <SocialWrapper>
-                    <img src={Twitter} alt="" />
-                    <img src={Telegram} alt="" />
+                    <a href="https://twitter.com/mula_mule_300" target="_blank">
+                      <img src={Twitter} alt="" />
+                    </a>
+                    <a href="https://www.t.me/MulaMarvin300" target="_blank">
+                      <img src={Telegram} alt="" />
+                    </a>
                   </SocialWrapper>
                 </MemberInfo>
               </MemberWrapper>
@@ -221,7 +258,9 @@ function Team(): JSX.Element {
                   <h5>Zeus</h5>
                   <p>Co-founder & Human Development</p>
                   <SocialWrapper>
-                    <img src={Telegram} alt="" />
+                    <a href="https://www.t.me/Stanley668" target="_blank">
+                      <img src={Telegram} alt="" />
+                    </a>
                   </SocialWrapper>
                 </MemberInfo>
               </MemberWrapper>

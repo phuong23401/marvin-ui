@@ -23,11 +23,6 @@ export const StyledButton = styled.button<{ disabled: boolean | undefined }>`
     height: 14px;
   }
 
-  a {
-    width: 100%;
-    height: 100%;
-  }
-
   &:hover {
     transform: scale(1.025);
   }
@@ -47,21 +42,11 @@ export const StyledButton = styled.button<{ disabled: boolean | undefined }>`
 
 export const ButtonPrimary = styled(StyledButton)<{ color?: string }>`
   color: ${({ color }) => (color ? color : "#000")};
-
-  a,
-  &:hover {
-    color: ${({ color }) => (color ? color : "#000")};
-  }
 `;
 
 export const ButtonSecondary = styled(StyledButton)`
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
-
-  a,
-  &:hover {
-    color: ${({ color }) => (color ? color : "#fff")};
-  }
 `;
 
 export const ButtonOutline = styled(StyledButton)`
@@ -70,18 +55,10 @@ export const ButtonOutline = styled(StyledButton)`
   padding: 0.75rem 1.5rem;
   color: #fff;
 
-  a {
-    color: #fff;
-  }
-
   &:hover {
     background: #f1f1f1;
     border-color: transparent;
     color: #0f0f0f;
-
-    a {
-      color: #0f0f0f;
-    }
   }
 `;
 

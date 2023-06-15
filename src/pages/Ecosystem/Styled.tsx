@@ -115,7 +115,7 @@ export const ButtonWrapper = styled.div`
   gap: 12px;
 `;
 
-export const StyledPrimaryButton = styled.button`
+export const StyledPrimaryButton = styled.a`
   position: relative;
   background: #fff;
   border: none;
@@ -142,7 +142,7 @@ export const StyledPrimaryButton = styled.button`
   }
 `;
 
-export const StyledSecondaryButton = styled.button`
+export const StyledSecondaryButton = styled.a`
   position: relative;
   background: rgba(255, 255, 255, 0.12);
   border: none;

@@ -46,28 +46,52 @@ function Footer(): JSX.Element {
               <SocialIcon href="https://twitter.com/marvin_inu" target="blank_">
                 <img src={Twitter} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://discord.com/invite/KXtBnvh3tE" target="blank_">
+              <SocialIcon
+                href="https://discord.com/invite/KXtBnvh3tE"
+                target="blank_"
+              >
                 <img src={Discord} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://www.instagram.com/marvininueth/" target="blank_">
+              <SocialIcon
+                href="https://www.instagram.com/marvininueth/"
+                target="blank_"
+              >
                 <img src={Instagram} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://www.tiktok.com/@marvinecosystem" target="blank_">
+              <SocialIcon
+                href="https://www.tiktok.com/@marvinecosystem"
+                target="blank_"
+              >
                 <img src={Tiktok} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://www.facebook.com/MarvinInuEcosystem" target="blank_">
+              <SocialIcon
+                href="https://www.facebook.com/MarvinInuEcosystem"
+                target="blank_"
+              >
                 <img src={Facebook} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://www.t.me/marvininuofficial" target="blank_">
+              <SocialIcon
+                href="https://www.t.me/marvininuofficial"
+                target="blank_"
+              >
                 <img src={Telegram} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://www.youtube.com/marvininu" target="blank_">
+              <SocialIcon
+                href="https://www.youtube.com/marvininu"
+                target="blank_"
+              >
                 <img src={Youtube} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://www.reddit.com/r/MarvinInu_ETH/" target="blank_">
+              <SocialIcon
+                href="https://www.reddit.com/r/MarvinInu_ETH/"
+                target="blank_"
+              >
                 <img src={Reddit} alt="" />
               </SocialIcon>
-              <SocialIcon href="https://www.twitch.tv/marvin_inu" target="blank_">
+              <SocialIcon
+                href="https://www.twitch.tv/marvin_inu"
+                target="blank_"
+              >
                 <img src={Twitch} alt="" />
               </SocialIcon>
             </SocialLinks>
@@ -86,8 +110,15 @@ function Footer(): JSX.Element {
               <RiShareBoxFill fill="rgba(255, 255, 255, 0.5)" size={14} />
             </InputField>
             <ButtonWrapper>
-              <Button type="primary">Buy Marvin</Button>
-              <Button type="secondary">Mint Pass</Button>
+              <a
+                href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
+                target="_blank"
+              >
+                <Button type="primary">Buy Marvin</Button>
+              </a>
+              <a href="https://nft.marvin-ecosystem.com/" target="_blank">
+                <Button type="secondary">Mint Pass</Button>
+              </a>
             </ButtonWrapper>
           </div>
         </FooterWrapper>

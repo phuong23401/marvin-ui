@@ -203,6 +203,17 @@ export const SocialWrapper = styled.div`
   gap: 0.5rem;
   margin-top: 5px;
 
+  a {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+
   img {
     width: 1rem;
 

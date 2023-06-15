@@ -1,5 +1,11 @@
 import { Offcanvas } from "react-bootstrap";
-import { StyledLink, MainMenu, MobileMenu, NavBarWrap } from "./Styled";
+import {
+  StyledLink,
+  MainMenu,
+  MobileMenu,
+  NavBarWrap,
+  StyledNavLink,
+} from "./Styled";
 
 interface INavigationProps {
   isOpen?: boolean;
@@ -15,19 +21,24 @@ function Navigation(props: INavigationProps): JSX.Element {
       <NavBarWrap className="d-md-flex flex-grow-1" footer={footer}>
         <ul className="main-menu list-unstyled">
           <li>
-            <StyledLink to="ecosystem">Ecosystem</StyledLink>
+            <StyledNavLink to="ecosystem">Ecosystem</StyledNavLink>
           </li>
           <li>
-            <StyledLink to="community">Community</StyledLink>
+            <StyledNavLink to="community">Community</StyledNavLink>
           </li>
           <li>
-            <StyledLink to="team">Team</StyledLink>
+            <StyledNavLink to="team">Team</StyledNavLink>
           </li>
           <li>
-            <StyledLink to="howtobuy">How To Buy</StyledLink>
+            <StyledNavLink to="howtobuy">How To Buy</StyledNavLink>
           </li>
           <li>
-            <StyledLink to="documents">Documents</StyledLink>
+            <StyledLink
+              href="https://drive.google.com/file/d/13u_BVImLUX_O21rr4ledTm5FQYP5eTAT/view"
+              target="_blank"
+            >
+              Documents
+            </StyledLink>
           </li>
         </ul>
       </NavBarWrap>
@@ -36,19 +47,24 @@ function Navigation(props: INavigationProps): JSX.Element {
         <Offcanvas.Body>
           <MobileMenu>
             <li>
-              <StyledLink to="ecosystem">Ecosystem</StyledLink>
+              <StyledNavLink to="ecosystem">Ecosystem</StyledNavLink>
             </li>
             <li>
-              <StyledLink to="community">Community</StyledLink>
+              <StyledNavLink to="community">Community</StyledNavLink>
             </li>
             <li>
-              <StyledLink to="team">Team</StyledLink>
+              <StyledNavLink to="team">Team</StyledNavLink>
             </li>
             <li>
-              <StyledLink to="howtobuy">How To Buy</StyledLink>
+              <StyledNavLink to="howtobuy">How To Buy</StyledNavLink>
             </li>
             <li>
-              <StyledLink to="documents">Documents</StyledLink>
+              <StyledLink
+                href="https://drive.google.com/file/d/13u_BVImLUX_O21rr4ledTm5FQYP5eTAT/view"
+                target="_blank"
+              >
+                Documents
+              </StyledLink>
             </li>
           </MobileMenu>
         </Offcanvas.Body>
