@@ -307,7 +307,7 @@ function Roadmap(): JSX.Element {
       </div>
 
       <DesktopWrapper>
-        <RebirthWrapper>
+        <RebirthWrapper className="desktop-content">
           <CometWrapper>
             <p>comet</p>
           </CometWrapper>
@@ -334,7 +334,7 @@ function Roadmap(): JSX.Element {
             </ContentText>
           </ContentWrapper>
         </RebirthWrapper>
-        <VibeWrapper>
+        <VibeWrapper className="desktop-content">
           <MikyWayWrapper>
             <p>miky way</p>
           </MikyWayWrapper>
@@ -361,7 +361,7 @@ function Roadmap(): JSX.Element {
             </ContentText>
           </ContentWrapper>
         </VibeWrapper>
-        <TakeoverWrapper>
+        <TakeoverWrapper className="desktop-content">
           <UfoWrapper>
             <p>UFO</p>
           </UfoWrapper>

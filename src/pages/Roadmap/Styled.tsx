@@ -3,11 +3,11 @@ import styled from "styled-components/macro";
 import MobileBg from "assets/images/Roadmap/mobile_bg.png";
 import DesktopBg from "assets/images/Roadmap/desktop_bg.png";
 import ContentBg from "assets/images/Roadmap/content_bg.png";
-import Vector_1 from "assets/images/Roadmap/Beginning/vector.png";
+// import Vector_1 from "assets/images/Roadmap/Beginning/vector.png";
 import Vector_2 from "assets/images/Roadmap/Growth/vector.png";
 import Vector_3 from "assets/images/Roadmap/Launching/vector.png";
 import Vector_4 from "assets/images/Roadmap/Ignition/vector.png";
-import Vector_5 from "assets/images/Roadmap/Destination/vector.png";
+// import Vector_5 from "assets/images/Roadmap/Destination/vector.png";
 
 export const SectionWrapper = styled.section`
   position: relative;
@@ -49,6 +49,10 @@ export const SectionWrapper = styled.section`
   @media (min-width: 1920px) {
     background-size: cover;
   }
+
+  @media (min-width: 2560px) {
+    height: 1500px;
+  }
 `;
 
 export const StyledParallax = styled(Parallax)`
@@ -74,12 +78,18 @@ export const DesktopWrapper = styled.div`
 
   .desktop-content {
     position: relative;
-    right: auto;
-    bottom: auto;
     transform: scale(1);
+
+    @media (min-width: 1400px) {
+      transform: scale(1);
+    }
 
     @media (min-width: 1920px) {
       transform: scale(1.25);
+    }
+
+    @media (min-width: 2560px) {
+      transform: scale(1.5);
     }
   }
 
@@ -476,15 +486,18 @@ export const RebirthWrapper = styled.div`
   }
 
   @media (min-width: 1400px) {
-    transform: scale(1);
-    left: 12rem;
+    left: 7rem;
     bottom: -1rem;
   }
 
   @media (min-width: 1920px) {
-    transform: scale(1.25);
-    left: 23rem;
-    bottom: -7rem;
+    left: 12rem;
+    bottom: -6rem;
+  }
+
+  @media (min-width: 2560px) {
+    left: 17rem;
+    bottom: -20rem;
   }
 `;
 
@@ -535,15 +548,18 @@ export const VibeWrapper = styled.div`
   }
 
   @media (min-width: 1400px) {
-    transform: scale(1);
-    left: 33rem;
-    bottom: 1rem;
+    left: -3rem;
+    bottom: -4rem;
   }
 
   @media (min-width: 1920px) {
-    transform: scale(1.25);
-    left: 48rem;
-    bottom: -5rem;
+    left: -3rem;
+    bottom: -9rem;
+  }
+
+  @media (min-width: 2560px) {
+    left: -5rem;
+    bottom: -23rem;
   }
 `;
 
@@ -603,15 +619,18 @@ export const TakeoverWrapper = styled.div`
   }
 
   @media (min-width: 1400px) {
-    transform: scale(1);
-    right: 12.5rem;
-    bottom: 2.25rem;
+    right: 7.5rem;
+    bottom: -5rem;
   }
 
   @media (min-width: 1920px) {
-    transform: scale(1.25);
-    right: 23rem;
-    bottom: -3.75rem;
+    right: 12.5rem;
+    bottom: -10rem;
+  }
+
+  @media (min-width: 2560px) {
+    right: 22rem;
+    bottom: -24rem;
   }
 `;
 
