@@ -173,7 +173,7 @@ export const PartnersWrapper = styled.div`
   position: relative;
   border: 2px solid rgba(255, 255, 255, 0.12);
   border-radius: 24px;
-  padding: 3rem 0 5rem;
+  padding: 3rem 0;
 `;
 
 export const StyledPartnersButton = styled.button`

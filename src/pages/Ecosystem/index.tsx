@@ -22,7 +22,6 @@ import Binance from "assets/images/Ecosystem/Partners/binance.png";
 import Bitmart from "assets/images/Ecosystem/Partners/bitmart.png";
 import Cmc from "assets/images/Ecosystem/Partners/cmc.png";
 import Eth from "assets/images/Ecosystem/Partners/eth.png";
-import Pancake from "assets/images/Ecosystem/Partners/pancake.png";
 
 function Ecosystem(): JSX.Element {
   return (
@@ -78,11 +77,8 @@ function Ecosystem(): JSX.Element {
               <SwiperSlide>
                 <img src={Eth} alt="Eth" />
               </SwiperSlide>
-              <SwiperSlide>
-                <img src={Pancake} alt="Pancake" />
-              </SwiperSlide>
             </Swiper>
-            <StyledPartnersButton>View all</StyledPartnersButton>
+            {/* <StyledPartnersButton>View all</StyledPartnersButton> */}
           </PartnersWrapper>
         </Container>
 
