@@ -1,3 +1,4 @@
+import { Modal } from "react-bootstrap";
 import styled from "styled-components/macro";
 import BgImage from "assets/images/WatchTrailer/watch_trailer_bg.png";
 import ButtonBg from "assets/images/WatchTrailer/button_bg.png";
@@ -32,7 +33,7 @@ export const ContentImage = styled.img`
   position: relative;
   width: 100%;
   z-index: 1;
-  
+
   @media (min-width: 992px) {
     width: auto;
   }
@@ -66,5 +67,54 @@ export const StyledButton = styled.button`
   @media (min-width: 576px) {
     width: 241px;
     height: 63.82px;
+  }
+`;
+
+export const StyledModal = styled(Modal)`
+  .modal-dialog {
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%) !important;
+  }
+
+  .modal-content {
+    background: transparent;
+
+    @media (min-width: 1200px) {
+      width: fit-content;
+      margin: auto;
+    }
+  }
+
+  .modal-header {
+    .btn-close {
+      display: none;
+    }
+  }
+`;
+
+export const VideoPlayer = styled.iframe`
+  width: 100%;
+  height: 170px;
+
+  @media (min-width: 375px) {
+    height: 200px;
+  }
+
+  @media (min-width: 576px) {
+    height: 280px;
+  }
+
+  @media (min-width: 992px) {
+    height: 450px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 798px;
+  }
+
+  @media (min-width: 1400px) {
+    width: 1085px;
+    height: 610px;
   }
 `;
