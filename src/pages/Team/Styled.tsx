@@ -25,6 +25,11 @@ export const ContentMobile = styled.div`
     justify-content: space-between;
   }
 
+  @media (min-width: 992px) {
+    padding: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
   @media (min-width: 1200px) {
     display: none;
   }
@@ -45,7 +50,8 @@ export const ContentDesktop = styled.div`
   }
 
   @media (min-width: 1400px) {
-    padding: 16rem 7rem;
+    background-size: contain;
+    padding: 12rem 11rem;
   }
 `;
 
@@ -59,8 +65,18 @@ export const MemberWrapper = styled.div`
   margin-bottom: 5rem;
   width: 90%;
 
+  &:nth-child(5),
+  :last-child {
+    margin-bottom: 3rem;
+  }
+
   @media (min-width: 375px) {
     width: 45%;
+    padding: 10px 9px;
+  }
+
+  @media (min-width: 576px) {
+    padding: 14px;
   }
 
   @media (min-width: 768px) {
@@ -72,22 +88,16 @@ export const MemberWrapper = styled.div`
   }
 
   @media (min-width: 992px) {
-    padding: 20px;
+    padding: 18px;
   }
 
   @media (min-width: 1200px) {
     width: fit-content;
     padding: 14px;
 
-    &:nth-child(4),
-    :nth-child(5) {
+    &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  &:nth-child(5),
-  :last-child {
-    margin-bottom: 3rem;
   }
 `;
 
@@ -97,10 +107,33 @@ export const MemberImage = styled.div`
 
   img {
     width: 100%;
+    height: 226px;
+
+    @media (min-width: 375px) {
+      height: 140px;
+    }
+
+    @media (min-width: 576px) {
+      height: 220px;
+    }
+
+    @media (min-width: 768px) {
+      height: 200px;
+    }
+
+    @media (min-width: 992px) {
+      height: 265px;
+    }
 
     @media (min-width: 1200px) {
       width: 158px;
       height: 195px;
+    }
+  }
+
+  &.question_mark {
+    &::after {
+      opacity: 0.5;
     }
   }
 

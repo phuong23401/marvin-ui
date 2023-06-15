@@ -18,6 +18,7 @@ import Hizuno from "assets/images/Team/Members/hizuno.png";
 import Zeus from "assets/images/Team/Members/zeus.png";
 import Queen from "assets/images/Team/Members/queen.png";
 import Mula from "assets/images/Team/Members/mula.png";
+import QuestionMark from "assets/images/Team/question_mark.png";
 
 function Team(): JSX.Element {
   return (
@@ -121,16 +122,16 @@ function Team(): JSX.Element {
                 </MemberInfo>
               </MemberWrapper>
               <MemberWrapper>
-                <MemberImage>
-                  <img src={Member} alt="" />
+                <MemberImage className="question_mark">
+                  <img src={QuestionMark} alt="" />
                 </MemberImage>
-                <MemberInfo>
+                {/* <MemberInfo>
                   <h5>Kikai</h5>
                   <p>Co-founder & Master Designer (RIP)</p>
                   <SocialWrapper>
                     <img src={Twitter} alt="" />
                   </SocialWrapper>
-                </MemberInfo>
+                </MemberInfo> */}
               </MemberWrapper>
             </div>
             <div>
@@ -159,16 +160,16 @@ function Team(): JSX.Element {
                 </MemberInfo>
               </MemberWrapper>
               <MemberWrapper>
-                <MemberImage>
-                  <img src={Member} alt="" />
+                <MemberImage className="question_mark">
+                  <img src={QuestionMark} alt="" />
                 </MemberImage>
-                <MemberInfo>
+                {/* <MemberInfo>
                   <h5>Kikai</h5>
                   <p>Co-founder & Master Designer (RIP)</p>
                   <SocialWrapper>
                     <img src={Twitter} alt="" />
                   </SocialWrapper>
-                </MemberInfo>
+                </MemberInfo> */}
               </MemberWrapper>
             </div>
             <div>
@@ -199,16 +200,16 @@ function Team(): JSX.Element {
                 </MemberInfo>
               </MemberWrapper>
               <MemberWrapper>
-                <MemberImage>
-                  <img src={Member} alt="" />
+                <MemberImage className="question_mark">
+                  <img src={QuestionMark} alt="" />
                 </MemberImage>
-                <MemberInfo>
+                {/* <MemberInfo>
                   <h5>Kikai</h5>
                   <p>Co-founder & Master Designer (RIP)</p>
                   <SocialWrapper>
                     <img src={Twitter} alt="" />
                   </SocialWrapper>
-                </MemberInfo>
+                </MemberInfo> */}
               </MemberWrapper>
             </div>
             <div>
@@ -225,16 +226,16 @@ function Team(): JSX.Element {
                 </MemberInfo>
               </MemberWrapper>
               <MemberWrapper>
-                <MemberImage>
-                  <img src={Member} alt="" />
+                <MemberImage className="question_mark">
+                  <img src={QuestionMark} alt="" />
                 </MemberImage>
-                <MemberInfo>
+                {/* <MemberInfo>
                   <h5>Kikai</h5>
                   <p>Co-founder & Master Designer (RIP)</p>
                   <SocialWrapper>
                     <img src={Twitter} alt="" />
                   </SocialWrapper>
-                </MemberInfo>
+                </MemberInfo> */}
               </MemberWrapper>
             </div>
           </ContentDesktop>
