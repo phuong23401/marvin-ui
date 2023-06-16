@@ -12,12 +12,14 @@ import Updates from "pages/Updates";
 import Team from "pages/Team";
 import DAO from "pages/DAO";
 import Footer from "components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 import "assets/scss/style.scss";
+import { ScrollTopButton } from "components/ScrollTopButton";
 
 function App(): JSX.Element {
   return (
     <Router>
+      <ScrollTopButton />
       <Header />
       <Ecosystem />
       <Community />
