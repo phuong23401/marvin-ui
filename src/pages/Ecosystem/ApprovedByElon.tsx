@@ -8,6 +8,7 @@ import Image2 from "assets/images/Ecosystem/ApprovedByElon/approved_2.png";
 import Image3 from "assets/images/Ecosystem/ApprovedByElon/approved_3.png";
 import Image4 from "assets/images/Ecosystem/ApprovedByElon/approved_4.png";
 import Image5 from "assets/images/Ecosystem/ApprovedByElon/approved_5.png";
+import Image6 from "assets/images/Ecosystem/ApprovedByElon/approved_6.png";
 import SwipperPrev from "assets/images/swiper_prev.png";
 import SwipperNext from "assets/images/swiper_next.png";
 
@@ -26,7 +27,7 @@ const ContentWrapper = styled.div`
 `;
 
 const ContentImage = styled.img`
-  border: 2px solid #1f1f1f;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   width: 295px;
   border-radius: 20px;
 
@@ -85,6 +86,9 @@ function ApprovedByElon(): JSX.Element {
             </SwiperSlide>
             <SwiperSlide>
               <ContentImage src={Image5} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ContentImage src={Image6} alt="" />
             </SwiperSlide>
             <img className="swiper-button-prev" src={SwipperPrev} alt="" />
             <img className="swiper-button-next" src={SwipperNext} alt="" />

@@ -7,7 +7,6 @@ import Button from "components/Button";
 import Image1 from "assets/images/Ecosystem/Engagement/engagement_1.png";
 import Image2 from "assets/images/Ecosystem/Engagement/engagement_2.png";
 import Image3 from "assets/images/Ecosystem/Engagement/engagement_3.png";
-import Image4 from "assets/images/Ecosystem/Engagement/engagement_4.png";
 import SwipperPrev from "assets/images/swiper_prev.png";
 import SwipperNext from "assets/images/swiper_next.png";
 import { RiShareBoxFill } from "react-icons/ri";
@@ -87,7 +86,7 @@ function Engagement(): JSX.Element {
     <EngagementWrapper>
       <Container>
         <SectionTitle subTitle="Elon Engagement">
-          There are no coincidence
+          There are no coincidences
         </SectionTitle>
         <ContentWrapper>
           <Swiper
@@ -143,17 +142,6 @@ function Engagement(): JSX.Element {
             <SwiperSlide>
               <ContentImage>
                 <img src={Image3} alt="" />
-                <ButtonWrapper>
-                  <Button type="secondary">
-                    Check it out
-                    <RiShareBoxFill size={15} />
-                  </Button>
-                </ButtonWrapper>
-              </ContentImage>
-            </SwiperSlide>
-            <SwiperSlide>
-              <ContentImage>
-                <img src={Image4} alt="" />
                 <ButtonWrapper>
                   <Button type="secondary">
                     Check it out

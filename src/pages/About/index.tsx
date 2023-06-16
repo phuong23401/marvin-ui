@@ -92,13 +92,15 @@ function About(): JSX.Element {
                     target="_blank"
                   >
                     <Button type="secondary">
-                      Verified supply on CoinGecko
+                      Track on CoinGecko
                       <RiShareBoxFill size={16} />
                     </Button>
                   </a>
                 </ButtonWrapper>
                 <p>Circulating Supply</p>
-                <h5>1,000,000,000,000</h5>
+                <ContentSubText>
+                  Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
+                </ContentSubText>
               </ContentInner>
             </SwiperSlide>
             <SwiperSlide>
@@ -110,15 +112,17 @@ function About(): JSX.Element {
                     target="_blank"
                   >
                     <Button type="secondary">
-                      Verified supply on CoinMarketCap
+                      Track on CoinMarketCap
                       <RiShareBoxFill size={16} />
                     </Button>
                   </a>
                 </ButtonWrapper>
                 <ContentText>Tokenomics</ContentText>
-                <ContentSubText>
-                  Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
-                </ContentSubText>
+                <ButtonWrapper>
+                  <a href="https://linksome.me/marvininu/" target="_blank">
+                    <Button type="primary">Community Profile</Button>
+                  </a>
+                </ButtonWrapper>
               </ContentInner>
             </SwiperSlide>
             <img className="swiper-button-prev" src={SwipperPrev} alt="" />
@@ -155,13 +159,15 @@ function About(): JSX.Element {
                   target="_blank"
                 >
                   <Button type="secondary">
-                    Verified supply on CoinGecko
+                    Track on CoinGecko
                     <RiShareBoxFill size={16} />
                   </Button>
                 </a>
               </ButtonWrapper>
               <p>Circulating Supply</p>
-              <h5>1,000,000,000,000</h5>
+              <ContentSubText>
+                Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
+              </ContentSubText>
             </ContentInner>
             <ContentInner>
               <img src={CMC} alt="" />
@@ -171,15 +177,17 @@ function About(): JSX.Element {
                   target="_blank"
                 >
                   <Button type="secondary">
-                    Verified supply on CoinMarketCap
+                    Track on CoinMarketCap
                     <RiShareBoxFill size={16} />
                   </Button>
                 </a>
               </ButtonWrapper>
               <ContentText>Tokenomics</ContentText>
-              <ContentSubText>
-                Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
-              </ContentSubText>
+              <ButtonWrapper>
+                <a href="https://linksome.me/marvininu/" target="_blank">
+                  <Button type="primary">Community Profile</Button>
+                </a>
+              </ButtonWrapper>
             </ContentInner>
           </ContentDesktop>
         </div>
