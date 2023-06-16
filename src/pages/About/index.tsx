@@ -97,9 +97,9 @@ function About(): JSX.Element {
                     </Button>
                   </a>
                 </ButtonWrapper>
-                <p>Circulating Supply</p>
+                <p>Total Supply</p>
                 <ContentSubText>
-                  Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
+                  1,000,000,000,000 <br /> 3% buy/sell tax on DEX
                 </ContentSubText>
               </ContentInner>
             </SwiperSlide>
@@ -164,9 +164,9 @@ function About(): JSX.Element {
                   </Button>
                 </a>
               </ButtonWrapper>
-              <p>Circulating Supply</p>
+              <p>Total Supply</p>
               <ContentSubText>
-                Total Supply: 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
+                1,000,000,000,000 <br /> 3% buy/sell tax on DEX
               </ContentSubText>
             </ContentInner>
             <ContentInner>

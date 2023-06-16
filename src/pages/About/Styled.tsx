@@ -124,7 +124,7 @@ export const ContentInner = styled.div`
   border-radius: 24px;
   text-align: center;
   padding: 2.5rem;
-  width: 100%;
+  width: 350px;
   height: 348px;
 
   img {
@@ -158,12 +158,9 @@ export const ContentInner = styled.div`
   }
 
   @media (min-width: 768px) {
-    height: 365px;
-  }
-
-  @media (min-width: 992px) {
     min-width: 365px;
     width: fit-content;
+    height: 365px;
   }
 `;
 
