@@ -83,7 +83,7 @@ function Team(): JSX.Element {
               </MemberImage>
               <MemberInfo>
                 <h5>Zeus</h5>
-                <p>Co-founder & Human Development</p>
+                <p>Co-founder & Head Of Development</p>
                 <SocialWrapper>
                   <a href="https://www.t.me/Stanley668" target="_blank">
                     <img src={Telegram} alt="" />
@@ -111,7 +111,7 @@ function Team(): JSX.Element {
               </MemberImage>
               <MemberInfo>
                 <h5>Mula</h5>
-                <p>Web Develeopment, Content & Social Media</p>
+                <p>Social Management & Content Creation</p>
                 <SocialWrapper>
                   <a href="https://twitter.com/mula_mule_300" target="_blank">
                     <img src={Twitter} alt="" />
@@ -225,7 +225,7 @@ function Team(): JSX.Element {
                 </MemberImage>
                 <MemberInfo>
                   <h5>Mula</h5>
-                  <p>Web Develeopment, Content & Social Media</p>
+                  <p>Social Management & Content Creation</p>
                   <SocialWrapper>
                     <a href="https://twitter.com/mula_mule_300" target="_blank">
                       <img src={Twitter} alt="" />
@@ -256,7 +256,7 @@ function Team(): JSX.Element {
                 </MemberImage>
                 <MemberInfo>
                   <h5>Zeus</h5>
-                  <p>Co-founder & Human Development</p>
+                  <p>Co-founder & Head Of Development</p>
                   <SocialWrapper>
                     <a href="https://www.t.me/Stanley668" target="_blank">
                       <img src={Telegram} alt="" />
