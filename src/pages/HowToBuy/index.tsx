@@ -36,7 +36,7 @@ function HowToBuy(): JSX.Element {
               <SectionSubtitle>Decentralized</SectionSubtitle>
               <DecentralizedButtons>
                 <a
-                  href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
+                  href="https://app.uniswap.org/#/swap?outputCurrency=0x55a380d134d722006A5CE2d510562e1239D225B1"
                   target="_blank"
                 >
                   <Button type="secondary">
@@ -45,11 +45,11 @@ function HowToBuy(): JSX.Element {
                   </Button>
                 </a>
                 <a
-                  href="https://skynet.certik.com/projects/marvin-inu"
+                  href="https://www.dextools.io/app/en/ether/pair-explorer/0xf7199887cc7cdaaf4934bd82110a9fb8b864171c"
                   target="_blank"
                 >
                   <Button type="secondary">
-                    CertiK Audit
+                    DexTools
                     <RiShareBoxFill size={16} />
                   </Button>
                 </a>

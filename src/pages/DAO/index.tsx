@@ -1,5 +1,10 @@
 import { Container } from "react-bootstrap";
-import { ContentText, DAOWrapper, SectionWrapper, SecurityWrapper } from "./Styled";
+import {
+  ContentText,
+  DAOWrapper,
+  SectionWrapper,
+  SecurityWrapper,
+} from "./Styled";
 import SectionTitle from "components/SectionTitle";
 import Button from "components/Button";
 import MarvinDAO from "assets/images/DAO/marvin_dao.png";
@@ -19,7 +24,9 @@ function DAO(): JSX.Element {
               are eligible to join. Exclusive voting rights, launchpad
               multipliers, whitelists and more!
             </ContentText>
-            <Button type="secondary">Join Community</Button>
+            <a href="https://linksome.me/marvininu/" target="_blank">
+              <Button type="secondary">Join Community</Button>
+            </a>
           </div>
         </DAOWrapper>
         <SecurityWrapper>
@@ -27,7 +34,12 @@ function DAO(): JSX.Element {
           <SectionTitle subTitle="Security" alignCenter size="sm">
             Marvin Audit
           </SectionTitle>
-          <Button type="primary">Marvin Token</Button>
+          <a
+            href="https://skynet.certik.com/projects/marvin-inu"
+            target="_blank"
+          >
+            <Button type="primary">Marvin Token</Button>
+          </a>
         </SecurityWrapper>
       </Container>
     </SectionWrapper>

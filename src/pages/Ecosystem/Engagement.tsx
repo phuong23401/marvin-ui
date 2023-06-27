@@ -121,10 +121,15 @@ function Engagement(): JSX.Element {
               <ContentImage>
                 <img src={Image1} alt="" />
                 <ButtonWrapper>
-                  <Button type="secondary">
-                    Check it out
-                    <RiShareBoxFill size={15} />
-                  </Button>
+                  <a
+                    href="https://twitter.com/marvin_inu/status/1594760645794271232?s=46&t=sOUOfKmNG-dzWrhhr4IGAQ"
+                    target="_blank"
+                  >
+                    <Button type="secondary">
+                      Check it out
+                      <RiShareBoxFill size={15} />
+                    </Button>
+                  </a>
                 </ButtonWrapper>
               </ContentImage>
             </SwiperSlide>
@@ -143,10 +148,15 @@ function Engagement(): JSX.Element {
               <ContentImage>
                 <img src={Image3} alt="" />
                 <ButtonWrapper>
-                  <Button type="secondary">
-                    Check it out
-                    <RiShareBoxFill size={15} />
-                  </Button>
+                  <a
+                    href="https://twitter.com/marvin_inu/status/1632682618171916289?s=46&t=sOUOfKmNG-dzWrhhr4IGAQ"
+                    target="_blank"
+                  >
+                    <Button type="secondary">
+                      Check it out
+                      <RiShareBoxFill size={15} />
+                    </Button>
+                  </a>
                 </ButtonWrapper>
               </ContentImage>
             </SwiperSlide>

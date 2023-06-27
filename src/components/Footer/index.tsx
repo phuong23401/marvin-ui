@@ -43,54 +43,54 @@ function Footer(): JSX.Element {
               NFT Marketplace, and NFTs without the gas fees (well almost).
             </SubText>
             <SocialLinks className="col-lg-10 col-xl-9">
-              <SocialIcon href="https://twitter.com/marvin_inu" target="blank_">
+              <SocialIcon href="https://twitter.com/marvin_inu" target="_blank">
                 <img src={Twitter} alt="" />
               </SocialIcon>
               <SocialIcon
                 href="https://discord.com/invite/KXtBnvh3tE"
-                target="blank_"
+                target="_blank"
               >
                 <img src={Discord} alt="" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.instagram.com/marvininueth/"
-                target="blank_"
+                target="_blank"
               >
                 <img src={Instagram} alt="" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.tiktok.com/@marvinecosystem"
-                target="blank_"
+                target="_blank"
               >
                 <img src={Tiktok} alt="" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.facebook.com/MarvinInuEcosystem"
-                target="blank_"
+                target="_blank"
               >
                 <img src={Facebook} alt="" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.t.me/marvininuofficial"
-                target="blank_"
+                target="_blank"
               >
                 <img src={Telegram} alt="" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.youtube.com/marvininu"
-                target="blank_"
+                target="_blank"
               >
                 <img src={Youtube} alt="" />
               </SocialIcon>
               <SocialIcon
                 href="https://www.reddit.com/r/MarvinInu_ETH/"
-                target="blank_"
+                target="_blank"
               >
                 <img src={Reddit} alt="" />
               </SocialIcon>
               <SocialIcon
-                href="https://www.twitch.tv/marvin_inu"
-                target="blank_"
+                href="https://www.reddit.com/r/MarvinEcosystem/?utm_source=share&utm_medium=ios_app&utm_name=ioscss&utm_content=1&utm_term=1"
+                target="_blank"
               >
                 <img src={Twitch} alt="" />
               </SocialIcon>

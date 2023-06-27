@@ -1,0 +1,3 @@
+[submodule "marvin-bot-api"]
+	path = marvin-bot-api
+	url = git@github.com:phuong23401/marvin-bot-api.git

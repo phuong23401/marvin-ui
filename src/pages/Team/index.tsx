@@ -99,6 +99,12 @@ function Team(): JSX.Element {
                 <h5>Queen</h5>
                 <p>Head of Marketing</p>
                 <SocialWrapper>
+                  <a
+                    href="https://twitter.com/queenscryptos?s=21&t=sOUOfKmNG-dzWrhhr4IGAQ"
+                    target="_blank"
+                  >
+                    <img src={Twitter} alt="" />
+                  </a>
                   <a href="https://www.t.me/QueenMonique88" target="_blank">
                     <img src={Telegram} alt="" />
                   </a>
@@ -179,6 +185,12 @@ function Team(): JSX.Element {
                   <h5>Queen</h5>
                   <p>Head of Marketing</p>
                   <SocialWrapper>
+                    <a
+                      href="https://twitter.com/queenscryptos?s=21&t=sOUOfKmNG-dzWrhhr4IGAQ"
+                      target="_blank"
+                    >
+                      <img src={Twitter} alt="" />
+                    </a>
                     <a href="https://www.t.me/QueenMonique88" target="_blank">
                       <img src={Telegram} alt="" />
                     </a>
