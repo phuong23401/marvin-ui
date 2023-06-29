@@ -45,10 +45,10 @@ function Community(): JSX.Element {
         );
 
         if (telegram && twitter && discord && youtube) {
-          setTelegramMembers(telegram.value);
+          setTelegramMembers(telegram.value ?? 7249);
           setTwitterFollowers(twitter.value ?? 60371);
           setDiscordMembers(discord.value ?? 808);
-          setYoutubeSubscribers(youtube.value);
+          setYoutubeSubscribers(youtube.value ?? 320);
         }
       }
     } catch (error) {
@@ -80,9 +80,9 @@ function Community(): JSX.Element {
                   <br className="d-none d-xl-block" />
                   get 24/7 support
                 </ChannelContent>
-                <h5>{telegramMembers ?? <Loader />}</h5>
-                <span>Members</span>
               </a>
+              <h5>{telegramMembers ?? <Loader />}</h5>
+              <span>Members</span>
             </ContentInner>
             <ContentInner>
               <a href="https://discord.com/invite/KXtBnvh3tE" target="_blank">
@@ -96,9 +96,9 @@ function Community(): JSX.Element {
                   <br className="d-none d-lg-block" />
                   discord
                 </ChannelContent>
-                <h5>{discordMembers ?? <Loader />}</h5>
-                <span>Members</span>
               </a>
+              <h5>{discordMembers ?? <Loader />}</h5>
+              <span>Members</span>
             </ContentInner>
             <ContentInner>
               <a href="https://twitter.com/marvin_inu" target="_blank">
@@ -112,9 +112,9 @@ function Community(): JSX.Element {
                   <br className="d-none d-lg-block" />
                   Mission
                 </ChannelContent>
-                <h5>{twitterFollowers ?? <Loader />}</h5>
-                <span>Followers</span>
               </a>
+              <h5>{twitterFollowers ?? <Loader />}</h5>
+              <span>Followers</span>
             </ContentInner>
             <ContentInner>
               <a href="https://www.youtube.com/marvininu" target="_blank">
@@ -127,9 +127,9 @@ function Community(): JSX.Element {
                   Education, gameplay videos
                   <br className="d-none d-lg-block" />& more!
                 </ChannelContent>
-                <h5>{youtubeSubscribers ?? <Loader />}</h5>
-                <span>Subscribers</span>
               </a>
+              <h5>{youtubeSubscribers ?? <Loader />}</h5>
+              <span>Subscribers</span>
             </ContentInner>
           </ContentWrapper>
         </Container>

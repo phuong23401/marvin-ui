@@ -48,6 +48,7 @@ export const ContentInner = styled.div`
 
   h5 {
     margin-bottom: 0;
+    color: #fff;
   }
 
   span {
