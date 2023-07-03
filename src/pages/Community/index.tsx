@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Scroll from "react-scroll";
-import axios from "axios";
 import { Container } from "react-bootstrap";
 import SectionTitle from "components/SectionTitle";
 import {
@@ -17,48 +16,38 @@ import Twitter from "assets/images/Community/twitter.svg";
 import Youtube from "assets/images/Community/youtube.svg";
 import { RiShareBoxFill } from "react-icons/ri";
 import Loader from "components/Loader";
+import useSWR from "swr";
 
-const apiUrl = "http://127.0.0.1:3005/api";
+const apiUrl = "https://api-test.marvin-ecosystem.com/social/count";
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 function Community(): JSX.Element {
+  const { data, error } = useSWR(apiUrl, fetcher, {
+    refreshInterval: 86400000,
+  });
+
   const [telegramMembers, setTelegramMembers] = useState<any>();
   const [twitterFollowers, setTwitterFollowers] = useState<any>();
   const [discordMembers, setDiscordMembers] = useState<any>();
   const [youtubeSubscribers, setYoutubeSubscribers] = useState<any>();
 
-  const getData = async () => {
-    try {
-      const response = await axios.get(`${apiUrl}/getDataCount`);
+  useEffect(() => {
+    if (data && data.length > 0) {
+      const telegram = data.find((e: any) => e.id === "telegram");
+      const twitter = data.find((e: any) => e.id === "twitter");
+      const discord = data.find((e: any) => e.id === "discord");
+      const youtube = data.find((e: any) => e.id === "youtube");
 
-      if (response.status === 200 && response.data) {
-        const telegram = response?.data?.find(
-          (data: any) => data.id === "telegram"
-        );
-        const twitter = response?.data?.find(
-          (data: any) => data.id === "twitter"
-        );
-        const discord = response?.data?.find(
-          (data: any) => data.id === "discord"
-        );
-        const youtube = response?.data?.find(
-          (data: any) => data.id === "youtube"
-        );
-
-        if (telegram && twitter && discord && youtube) {
-          setTelegramMembers(telegram.value ?? 7249);
-          setTwitterFollowers(twitter.value ?? 60371);
-          setDiscordMembers(discord.value ?? 808);
-          setYoutubeSubscribers(youtube.value ?? 320);
-        }
+      if (telegram && twitter && discord && youtube) {
+        setTelegramMembers(telegram.value);
+        setTwitterFollowers(twitter.value ?? 60371);
+        setDiscordMembers(discord.value);
+        setYoutubeSubscribers(youtube.value);
       }
-    } catch (error) {
+    } else if (error) {
       console.error(error);
     }
-  };
-
-  getData();
-  // setInterval(() => {
-  // }, 43200000);
+  }, [data]);
 
   return (
     <Scroll.Element name="community">
