@@ -23,7 +23,7 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 function Community(): JSX.Element {
   const { data, error } = useSWR(apiUrl, fetcher, {
-    refreshInterval: 86400000,
+    refreshInterval: 10800000,
   });
 
   const [telegramMembers, setTelegramMembers] = useState<any>();
