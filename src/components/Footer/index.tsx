@@ -1,5 +1,5 @@
-import { Container } from "react-bootstrap";
-import Navigation from "../Navigation";
+import { Container } from 'react-bootstrap'
+import Navigation from '../Navigation'
 import {
   ButtonWrapper,
   FooterMain,
@@ -11,20 +11,20 @@ import {
   LogoWrap,
   SocialIcon,
   SocialLinks,
-  SubText,
-} from "./Styled";
-import Logo from "assets/images/Footer/logo_footer.png";
-import Twitter from "assets/images/Footer/twitter.png";
-import Discord from "assets/images/Footer/discord.png";
-import Instagram from "assets/images/Footer/instagram.png";
-import Tiktok from "assets/images/Footer/tiktok.png";
-import Facebook from "assets/images/Footer/facebook.png";
-import Telegram from "assets/images/Footer/telegram.png";
-import Youtube from "assets/images/Footer/youtube.png";
-import Reddit from "assets/images/Footer/reddit.png";
-import Twitch from "assets/images/Footer/twitch.png";
-import { RiShareBoxFill } from "react-icons/ri";
-import Button from "components/Button";
+  SubText
+} from './Styled'
+import Logo from 'assets/images/Footer/logo_footer.png'
+import Twitter from 'assets/images/Footer/twitter.png'
+import Discord from 'assets/images/Footer/discord.png'
+import Instagram from 'assets/images/Footer/instagram.png'
+import Tiktok from 'assets/images/Footer/tiktok.png'
+import Facebook from 'assets/images/Footer/facebook.png'
+import Telegram from 'assets/images/Footer/telegram.png'
+import Youtube from 'assets/images/Footer/youtube.png'
+import Reddit from 'assets/images/Footer/reddit.png'
+import Twitch from 'assets/images/Footer/twitch.png'
+import { RiShareBoxFill } from 'react-icons/ri'
+import Button from 'components/Button'
 
 function Footer(): JSX.Element {
   return (
@@ -113,10 +113,15 @@ function Footer(): JSX.Element {
               <a
                 href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
                 target="_blank"
+                rel="noreferrer"
               >
                 <Button type="primary">Buy Marvin</Button>
               </a>
-              <a href="https://nft.marvin-ecosystem.com/" target="_blank">
+              <a
+                href="https://nft.marvin-ecosystem.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Button type="secondary">Mint Pass</Button>
               </a>
             </ButtonWrapper>
@@ -124,7 +129,7 @@ function Footer(): JSX.Element {
         </FooterWrapper>
       </Container>
     </FooterMain>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

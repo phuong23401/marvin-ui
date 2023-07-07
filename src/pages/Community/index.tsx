@@ -1,53 +1,54 @@
-import { useEffect, useState } from "react";
-import Scroll from "react-scroll";
-import { Container } from "react-bootstrap";
-import SectionTitle from "components/SectionTitle";
+import { useEffect, useState } from 'react'
+import Scroll from 'react-scroll'
+import { Container } from 'react-bootstrap'
+import SectionTitle from 'components/SectionTitle'
 import {
   ChannelContent,
   ChannelLogo,
   ChannelName,
   ContentInner,
   ContentWrapper,
-  SectionWrapper,
-} from "./Styled";
-import Telegram from "assets/images/Community/telegram.svg";
-import Discord from "assets/images/Community/discord.svg";
-import Twitter from "assets/images/Community/twitter.svg";
-import Youtube from "assets/images/Community/youtube.svg";
-import { RiShareBoxFill } from "react-icons/ri";
-import Loader from "components/Loader";
-import useSWR from "swr";
+  SectionWrapper
+} from './Styled'
+import Telegram from 'assets/images/Community/telegram.svg'
+import Discord from 'assets/images/Community/discord.svg'
+import Twitter from 'assets/images/Community/twitter.svg'
+import Youtube from 'assets/images/Community/youtube.svg'
+import { RiShareBoxFill } from 'react-icons/ri'
+import Loader from 'components/Loader'
+import useSWR from 'swr'
 
-const apiUrl = "https://api-test.marvin-ecosystem.com/social/count";
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
+const apiUrl = 'https://api-test.marvin-ecosystem.com/social/count'
+const fetcher = (url: string) => fetch(url).then(res => res.json())
 
 function Community(): JSX.Element {
   const { data, error } = useSWR(apiUrl, fetcher, {
-    refreshInterval: 10800000,
-  });
+    refreshInterval: 10800000
+  })
 
-  const [telegramMembers, setTelegramMembers] = useState<any>();
-  const [twitterFollowers, setTwitterFollowers] = useState<any>();
-  const [discordMembers, setDiscordMembers] = useState<any>();
-  const [youtubeSubscribers, setYoutubeSubscribers] = useState<any>();
+  const [telegramMembers, setTelegramMembers] = useState<any>()
+  const [twitterFollowers, setTwitterFollowers] = useState<any>()
+  const [discordMembers, setDiscordMembers] = useState<any>()
+  const [youtubeSubscribers, setYoutubeSubscribers] = useState<any>()
 
   useEffect(() => {
     if (data && data.length > 0) {
-      const telegram = data.find((e: any) => e.id === "telegram");
-      const twitter = data.find((e: any) => e.id === "twitter");
-      const discord = data.find((e: any) => e.id === "discord");
-      const youtube = data.find((e: any) => e.id === "youtube");
+      const telegram = data.find((e: any) => e.id === 'telegram')
+      const twitter = data.find((e: any) => e.id === 'twitter')
+      const discord = data.find((e: any) => e.id === 'discord')
+      const youtube = data.find((e: any) => e.id === 'youtube')
 
       if (telegram && twitter && discord && youtube) {
-        setTelegramMembers(telegram.value);
-        setTwitterFollowers(twitter.value ?? 60371);
-        setDiscordMembers(discord.value);
-        setYoutubeSubscribers(youtube.value);
+        setTelegramMembers(telegram.value)
+        setTwitterFollowers(twitter.value ?? 60371)
+        setDiscordMembers(discord.value)
+        setYoutubeSubscribers(youtube.value)
       }
     } else if (error) {
-      console.error(error);
+      console.error(error)
     }
-  }, [data]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data])
 
   return (
     <Scroll.Element name="community">
@@ -58,14 +59,18 @@ function Community(): JSX.Element {
           </SectionTitle>
           <ContentWrapper>
             <ContentInner>
-              <a href="https://www.t.me/marvininuofficial" target="_blank">
+              <a
+                href="https://www.t.me/marvininuofficial"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ChannelLogo src={Telegram} alt="" />
                 <ChannelName>
                   Telegram
                   <RiShareBoxFill size={14} />
                 </ChannelName>
                 <ChannelContent>
-                  Join the bossiest Web3 community and{" "}
+                  Join the bossiest Web3 community and{' '}
                   <br className="d-none d-xl-block" />
                   get 24/7 support
                 </ChannelContent>
@@ -74,7 +79,11 @@ function Community(): JSX.Element {
               <span>Members</span>
             </ContentInner>
             <ContentInner>
-              <a href="https://discord.com/invite/KXtBnvh3tE" target="_blank">
+              <a
+                href="https://discord.com/invite/KXtBnvh3tE"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ChannelLogo src={Discord} alt="" />
                 <ChannelName>
                   Discord
@@ -90,7 +99,11 @@ function Community(): JSX.Element {
               <span>Members</span>
             </ContentInner>
             <ContentInner>
-              <a href="https://twitter.com/marvin_inu" target="_blank">
+              <a
+                href="https://twitter.com/marvin_inu"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ChannelLogo src={Twitter} alt="" />
                 <ChannelName>
                   Twitter
@@ -106,7 +119,11 @@ function Community(): JSX.Element {
               <span>Followers</span>
             </ContentInner>
             <ContentInner>
-              <a href="https://www.youtube.com/marvininu" target="_blank">
+              <a
+                href="https://www.youtube.com/marvininu"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ChannelLogo src={Youtube} alt="" />
                 <ChannelName>
                   Youtube
@@ -124,7 +141,7 @@ function Community(): JSX.Element {
         </Container>
       </SectionWrapper>
     </Scroll.Element>
-  );
+  )
 }
 
-export default Community;
+export default Community

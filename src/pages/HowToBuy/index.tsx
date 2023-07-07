@@ -1,7 +1,7 @@
-import Scroll from "react-scroll";
-import { Container } from "react-bootstrap";
-import SectionTitle from "components/SectionTitle";
-import Button from "components/Button";
+import Scroll from 'react-scroll'
+import { Container } from 'react-bootstrap'
+import SectionTitle from 'components/SectionTitle'
+import Button from 'components/Button'
 import {
   PartnerLogo,
   PartnerName,
@@ -11,12 +11,12 @@ import {
   PartnersWrapper,
   SectionSubtitle,
   ActionsWrapper,
-  DecentralizedButtons,
-} from "./Styled";
-import Uniswap from "assets/images/HowToBuy/uniswap.svg";
-import Certik from "assets/images/HowToBuy/certikaudit.png";
-import Bitmart from "assets/images/HowToBuy/bitmart.svg";
-import { RiShareBoxFill } from "react-icons/ri";
+  DecentralizedButtons
+} from './Styled'
+import Uniswap from 'assets/images/HowToBuy/uniswap.svg'
+import Certik from 'assets/images/HowToBuy/certikaudit.png'
+import Bitmart from 'assets/images/HowToBuy/bitmart.svg'
+import { RiShareBoxFill } from 'react-icons/ri'
 
 function HowToBuy(): JSX.Element {
   return (
@@ -38,6 +38,7 @@ function HowToBuy(): JSX.Element {
                 <a
                   href="https://app.uniswap.org/#/swap?outputCurrency=0x55a380d134d722006A5CE2d510562e1239D225B1"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Button type="secondary">
                     Uniswap
@@ -47,6 +48,7 @@ function HowToBuy(): JSX.Element {
                 <a
                   href="https://www.dextools.io/app/en/ether/pair-explorer/0xf7199887cc7cdaaf4934bd82110a9fb8b864171c"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Button type="secondary">
                     DexTools
@@ -61,6 +63,7 @@ function HowToBuy(): JSX.Element {
                 <a
                   href="https://www.bitmart.com/trade/en-US?symbol=MARVIN_USDT&layout=basic"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Button type="secondary">
                     Buy on Bitmart
@@ -92,7 +95,7 @@ function HowToBuy(): JSX.Element {
         </Container>
       </SectionWrapper>
     </Scroll.Element>
-  );
+  )
 }
 
-export default HowToBuy;
+export default HowToBuy

@@ -62,7 +62,11 @@ function Gamefi(): JSX.Element {
                 rewards....
               </ContentText>
               <ButtonWrapper>
-                <a href="https://nft.marvin-ecosystem.com/" target="_blank">
+                <a
+                  href="https://nft.marvin-ecosystem.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Button type="primary">Mint Pass</Button>
                 </a>
                 {/* <Button type="secondary">

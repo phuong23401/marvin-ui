@@ -1,14 +1,14 @@
-import { Container } from "react-bootstrap";
+import { Container } from 'react-bootstrap'
 import {
   ContentText,
   DAOWrapper,
   SectionWrapper,
-  SecurityWrapper,
-} from "./Styled";
-import SectionTitle from "components/SectionTitle";
-import Button from "components/Button";
-import MarvinDAO from "assets/images/DAO/marvin_dao.png";
-import Security from "assets/images/DAO/security.png";
+  SecurityWrapper
+} from './Styled'
+import SectionTitle from 'components/SectionTitle'
+import Button from 'components/Button'
+import MarvinDAO from 'assets/images/DAO/marvin_dao.png'
+import Security from 'assets/images/DAO/security.png'
 
 function DAO(): JSX.Element {
   return (
@@ -24,7 +24,11 @@ function DAO(): JSX.Element {
               are eligible to join. Exclusive voting rights, launchpad
               multipliers, whitelists and more!
             </ContentText>
-            <a href="https://linksome.me/marvininu/" target="_blank">
+            <a
+              href="https://linksome.me/marvininu/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button type="secondary">Join Community</Button>
             </a>
           </div>
@@ -37,13 +41,14 @@ function DAO(): JSX.Element {
           <a
             href="https://skynet.certik.com/projects/marvin-inu"
             target="_blank"
+            rel="noreferrer"
           >
             <Button type="primary">Marvin Token</Button>
           </a>
         </SecurityWrapper>
       </Container>
     </SectionWrapper>
-  );
+  )
 }
 
-export default DAO;
+export default DAO

@@ -1,7 +1,7 @@
-import Scroll from "react-scroll";
-import { Container } from "react-bootstrap";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import Scroll from 'react-scroll'
+import { Container } from 'react-bootstrap'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper'
 import {
   BackgroundSubtitle,
   BackgroundTitle,
@@ -10,18 +10,17 @@ import {
   Introduce,
   PartnersWrapper,
   SectionWrapper,
-  StyledPartnersButton,
   StyledPrimaryButton,
   StyledSecondaryButton,
-  TitleWrapper,
-} from "./Styled";
-import CrewTheMoon from "./CrewTheMoon";
-import Engagement from "./Engagement";
-import ApprovedByElon from "./ApprovedByElon";
-import Binance from "assets/images/Ecosystem/Partners/binance.png";
-import Bitmart from "assets/images/Ecosystem/Partners/bitmart.png";
-import Cmc from "assets/images/Ecosystem/Partners/cmc.png";
-import Eth from "assets/images/Ecosystem/Partners/eth.png";
+  TitleWrapper
+} from './Styled'
+import CrewTheMoon from './CrewTheMoon'
+import Engagement from './Engagement'
+import ApprovedByElon from './ApprovedByElon'
+import Binance from 'assets/images/Ecosystem/Partners/binance.png'
+import Bitmart from 'assets/images/Ecosystem/Partners/bitmart.png'
+import Cmc from 'assets/images/Ecosystem/Partners/cmc.png'
+import Eth from 'assets/images/Ecosystem/Partners/eth.png'
 
 function Ecosystem(): JSX.Element {
   return (
@@ -61,18 +60,18 @@ function Ecosystem(): JSX.Element {
               loop={true}
               autoplay={{
                 delay: 2500,
-                disableOnInteraction: false,
+                disableOnInteraction: false
               }}
               speed={3000}
               breakpoints={{
                 576: {
                   slidesPerView: 2,
-                  spaceBetween: 30,
+                  spaceBetween: 30
                 },
                 992: {
                   slidesPerView: 3,
-                  spaceBetween: 50,
-                },
+                  spaceBetween: 50
+                }
               }}
               modules={[Autoplay]}
             >
@@ -80,6 +79,7 @@ function Ecosystem(): JSX.Element {
                 <a
                   href="https://www.binance.com/en/price/marvin-inu"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img src={Binance} alt="Binance" />
                 </a>
@@ -88,6 +88,7 @@ function Ecosystem(): JSX.Element {
                 <a
                   href="https://www.bitmart.com/trade/en-US?symbol=MARVIN_USDT&layout=basic"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img src={Bitmart} alt="Bitmart" />
                 </a>
@@ -96,6 +97,7 @@ function Ecosystem(): JSX.Element {
                 <a
                   href="https://coinmarketcap.com/currencies/marvin-inu/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img src={Cmc} alt="Cmc" />
                 </a>
@@ -104,6 +106,7 @@ function Ecosystem(): JSX.Element {
                 <a
                   href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img src={Eth} alt="Eth" />
                 </a>
@@ -117,7 +120,7 @@ function Ecosystem(): JSX.Element {
         <ApprovedByElon />
       </SectionWrapper>
     </Scroll.Element>
-  );
+  )
 }
 
-export default Ecosystem;
+export default Ecosystem

@@ -1,7 +1,7 @@
-import { Container } from "react-bootstrap";
-import SectionTitle from "components/SectionTitle";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Container } from 'react-bootstrap'
+import SectionTitle from 'components/SectionTitle'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
 import {
   BottomWrapper,
   ButtonWrapper,
@@ -11,15 +11,15 @@ import {
   ContentMobile,
   Introduce,
   SectionWrapper,
-  ContentDesktop,
-} from "./Styled";
-import Button from "components/Button";
-import ETH from "assets/images/About/eth.svg";
-import Coingecko from "assets/images/About/coingecko.svg";
-import CMC from "assets/images/About/cmc.svg";
-import SwipperPrev from "assets/images/swiper_prev.png";
-import SwipperNext from "assets/images/swiper_next.png";
-import { RiShareBoxFill } from "react-icons/ri";
+  ContentDesktop
+} from './Styled'
+import Button from 'components/Button'
+import ETH from 'assets/images/About/eth.svg'
+import Coingecko from 'assets/images/About/coingecko.svg'
+import CMC from 'assets/images/About/cmc.svg'
+import SwipperPrev from 'assets/images/swiper_prev.png'
+import SwipperNext from 'assets/images/swiper_next.png'
+import { RiShareBoxFill } from 'react-icons/ri'
 
 function About(): JSX.Element {
   return (
@@ -39,8 +39,8 @@ function About(): JSX.Element {
           <Swiper
             cssMode={true}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
             }}
             pagination={true}
             mousewheel={true}
@@ -49,18 +49,18 @@ function About(): JSX.Element {
             spaceBetween={20}
             autoplay={{
               delay: 2500,
-              disableOnInteraction: false,
+              disableOnInteraction: false
             }}
             speed={3000}
             breakpoints={{
               576: {
                 slidesPerView: 2,
-                spaceBetween: 30,
+                spaceBetween: 30
               },
               992: {
                 slidesPerView: 3,
-                spaceBetween: 30,
-              },
+                spaceBetween: 30
+              }
             }}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
           >
@@ -71,6 +71,7 @@ function About(): JSX.Element {
                   <a
                     href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <Button type="secondary">
                       Etherscan (ETH)
@@ -90,6 +91,7 @@ function About(): JSX.Element {
                   <a
                     href="https://www.coingecko.com/en/coins/marvin-inu"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <Button type="secondary">
                       Track on CoinGecko
@@ -110,6 +112,7 @@ function About(): JSX.Element {
                   <a
                     href="https://coinmarketcap.com/currencies/marvin-inu/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <Button type="secondary">
                       Track on CoinMarketCap
@@ -119,7 +122,11 @@ function About(): JSX.Element {
                 </ButtonWrapper>
                 <ContentText>Tokenomics</ContentText>
                 <ButtonWrapper>
-                  <a href="https://linksome.me/marvininu/" target="_blank">
+                  <a
+                    href="https://linksome.me/marvininu/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Button type="primary">Community Profile</Button>
                   </a>
                 </ButtonWrapper>
@@ -138,6 +145,7 @@ function About(): JSX.Element {
                 <a
                   href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Button type="secondary">
                     Etherscan (ETH)
@@ -157,6 +165,7 @@ function About(): JSX.Element {
                 <a
                   href="https://www.coingecko.com/en/coins/marvin-inu"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Button type="secondary">
                     Track on CoinGecko
@@ -175,6 +184,7 @@ function About(): JSX.Element {
                 <a
                   href="https://coinmarketcap.com/currencies/marvin-inu/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Button type="secondary">
                     Track on CoinMarketCap
@@ -184,7 +194,11 @@ function About(): JSX.Element {
               </ButtonWrapper>
               <ContentText>Tokenomics</ContentText>
               <ButtonWrapper>
-                <a href="https://linksome.me/marvininu/" target="_blank">
+                <a
+                  href="https://linksome.me/marvininu/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Button type="primary">Community Profile</Button>
                 </a>
               </ButtonWrapper>
@@ -204,6 +218,7 @@ function About(): JSX.Element {
             <a
               href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
               target="_blank"
+              rel="noreferrer"
             >
               <Button type="primary">Buy Marvin</Button>
             </a>
@@ -211,7 +226,7 @@ function About(): JSX.Element {
         </BottomWrapper>
       </Container>
     </SectionWrapper>
-  );
+  )
 }
 
-export default About;
+export default About
