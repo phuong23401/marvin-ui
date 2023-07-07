@@ -1,20 +1,20 @@
-import { Container } from "react-bootstrap";
-import styled from "styled-components/macro";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import SectionTitle from "components/SectionTitle";
-import Button from "components/Button";
-import Image1 from "assets/images/Ecosystem/Engagement/engagement_1.png";
-import Image2 from "assets/images/Ecosystem/Engagement/engagement_2.png";
-import Image3 from "assets/images/Ecosystem/Engagement/engagement_3.png";
-import SwipperPrev from "assets/images/swiper_prev.png";
-import SwipperNext from "assets/images/swiper_next.png";
-import { RiShareBoxFill } from "react-icons/ri";
+import { Container } from 'react-bootstrap'
+import styled from 'styled-components/macro'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper'
+import SectionTitle from 'components/SectionTitle'
+import Button from 'components/Button'
+import Image1 from 'assets/images/Ecosystem/Engagement/engagement_1.png'
+import Image2 from 'assets/images/Ecosystem/Engagement/engagement_2.png'
+import Image3 from 'assets/images/Ecosystem/Engagement/engagement_3.png'
+import SwipperPrev from 'assets/images/swiper_prev.png'
+import SwipperNext from 'assets/images/swiper_next.png'
+import { RiShareBoxFill } from 'react-icons/ri'
 
 const EngagementWrapper = styled.div`
   position: relative;
   padding-top: 3rem;
-`;
+`
 
 const ContentWrapper = styled.div`
   position: relative;
@@ -28,7 +28,7 @@ const ContentWrapper = styled.div`
     justify-content: flex-start;
     margin-left: 2rem;
   }
-`;
+`
 
 const ContentImage = styled.div`
   position: relative;
@@ -45,7 +45,7 @@ const ContentImage = styled.div`
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -72,14 +72,14 @@ const ContentImage = styled.div`
   @media (min-width: 1400px) {
     margin-right: 5rem;
   }
-`;
+`
 
 const ButtonWrapper = styled.div`
   position: absolute;
   bottom: 1.5rem;
   left: 1rem;
   z-index: 1;
-`;
+`
 
 function Engagement(): JSX.Element {
   return (
@@ -92,8 +92,8 @@ function Engagement(): JSX.Element {
           <Swiper
             cssMode={true}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
             }}
             pagination={true}
             mousewheel={true}
@@ -102,18 +102,18 @@ function Engagement(): JSX.Element {
             spaceBetween={20}
             autoplay={{
               delay: 2500,
-              disableOnInteraction: false,
+              disableOnInteraction: false
             }}
             speed={3000}
             breakpoints={{
               576: {
                 slidesPerView: 2,
-                spaceBetween: 30,
+                spaceBetween: 30
               },
               992: {
                 slidesPerView: 3,
-                spaceBetween: 30,
-              },
+                spaceBetween: 30
+              }
             }}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
           >
@@ -124,6 +124,7 @@ function Engagement(): JSX.Element {
                   <a
                     href="https://twitter.com/marvin_inu/status/1594760645794271232?s=46&t=sOUOfKmNG-dzWrhhr4IGAQ"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <Button type="secondary">
                       Check it out
@@ -136,12 +137,6 @@ function Engagement(): JSX.Element {
             <SwiperSlide>
               <ContentImage>
                 <img src={Image2} alt="" />
-                <ButtonWrapper>
-                  <Button type="secondary">
-                    Check it out
-                    <RiShareBoxFill size={16} />
-                  </Button>
-                </ButtonWrapper>
               </ContentImage>
             </SwiperSlide>
             <SwiperSlide>
@@ -151,6 +146,7 @@ function Engagement(): JSX.Element {
                   <a
                     href="https://twitter.com/marvin_inu/status/1632682618171916289?s=46&t=sOUOfKmNG-dzWrhhr4IGAQ"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <Button type="secondary">
                       Check it out
@@ -166,7 +162,7 @@ function Engagement(): JSX.Element {
         </ContentWrapper>
       </Container>
     </EngagementWrapper>
-  );
+  )
 }
 
-export default Engagement;
+export default Engagement
