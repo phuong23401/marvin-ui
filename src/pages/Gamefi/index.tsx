@@ -1,17 +1,17 @@
-import { Container } from "react-bootstrap";
-import Button from "components/Button";
+import { Container } from 'react-bootstrap'
+import Button from 'components/Button'
 import {
   ButtonWrapper,
   ContentImage,
   ContentText,
   ContentWrapper,
   SectionWrapper,
-  Spacing,
-} from "./Styled";
-import SectionTitle from "components/SectionTitle";
-import Vault from "assets/images/Gamefi/vault.png";
-import GamePass from "assets/images/Gamefi/game_pass.png";
-import { FaSearchPlus } from "react-icons/fa";
+  Spacing
+} from './Styled'
+import SectionTitle from 'components/SectionTitle'
+import Vault from 'assets/images/Gamefi/vault.png'
+import GamePass from 'assets/images/Gamefi/game_pass.png'
+import { FaSearchPlus } from 'react-icons/fa'
 
 function Gamefi(): JSX.Element {
   return (
@@ -30,12 +30,17 @@ function Gamefi(): JSX.Element {
                 rewards - The Marvin Vault.
               </ContentText>
               <ButtonWrapper>
-                <a href="https://www.t.me/marvininuofficial" target="_blank">
+                <a
+                  href="https://www.t.me/marvininuofficial"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Button type="primary">Join Community</Button>
                 </a>
                 <a
                   href="https://www.reddit.com/r/marvininu_ETH"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Button type="secondary">
                     Read more <FaSearchPlus />
@@ -69,7 +74,7 @@ function Gamefi(): JSX.Element {
         </div>
       </Container>
     </SectionWrapper>
-  );
+  )
 }
 
-export default Gamefi;
+export default Gamefi

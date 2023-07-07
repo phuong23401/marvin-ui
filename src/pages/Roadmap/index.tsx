@@ -1,6 +1,6 @@
-import { useRef } from "react";
-import { Container } from "react-bootstrap";
-import { ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { useRef } from 'react'
+import { Container } from 'react-bootstrap'
+import { ParallaxLayer, IParallax } from '@react-spring/parallax'
 import {
   // BegginingWrapper,
   CometWrapper,
@@ -20,17 +20,17 @@ import {
   StyledParallax,
   TakeoverWrapper,
   UfoWrapper,
-  VibeWrapper,
-} from "./Styled";
-import SectionTitle from "components/SectionTitle";
-import Planet_1 from "assets/images/Roadmap/Beginning/planet.png";
-import Planet_2 from "assets/images/Roadmap/Growth/planet.png";
-import Planet_3 from "assets/images/Roadmap/Launching/planet.png";
-import Planet_4 from "assets/images/Roadmap/Ignition/planet.png";
-import Planet_5 from "assets/images/Roadmap/Destination/planet.png";
+  VibeWrapper
+} from './Styled'
+import SectionTitle from 'components/SectionTitle'
+import Planet_1 from 'assets/images/Roadmap/Beginning/planet.png'
+import Planet_2 from 'assets/images/Roadmap/Growth/planet.png'
+import Planet_3 from 'assets/images/Roadmap/Launching/planet.png'
+import Planet_4 from 'assets/images/Roadmap/Ignition/planet.png'
+import Planet_5 from 'assets/images/Roadmap/Destination/planet.png'
 
 function Roadmap(): JSX.Element {
-  const parallax = useRef<IParallax>(null);
+  const parallax = useRef<IParallax>(null)
 
   return (
     <SectionWrapper>
@@ -110,13 +110,11 @@ function Roadmap(): JSX.Element {
               <ContentWrapper>
                 <ContentTitle>Martians Takeover 2023</ContentTitle>
                 <ContentText>
-                  <li>Appstore & playstore Release</li>
+                  <li>App Store & Play Store Release</li>
                   <li>T1 listings</li>
                   <li>Marvin merchandise</li>
                   <li>10k+ holders</li>
                   <li>Marvin VISA cards</li>
-                  <li>Murderous intent towards Doge coin</li>
-                  <li>Doge coin raped left with aids</li>
                   <li>
                     Marvin becomes the bossiest
                     <br />
@@ -140,7 +138,7 @@ function Roadmap(): JSX.Element {
                 <p>comet</p>
               </CometWrapper>
               <ContentWrapper>
-                <ContentTitle>Rebirth as martians</ContentTitle>
+                <ContentTitle>Rebirth as Martians</ContentTitle>
                 <ContentText>
                   <li>Creation of marvolutionary Smart contract</li>
                   <li>New Website</li>
@@ -199,15 +197,13 @@ function Roadmap(): JSX.Element {
                 <p>UFO</p>
               </UfoWrapper>
               <ContentWrapper>
-                <ContentTitle>Martians Takeover 2023</ContentTitle>
+                <ContentTitle>Introducing: THE MARVIN STUDIO</ContentTitle>
                 <ContentText>
-                  <li>Appstore & playstore Release</li>
+                  <li>App Store & Play Store Release</li>
                   <li>T1 listings</li>
                   <li>Marvin merchandise</li>
                   <li>10k+ holders</li>
                   <li>Marvin VISA cards</li>
-                  <li>Murderous intent towards Doge coin</li>
-                  <li>Doge coin raped left with aids</li>
                   <li>
                     Marvin becomes the bossiest
                     <br />
@@ -286,15 +282,13 @@ function Roadmap(): JSX.Element {
             <p>UFO</p>
           </UfoWrapper>
           <ContentWrapper>
-            <ContentTitle>Martians Takeover 2023</ContentTitle>
+            <ContentTitle>Introducing: THE MARVIN STUDIO</ContentTitle>
             <ContentText>
               <li>Appstore & playstore Release</li>
               <li>T1 listings</li>
               <li>Marvin merchandise</li>
               <li>10k+ holders</li>
               <li>Marvin VISA cards</li>
-              <li>Murderous intent towards Doge coin</li>
-              <li>Doge coin raped left with aids</li>
               <li>
                 Marvin becomes the bossiest
                 <br />
@@ -366,15 +360,13 @@ function Roadmap(): JSX.Element {
             <p>UFO</p>
           </UfoWrapper>
           <ContentWrapper>
-            <ContentTitle>Martians Takeover 2023</ContentTitle>
+            <ContentTitle>Introducing: THE MARVIN STUDIO</ContentTitle>
             <ContentText>
               <li>Appstore & playstore Release</li>
               <li>T1 listings</li>
               <li>Marvin merchandise</li>
               <li>10k+ holders</li>
               <li>Marvin VISA cards</li>
-              <li>Murderous intent towards Doge coin</li>
-              <li>Doge coin raped left with aids</li>
               <li>
                 Marvin becomes the bossiest
                 <br />
@@ -1118,7 +1110,7 @@ function Roadmap(): JSX.Element {
         </DestinationWrapper>
       </DesktopWrapper> */}
     </SectionWrapper>
-  );
+  )
 }
 
-export default Roadmap;
+export default Roadmap
