@@ -85,42 +85,46 @@ function About(): JSX.Element {
               </ContentInner>
             </SwiperSlide>
             <SwiperSlide>
-              <ContentInner>
-                <img src={Coingecko} alt="" />
-                <ButtonWrapper>
-                  <a
-                    href="https://www.coingecko.com/en/coins/marvin-inu"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Button type="secondary">
-                      Track on CoinGecko
-                      <RiShareBoxFill size={16} />
-                    </Button>
-                  </a>
-                </ButtonWrapper>
-                <p>Total Supply</p>
+              <ContentInner className="no-text">
+                <div>
+                  <img src={Coingecko} alt="" />
+                  <ButtonWrapper>
+                    <a
+                      href="https://www.coingecko.com/en/coins/marvin-inu"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button type="secondary">
+                        Track on CoinGecko
+                        <RiShareBoxFill size={16} />
+                      </Button>
+                    </a>
+                  </ButtonWrapper>
+                </div>
+                {/* <p>Total Supply</p>
                 <ContentSubText>
                   1,000,000,000,000 <br /> 3% buy/sell tax on DEX
-                </ContentSubText>
+                </ContentSubText> */}
               </ContentInner>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide  className="no-text">
               <ContentInner>
-                <img src={CMC} alt="" />
-                <ButtonWrapper>
-                  <a
-                    href="https://coinmarketcap.com/currencies/marvin-inu/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Button type="secondary">
-                      Track on CoinMarketCap
-                      <RiShareBoxFill size={16} />
-                    </Button>
-                  </a>
-                </ButtonWrapper>
-                <ContentText>Tokenomics</ContentText>
+                <div>
+                  <img src={CMC} alt="" />
+                  <ButtonWrapper>
+                    <a
+                      href="https://coinmarketcap.com/currencies/marvin-inu/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button type="secondary">
+                        Track on CoinMarketCap
+                        <RiShareBoxFill size={16} />
+                      </Button>
+                    </a>
+                  </ButtonWrapper>
+                </div>
+                {/* <ContentText>Tokenomics</ContentText>
                 <ButtonWrapper>
                   <a
                     href="https://linksome.me/marvininu/"
@@ -129,7 +133,7 @@ function About(): JSX.Element {
                   >
                     <Button type="primary">Community Profile</Button>
                   </a>
-                </ButtonWrapper>
+                </ButtonWrapper> */}
               </ContentInner>
             </SwiperSlide>
             <img className="swiper-button-prev" src={SwipperPrev} alt="" />
@@ -159,40 +163,44 @@ function About(): JSX.Element {
             </ContentInner>
           </ContentDesktop>
           <ContentDesktop>
-            <ContentInner>
-              <img src={Coingecko} alt="" />
-              <ButtonWrapper>
-                <a
-                  href="https://www.coingecko.com/en/coins/marvin-inu"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button type="secondary">
-                    Track on CoinGecko
-                    <RiShareBoxFill size={16} />
-                  </Button>
-                </a>
-              </ButtonWrapper>
-              <p>Total Supply</p>
+            <ContentInner  className="no-text">
+              <div>
+                <img src={Coingecko} alt="" />
+                <ButtonWrapper>
+                  <a
+                    href="https://www.coingecko.com/en/coins/marvin-inu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button type="secondary">
+                      Track on CoinGecko
+                      <RiShareBoxFill size={16} />
+                    </Button>
+                  </a>
+                </ButtonWrapper>
+              </div>
+              {/* <p>Total Supply</p>
               <ContentSubText>
                 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
-              </ContentSubText>
+              </ContentSubText> */}
             </ContentInner>
-            <ContentInner>
-              <img src={CMC} alt="" />
-              <ButtonWrapper>
-                <a
-                  href="https://coinmarketcap.com/currencies/marvin-inu/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button type="secondary">
-                    Track on CoinMarketCap
-                    <RiShareBoxFill size={16} />
-                  </Button>
-                </a>
-              </ButtonWrapper>
-              <ContentText>Tokenomics</ContentText>
+            <ContentInner  className="no-text">
+              <div>
+                <img src={CMC} alt="" />
+                <ButtonWrapper>
+                  <a
+                    href="https://coinmarketcap.com/currencies/marvin-inu/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Button type="secondary">
+                      Track on CoinMarketCap
+                      <RiShareBoxFill size={16} />
+                    </Button>
+                  </a>
+                </ButtonWrapper>
+              </div>
+              {/* <ContentText>Tokenomics</ContentText>
               <ButtonWrapper>
                 <a
                   href="https://linksome.me/marvininu/"
@@ -201,7 +209,7 @@ function About(): JSX.Element {
                 >
                   <Button type="primary">Community Profile</Button>
                 </a>
-              </ButtonWrapper>
+              </ButtonWrapper> */}
             </ContentInner>
           </ContentDesktop>
         </div>

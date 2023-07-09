@@ -127,6 +127,12 @@ export const ContentInner = styled.div`
   width: 350px;
   height: 348px;
 
+  &.no-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   img {
     width: 75px;
     margin-bottom: 1rem;

@@ -75,7 +75,7 @@ function Ecosystem(): JSX.Element {
               }}
               modules={[Autoplay]}
             >
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <a
                   href="https://www.binance.com/en/price/marvin-inu"
                   target="_blank"
@@ -83,7 +83,7 @@ function Ecosystem(): JSX.Element {
                 >
                   <img src={Binance} alt="Binance" />
                 </a>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
                 <a
                   href="https://www.bitmart.com/trade/en-US?symbol=MARVIN_USDT&layout=basic"
