@@ -35,7 +35,7 @@ function Gamefi(): JSX.Element {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button type="primary">Join Community</Button>
+                  <Button type="primary">Join Marvin</Button>
                 </a>
                 <a
                   href="https://www.reddit.com/r/marvininu_ETH"

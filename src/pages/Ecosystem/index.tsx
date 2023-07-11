@@ -17,7 +17,6 @@ import {
 import CrewTheMoon from './CrewTheMoon'
 import Engagement from './Engagement'
 import ApprovedByElon from './ApprovedByElon'
-import Binance from 'assets/images/Ecosystem/Partners/binance.png'
 import Bitmart from 'assets/images/Ecosystem/Partners/bitmart.png'
 import Cmc from 'assets/images/Ecosystem/Partners/cmc.png'
 import Eth from 'assets/images/Ecosystem/Partners/eth.png'

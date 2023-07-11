@@ -29,7 +29,7 @@ function DAO(): JSX.Element {
               target="_blank"
               rel="noreferrer"
             >
-              <Button type="secondary">Join Community</Button>
+              <Button type="secondary">Join Marvin</Button>
             </a>
           </div>
         </DAOWrapper>

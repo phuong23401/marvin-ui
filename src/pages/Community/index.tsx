@@ -55,7 +55,7 @@ function Community(): JSX.Element {
       <SectionWrapper>
         <Container>
           <SectionTitle alignCenter subTitle="Community">
-            Join the Marvin army
+            Join Marvin
           </SectionTitle>
           <ContentWrapper>
             <ContentInner>

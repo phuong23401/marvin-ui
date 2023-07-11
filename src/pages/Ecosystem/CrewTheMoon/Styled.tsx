@@ -1,5 +1,5 @@
-import styled from "styled-components/macro";
-import BgImage from "assets/images/Ecosystem/crewthemoon_bg.png";
+import styled from 'styled-components/macro'
+import BgImage from 'assets/images/Ecosystem/IMG_0423.png'
 
 export const CardWrapper = styled.div`
   position: relative;
@@ -12,7 +12,7 @@ export const CardWrapper = styled.div`
   margin-bottom: 2rem;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@ export const CardWrapper = styled.div`
     background: linear-gradient(274.25deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
     z-index: 0;
   }
-`;
+`
 
 export const CardTitle = styled.p`
   position: relative;
@@ -29,18 +29,18 @@ export const CardTitle = styled.p`
   font-size: 12px;
   line-height: 15px;
   z-index: 1;
-  
+
   @media (min-width: 576px) {
     font-size: 16px;
     line-height: 22px;
   }
-  
+
   @media (min-width: 992px) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 3rem;
   }
-`;
+`
 
 export const CardSubtitle = styled.p`
   position: relative;
@@ -52,19 +52,19 @@ export const CardSubtitle = styled.p`
   margin-bottom: 2rem;
   width: 90%;
   z-index: 1;
-  
+
   @media (min-width: 576px) {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 1rem;
   }
-  
+
   @media (min-width: 992px) {
     font-size: 17px;
     line-height: 28px;
     margin-bottom: 0;
   }
-`;
+`
 
 export const ButtonWrapper = styled.div`
   position: absolute;
@@ -72,9 +72,9 @@ export const ButtonWrapper = styled.div`
   right: 1.5rem;
   bottom: 1.5rem;
   z-index: 1;
-  
+
   @media (min-width: 992px) {
     top: 50%;
     transform: translateY(-50%);
   }
-`;
+`

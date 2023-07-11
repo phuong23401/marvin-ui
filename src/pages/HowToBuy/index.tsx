@@ -74,7 +74,7 @@ function HowToBuy(): JSX.Element {
             </div>
           </ActionsWrapper>
           <ContentWrapper>
-            <SectionTitle alignCenter subTitle="Partners">
+            <SectionTitle alignCenter subTitle="Invading Partners">
               Join the invasion
             </SectionTitle>
             <PartnersWrapper>
