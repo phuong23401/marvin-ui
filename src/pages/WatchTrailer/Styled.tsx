@@ -1,7 +1,8 @@
-import { Modal } from "react-bootstrap";
-import styled from "styled-components/macro";
-import BgImage from "assets/images/WatchTrailer/watch_trailer_bg.png";
-import ButtonBg from "assets/images/WatchTrailer/button_bg.png";
+import { Modal } from 'react-bootstrap'
+import styled from 'styled-components/macro'
+import BgImage from 'assets/images/WatchTrailer/watch_trailer_bg.png'
+import ButtonBg from 'assets/images/WatchTrailer/button_bg.png'
+import { FaPlay } from 'react-icons/fa'
 
 export const SectionWrapper = styled.section`
   position: relative;
@@ -12,7 +13,7 @@ export const SectionWrapper = styled.section`
   padding: 10rem 0;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     background: linear-gradient(
       180deg,
@@ -27,7 +28,7 @@ export const SectionWrapper = styled.section`
     height: 100%;
     z-index: 0;
   }
-`;
+`
 
 export const ContentImage = styled.img`
   position: relative;
@@ -37,7 +38,7 @@ export const ContentImage = styled.img`
   @media (min-width: 992px) {
     width: auto;
   }
-`;
+`
 
 export const StyledButton = styled.button`
   position: relative;
@@ -68,7 +69,7 @@ export const StyledButton = styled.button`
     width: 241px;
     height: 63.82px;
   }
-`;
+`
 
 export const StyledModal = styled(Modal)`
   .modal-dialog {
@@ -91,7 +92,7 @@ export const StyledModal = styled(Modal)`
       display: none;
     }
   }
-`;
+`
 
 export const VideoPlayer = styled.iframe`
   width: 100%;
@@ -117,4 +118,26 @@ export const VideoPlayer = styled.iframe`
     width: 1085px;
     height: 610px;
   }
-`;
+`
+
+export const ImageWrapper = styled.div`
+  position: relative;
+`
+
+export const PlayImage = styled(FaPlay)`
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  cursor: pointer;
+
+  @media (min-width: 576px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 70px;
+  }
+`

@@ -1,22 +1,28 @@
-import { useState } from "react";
-import { Container } from "react-bootstrap";
+import { useState } from 'react'
+import { Container } from 'react-bootstrap'
+import { FaPlay } from 'react-icons/fa'
 import {
   ContentImage,
   SectionWrapper,
   StyledButton,
   StyledModal,
   VideoPlayer,
-} from "./Styled";
-import ContentImg from "assets/images/WatchTrailer/content.png";
+  ImageWrapper,
+  PlayImage
+} from './Styled'
+import ContentImg from 'assets/images/WatchTrailer/content.png'
 
 function WatchTrailer(): JSX.Element {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <SectionWrapper>
       <Container>
         <div className="text-center">
-          <ContentImage src={ContentImg} alt="" />
+          <ImageWrapper>
+            <ContentImage src={ContentImg} alt="" />
+            <PlayImage color="#b6272d" onClick={() => setIsOpen(true)} />
+          </ImageWrapper>
           <StyledButton onClick={() => setIsOpen(true)}>&ensp;</StyledButton>
         </div>
 
@@ -31,7 +37,7 @@ function WatchTrailer(): JSX.Element {
         </StyledModal>
       </Container>
     </SectionWrapper>
-  );
+  )
 }
 
-export default WatchTrailer;
+export default WatchTrailer
