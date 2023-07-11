@@ -69,6 +69,8 @@ export const ContentInner = styled.div`
 
   img {
     width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 32px;
   }
 
@@ -76,9 +78,9 @@ export const ContentInner = styled.div`
     content: "";
     position: absolute;
     background: linear-gradient(
-      26deg,
-      rgba(0, 0, 0, 0.98) 10%,
-      rgba(0, 0, 0, 0) 65%
+      25deg,
+      rgba(0, 0, 0, 0.98) 20%,
+      rgba(0, 0, 0, 0) 85%
     );
     top: 0;
     left: 0;
