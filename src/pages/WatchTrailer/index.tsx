@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Container } from 'react-bootstrap'
-import { FaPlay } from 'react-icons/fa'
 import {
   ContentImage,
   SectionWrapper,
