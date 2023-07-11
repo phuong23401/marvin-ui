@@ -6,7 +6,7 @@ import {
   BottomWrapper,
   ButtonWrapper,
   ContentInner,
-  ContentSubText,
+  // ContentSubText,
   ContentText,
   ContentMobile,
   Introduce,
