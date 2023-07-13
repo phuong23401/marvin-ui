@@ -151,13 +151,12 @@ export const ContentText = styled.p`
   @media (min-width: 576px) {
     font-size: 18px;
     line-height: 28px;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 
   @media (min-width: 992px) {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 2rem;
   }
 `;
 
