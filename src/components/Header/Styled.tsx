@@ -34,7 +34,7 @@ export const LogoWrap = styled.a`
   @media (min-width: 768px) {
     margin-left: 1rem;
   }
-  
+
   @media (min-width: 992px) {
     margin-left: 6rem;
   }
@@ -45,7 +45,11 @@ export const LogoWrap = styled.a`
 `;
 
 export const LogoImage = styled.img`
-  width: 100%;
+  width: 100px;
+
+  @media (min-width: 768px) {
+    width: 110px;
+  }
 `;
 
 export const MenuToggle = styled.button`
