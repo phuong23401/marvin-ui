@@ -34,12 +34,12 @@ function Ecosystem(): JSX.Element {
                 Ignite your rocket and join the bossiest Web3 community now!
               </BackgroundSubtitle>
               <ButtonWrapper>
-                <StyledPrimaryButton
+                {/* <StyledPrimaryButton
                   href="https://swap.marvininu.finance/"
                   target="_blank"
                 >
                   Launch Dapp
-                </StyledPrimaryButton>
+                </StyledPrimaryButton> */}
                 <StyledSecondaryButton
                   href="https://nft.marvin-ecosystem.com/"
                   target="_blank"
