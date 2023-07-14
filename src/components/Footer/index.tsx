@@ -111,7 +111,7 @@ function Footer(): JSX.Element {
             </InputField>
             <ButtonWrapper>
               <a
-                href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
+                href="https://app.uniswap.org/#/swap?inputCurrency=0x55a380d134d722006a5ce2d510562e1239d225b1&chain=mainnet"
                 target="_blank"
                 rel="noreferrer"
               >

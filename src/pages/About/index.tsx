@@ -69,7 +69,7 @@ function About(): JSX.Element {
                 <img src={ETH} alt="" />
                 <ButtonWrapper>
                   <a
-                    href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
+                    href="https://etherscan.io/token/0x55a380d134d722006a5ce2d510562e1239d225b1"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -107,7 +107,7 @@ function About(): JSX.Element {
                 </ContentSubText> */}
               </ContentInner>
             </SwiperSlide>
-            <SwiperSlide  className="no-text">
+            <SwiperSlide className="no-text">
               <ContentInner>
                 <div>
                   <img src={CMC} alt="" />
@@ -147,7 +147,7 @@ function About(): JSX.Element {
               <img src={ETH} alt="" />
               <ButtonWrapper>
                 <a
-                  href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
+                  href="https://etherscan.io/token/0x55a380d134d722006a5ce2d510562e1239d225b1"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -163,7 +163,7 @@ function About(): JSX.Element {
             </ContentInner>
           </ContentDesktop>
           <ContentDesktop>
-            <ContentInner  className="no-text">
+            <ContentInner className="no-text">
               <div>
                 <img src={Coingecko} alt="" />
                 <ButtonWrapper>
@@ -184,7 +184,7 @@ function About(): JSX.Element {
                 1,000,000,000,000 <br /> 3% buy/sell tax on DEX
               </ContentSubText> */}
             </ContentInner>
-            <ContentInner  className="no-text">
+            <ContentInner className="no-text">
               <div>
                 <img src={CMC} alt="" />
                 <ButtonWrapper>
@@ -224,7 +224,7 @@ function About(): JSX.Element {
           </p>
           <ButtonWrapper>
             <a
-              href="https://app.uniswap.org/#/swap?inputCurrency=0xcaa9ed6d7502595b555113d4517668ae24038c8a&chain=mainnet"
+              href="https://app.uniswap.org/#/swap?inputCurrency=0x55a380d134d722006a5ce2d510562e1239d225b1&chain=mainnet"
               target="_blank"
               rel="noreferrer"
             >

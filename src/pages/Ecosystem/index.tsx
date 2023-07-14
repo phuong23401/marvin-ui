@@ -103,7 +103,7 @@ function Ecosystem(): JSX.Element {
               </SwiperSlide>
               <SwiperSlide>
                 <a
-                  href="https://etherscan.io/token/0xcaa9ed6d7502595b555113d4517668ae24038c8a"
+                  href="https://etherscan.io/token/0x55a380d134d722006a5ce2d510562e1239d225b1"
                   target="_blank"
                   rel="noreferrer"
                 >
