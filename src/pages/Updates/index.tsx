@@ -37,11 +37,11 @@ function Updates(): JSX.Element {
   });
 
   const [news, setNews] = useState<News[]>([]);
-  console.log(news);
 
   useEffect(() => {
     if (data) {
       const _news = data.value;
+      _news.sort((a: any, b: any) => b.date - a.date);
 
       if (_news) {
         setNews(_news);
