@@ -151,7 +151,7 @@ export const ContentText = styled.p`
   @media (min-width: 576px) {
     font-size: 18px;
     line-height: 28px;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   @media (min-width: 992px) {

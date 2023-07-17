@@ -92,7 +92,11 @@ function Updates(): JSX.Element {
                       <img src={e.imageUrl} alt="" />
                       <TextWrapper>
                         <Date>{format(e.date, "MMM dd, yyyy")}</Date>
-                        <ContentText>{e.title}</ContentText>
+                        <ContentText>
+                          {e.title.length > 60
+                            ? `${e.title.substring(0, 60)}...`
+                            : e.title}
+                        </ContentText>
                       </TextWrapper>
                       <ButtonWrapper>
                         <a href={e.link} target="_blank">
