@@ -10,7 +10,6 @@ import {
   Introduce,
   PartnersWrapper,
   SectionWrapper,
-  StyledPrimaryButton,
   StyledSecondaryButton,
   TitleWrapper
 } from './Styled'
