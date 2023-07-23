@@ -1,11 +1,11 @@
-import styled from "styled-components/macro";
-import BgImage from "assets/images/Ecosystem/ecosystem_bg.png";
+import styled from 'styled-components/macro'
+import BgImage from 'assets/images/Ecosystem/ecosystem_bg.png'
 
 export const SectionWrapper = styled.section`
   width: 100%;
   border-bottom: 2px solid #1f1f1f;
   padding-bottom: 3rem;
-`;
+`
 
 export const BackgroundWrapper = styled.div`
   position: relative;
@@ -17,7 +17,7 @@ export const BackgroundWrapper = styled.div`
   margin-bottom: 3.5rem;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -34,12 +34,12 @@ export const BackgroundWrapper = styled.div`
   @media (min-width: 992px) {
     margin-bottom: 7.5rem;
   }
-`;
+`
 
 export const TitleWrapper = styled.div`
   padding-top: 20rem;
   text-align: center;
-`;
+`
 
 export const Introduce = styled.div`
   position: relative;
@@ -63,10 +63,11 @@ export const Introduce = styled.div`
     letter-spacing: 4px;
     padding: 1rem 1.5rem;
   }
-`;
+`
 
 export const BackgroundTitle = styled.h4`
   position: relative;
+  font-family: 'GT Ultra';
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
@@ -83,7 +84,7 @@ export const BackgroundTitle = styled.h4`
     font-size: 64px;
     line-height: 69px;
   }
-`;
+`
 
 export const BackgroundSubtitle = styled.p`
   position: relative;
@@ -106,14 +107,14 @@ export const BackgroundSubtitle = styled.p`
   @media (min-width: 992px) {
     letter-spacing: 4px;
   }
-`;
+`
 
 export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
-`;
+`
 
 export const StyledPrimaryButton = styled.a`
   position: relative;
@@ -140,7 +141,7 @@ export const StyledPrimaryButton = styled.a`
     padding: 18px 40px;
     border-radius: 24px;
   }
-`;
+`
 
 export const StyledSecondaryButton = styled.a`
   position: relative;
@@ -167,14 +168,14 @@ export const StyledSecondaryButton = styled.a`
     padding: 18px 40px;
     border-radius: 24px;
   }
-`;
+`
 
 export const PartnersWrapper = styled.div`
   position: relative;
   border: 2px solid rgba(255, 255, 255, 0.12);
   border-radius: 24px;
   padding: 3rem 0;
-`;
+`
 
 export const StyledPartnersButton = styled.button`
   position: absolute;
@@ -195,4 +196,4 @@ export const StyledPartnersButton = styled.button`
   &:hover {
     transform: scale(1.025);
   }
-`;
+`
