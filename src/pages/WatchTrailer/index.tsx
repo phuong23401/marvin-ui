@@ -22,7 +22,9 @@ function WatchTrailer(): JSX.Element {
             <ContentImage src={ContentImg} alt="" />
             <PlayImage color="#b6272d" onClick={() => setIsOpen(true)} />
           </ImageWrapper>
-          <StyledButton onClick={() => setIsOpen(true)}>&ensp;</StyledButton>
+          <StyledButton href="http://marvinsurvivors.io/" target="_blank">
+            Play Demo
+          </StyledButton>
         </div>
 
         <StyledModal size="xl" show={isOpen} onHide={() => setIsOpen(false)}>

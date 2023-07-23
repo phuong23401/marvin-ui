@@ -40,7 +40,7 @@ export const ContentImage = styled.img`
   }
 `
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.a`
   position: relative;
   background: transparent;
   background-image: url(${ButtonBg});
@@ -49,17 +49,18 @@ export const StyledButton = styled.button`
   background-repeat: no-repeat;
   border: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 53.82px;
   margin: auto;
   margin-top: 1rem;
   transition: all 0.3s ease;
   z-index: 1;
-
-  a {
-    width: 100%;
-    height: 100%;
-  }
+  font-family: 'GT Ultra';
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.025);
