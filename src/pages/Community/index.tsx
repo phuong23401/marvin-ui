@@ -18,7 +18,7 @@ import { RiShareBoxFill } from 'react-icons/ri'
 import Loader from 'components/Loader'
 import useSWR from 'swr'
 
-const apiUrl = 'https://api-test.marvin-ecosystem.com/social/count'
+const apiUrl = 'https://api.marvin-ecosystem.com/social/count'
 const fetcher = (url: string) => fetch(url).then(res => res.json())
 
 function Community(): JSX.Element {

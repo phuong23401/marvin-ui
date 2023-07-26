@@ -20,7 +20,7 @@ import SwipperNext from 'assets/images/swiper_next.png'
 import useSWR from 'swr'
 import { format } from 'date-fns'
 
-const apiUrl = 'https://api-test.marvin-ecosystem.com/news/telegram'
+const apiUrl = 'https://api.marvin-ecosystem.com/news/telegram'
 const fetcher = (url: string) => fetch(url).then(res => res.json())
 
 interface News {
