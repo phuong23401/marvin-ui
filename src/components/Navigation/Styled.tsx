@@ -1,5 +1,6 @@
-import styled from "styled-components/macro";
+import { Offcanvas } from "react-bootstrap";
 import { Link } from "react-scroll";
+import styled from "styled-components/macro";
 
 export const MainMenu = styled.div<{ footer?: boolean }>`
   position: relative;
@@ -47,6 +48,14 @@ export const NavBarWrap = styled.div<{ footer?: boolean }>`
     @media (min-width: 992px) {
       display: ${({ footer }) => (footer ? "block" : "flex")};
     }
+  }
+`;
+
+export const MobileBarWrap = styled(Offcanvas)`
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .btn-close {
+    background-color: rgba(255, 255, 255, 0.5);
   }
 `;
 

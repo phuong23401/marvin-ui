@@ -5,6 +5,7 @@ import {
   MobileMenu,
   NavBarWrap,
   StyledNavLink,
+  MobileBarWrap,
 } from "./Styled";
 
 interface INavigationProps {
@@ -42,7 +43,7 @@ function Navigation(props: INavigationProps): JSX.Element {
           </li>
         </ul>
       </NavBarWrap>
-      <Offcanvas show={isOpen} onHide={onHide}>
+      <MobileBarWrap show={isOpen} onHide={onHide}>
         <Offcanvas.Header closeButton />
         <Offcanvas.Body>
           <MobileMenu>
@@ -68,7 +69,7 @@ function Navigation(props: INavigationProps): JSX.Element {
             </li>
           </MobileMenu>
         </Offcanvas.Body>
-      </Offcanvas>
+      </MobileBarWrap>
     </MainMenu>
   );
 }
