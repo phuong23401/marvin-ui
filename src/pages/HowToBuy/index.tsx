@@ -27,7 +27,7 @@ function HowToBuy(): JSX.Element {
             Where to buy Marvin
           </SectionTitle>
           <SectionSubtitle className="col col-sm-9 col-md-7 col-lg-5 col-xl-4">
-            Buy Marvin on 70+ exchanges.&ensp;
+            Buy Marvin with creditcard, Apple Pay or Google Pay&ensp;
             <span>Set slippage to 0.5% on DEX.</span> Need help?&ensp;
             <span>CLICK HERE</span>
           </SectionSubtitle>
