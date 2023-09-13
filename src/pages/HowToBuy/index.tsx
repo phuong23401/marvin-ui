@@ -73,6 +73,17 @@ function HowToBuy(): JSX.Element {
               </div>
             </div>
           </ActionsWrapper>
+
+          <div className="text-center my-5">
+            <iframe
+              width="400"
+              height="720"
+              title=""
+              allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
+              src="https://flooz.xyz/embed/trade?swapDisabled=true&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=false&onRampTokenAddress=0x55a380d134d722006A5CE2d510562e1239D225B1&onRampLockToken=true&stakeDisabled=true&network=eth&lightMode=false&primaryColor=%23d03a20&backgroundColor=transparent&roundedCorners=10&padding=20&refId=HoNfLq"
+            ></iframe>
+          </div>
+
           <ContentWrapper>
             <SectionTitle alignCenter subTitle="Invading Partners">
               Join the invasion
