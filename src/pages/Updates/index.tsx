@@ -88,7 +88,7 @@ function Updates(): JSX.Element {
               <>
                 {news.map(e => (
                   <>
-                    {e && (
+                    {e.title && (
                       <SwiperSlide key={e.id}>
                         <ContentInner>
                           <img src={e.imageUrl} alt="" />
