@@ -87,24 +87,28 @@ function Updates(): JSX.Element {
             {news.length > 0 ? (
               <>
                 {news.map(e => (
-                  <SwiperSlide key={e.id}>
-                    <ContentInner>
-                      <img src={e.imageUrl} alt="" />
-                      <TextWrapper>
-                        <Date>{format(e.date, 'MMM dd, yyyy')}</Date>
-                        <ContentText>
-                          {e.title.length > 60
-                            ? `${e.title.substring(0, 60)}...`
-                            : e.title}
-                        </ContentText>
-                      </TextWrapper>
-                      <ButtonWrapper>
-                        <a href={e.link} target="_blank" rel="noreferrer">
-                          <Button type="outline">View post</Button>
-                        </a>
-                      </ButtonWrapper>
-                    </ContentInner>
-                  </SwiperSlide>
+                  <>
+                    {e && (
+                      <SwiperSlide key={e.id}>
+                        <ContentInner>
+                          <img src={e.imageUrl} alt="" />
+                          <TextWrapper>
+                            <Date>{format(e.date, 'MMM dd, yyyy')}</Date>
+                            <ContentText>
+                              {e.title.length > 60
+                                ? `${e.title.substring(0, 60)}...`
+                                : e.title}
+                            </ContentText>
+                          </TextWrapper>
+                          <ButtonWrapper>
+                            <a href={e.link} target="_blank" rel="noreferrer">
+                              <Button type="outline">View post</Button>
+                            </a>
+                          </ButtonWrapper>
+                        </ContentInner>
+                      </SwiperSlide>
+                    )}
+                  </>
                 ))}
               </>
             ) : (

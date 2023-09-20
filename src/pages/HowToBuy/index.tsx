@@ -78,9 +78,9 @@ function HowToBuy(): JSX.Element {
             <iframe
               width="400"
               height="720"
-              title=""
+              frameBorder="0"
               allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
-              src="https://flooz.xyz/embed/trade?swapDisabled=true&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=false&onRampTokenAddress=0x55a380d134d722006A5CE2d510562e1239D225B1&onRampLockToken=true&stakeDisabled=true&network=eth&lightMode=false&primaryColor=%23d03a20&backgroundColor=transparent&roundedCorners=10&padding=20&refId=HoNfLq"
+              src="https://flooz.xyz/embed/trade?swapDisabled=true&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=true&onRampTokenAddress=0x55a380d134d722006A5CE2d510562e1239D225B1&onRampLockToken=true&stakeDisabled=true&network=eth&lightMode=false&primaryColor=%23d03a20&backgroundColor=transparent&roundedCorners=32&padding=40&refId=HoNfLq"
             ></iframe>
           </div>
 
