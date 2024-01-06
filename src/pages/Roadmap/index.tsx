@@ -31,6 +31,7 @@ import Planet_5 from 'assets/images/Roadmap/Destination/planet.png'
 
 function Roadmap(): JSX.Element {
   const parallax = useRef<IParallax>(null)
+  const currentYear = new Date().getFullYear()
 
   return (
     <SectionWrapper>
@@ -108,7 +109,7 @@ function Roadmap(): JSX.Element {
                 <p>UFO</p>
               </UfoWrapper>
               <ContentWrapper>
-                <ContentTitle>Martians Takeover 2023</ContentTitle>
+                <ContentTitle>Martians Takeover {currentYear}</ContentTitle>
                 <ContentText>
                   <li>App Store & Play Store Release</li>
                   <li>T1 listings</li>
