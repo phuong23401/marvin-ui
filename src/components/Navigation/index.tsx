@@ -1,21 +1,21 @@
-import { Offcanvas } from "react-bootstrap";
+import { Offcanvas } from 'react-bootstrap'
 import {
   StyledLink,
   MainMenu,
   MobileMenu,
   NavBarWrap,
   StyledNavLink,
-  MobileBarWrap,
-} from "./Styled";
+  MobileBarWrap
+} from './Styled'
 
 interface INavigationProps {
-  isOpen?: boolean;
-  onHide?: any;
-  footer?: boolean;
+  isOpen?: boolean
+  onHide?: any
+  footer?: boolean
 }
 
 function Navigation(props: INavigationProps): JSX.Element {
-  const { isOpen, onHide, footer } = props;
+  const { isOpen, onHide, footer } = props
 
   return (
     <MainMenu footer={footer}>
@@ -39,6 +39,14 @@ function Navigation(props: INavigationProps): JSX.Element {
               target="_blank"
             >
               Documents
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink
+              href="https://panel.marvin-ecosystem.com/"
+              target="_blank"
+            >
+              Panel
             </StyledLink>
           </li>
         </ul>
@@ -67,11 +75,19 @@ function Navigation(props: INavigationProps): JSX.Element {
                 Documents
               </StyledLink>
             </li>
+            <li>
+              <StyledLink
+                href="https://panel.marvin-ecosystem.com/"
+                target="_blank"
+              >
+                Panel
+              </StyledLink>
+            </li>
           </MobileMenu>
         </Offcanvas.Body>
       </MobileBarWrap>
     </MainMenu>
-  );
+  )
 }
 
-export default Navigation;
+export default Navigation
