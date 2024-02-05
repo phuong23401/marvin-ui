@@ -148,15 +148,11 @@ function Team(): JSX.Element {
                 <h5>Mula</h5>
                 <p>Social Management & Content Creation</p>
                 <SocialWrapper>
-                  <a
-                    href="https://twitter.com/mula_mule_300"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="x.com/mulamule300" target="_blank" rel="noreferrer">
                     <img src={Twitter} alt="" />
                   </a>
                   <a
-                    href="https://www.t.me/MulaMarvin300"
+                    href="https://t.me/mulathemule"
                     target="_blank"
                     rel="noreferrer"
                   >
